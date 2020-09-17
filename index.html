@@ -9,52 +9,54 @@
 
       <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>AGIXURY</title>
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <div>
-                <div>
+    <header class = "jumbotron">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-12 col-sm-6">
                     <h1>Header</h1>
                     <p>sample header text</p>
                 </div>
-                <div>
+                <div class= " col-12 col-sm">
+                    <p> Even more sample header text </p>
                 </div>
             </div>
         </div>
     </header>
 
-    <div>
-        <div>
-            <div>
+    <div class="container">
+        <div class="row">
+            <div class ="col-12 col-sm-4 ">
                 <h3>Body Header 1</h3>
             </div>
-            <div>
+            <div class = "col-12 col-sm">
                 <h2>Body Sub heading 1</h2>
                 <p>Body header 1 contents</p>
             </div>
         </div>
 
 
-        <div>
-            <div>
+        <div class="row">
+            <div class ="col-12 col-sm-4 ">
                 <h3>Body Header 2</h3>
             </div>
-            <div>
+            <div class ="col-12 col-sm-4 ">
                 <h2>Body Sub heading 2</h2>
                 <p>Body header 2 contents </p>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class="row">
+            <div class ="col-12 col-sm-4 ">
                 <h3>Body Header 3</h3>
             </div>
-            <div>
+            <div class ="col-12 col-sm-4 ">
                 <h2>Body Sub heading 3</h2>
                 <h4>Body Sub heading 3_2</h4>
                 <p>Body header 3 contents </p>
@@ -62,10 +64,10 @@
         </div>
     </div>
 
-    <footer>
-        <div>
-            <div>             
-                <div>
+    <footer class = "footer-base">
+        <div class ="container">
+            <div class ="row">             
+                <div class = "col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -74,7 +76,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class= "col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
 		              Somewhere <br>
@@ -85,7 +87,7 @@
 		              Email: <a href="mailto:example@mail.com">example@mail.com</a>
 		           </address>
                 </div>
-                <div>
+                <div class="col-12 col-sm-4">
                     <div>
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -96,13 +98,13 @@
                     </div>
                 </div>
            </div>
-           <div>             
-                <div>
+           <div class= "row">             
+                <div class = "col-auto">
                     <p>© Copyright 2020 AGIXURY</p>
                 </div>
            </div>
         </div>
-    </footer>
+    </footer >
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
