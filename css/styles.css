@@ -1,3 +1,15 @@
+.body-border-demarcate{
+    border-bottom: 15px ridge;
+}
+
 .footer-base{
     background-color: gray;
+}
+
+.navbar-dark {
+    background-color: #000000;
+}
+
+.row-content{
+    min-height: 400px;
 }
