@@ -1,0 +1,13 @@
+•	To install Node on your machine, go to https://nodejs.org and click on the Download button. Depending on your computer's platform (Windows, MacOS or Linux), the appropriate installation package is downloaded.
+•	Open a terminal window on your machine. If you are using a Windows machine, open a cmd window or PowerShell window with admin privileges.
+•	To ensure that your NodeJS setup is working correctly, type the following at the command prompt to check for the version of Node and NPM         
+•	node -v
+•	npm -v
+
+
+Once this is done where the zip file is unzipped for example /(*Task_name) folder
+Go to CMD prompt to that location and run 
+		npm install lite-server --save-dev
+		npm install bootstrap@4.0.0 --save
+		npm install jquery@3.3.1 popper.js@1.12.9 --save
+Go to CMD prompt to that location and run npm start this will open the page that you will be working on.
