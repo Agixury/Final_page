@@ -818,7 +818,7 @@ legend {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-
+  min-height: 200px;
   font-family: 'Roboto', sans-serif;
 }
 
