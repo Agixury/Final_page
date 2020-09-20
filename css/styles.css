@@ -1,6 +1,21 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    background-color:  #ffffff;
+}
 body{
-  font-family: "Montserrat";
-  text-align: center;
+    overflow-x: hidden; 
+    text-rendering: optimizeLegibility;
+    font-family: "Montserrat";
+    text-align: center;
 }
 
 .body-border-demarcate{
@@ -9,22 +24,47 @@ body{
 
 .footer-base{
     background-color: #fff;
-
+}
+/* Navbar css START
+============================================================================================ */
+button.btn{
+  background-color: #000;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 7.75px 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 15px;
+  border-radius: 0%;
 }
 
-.navbar-dark {
-    background-color: #000000;
+button.btn-1{
+  background-color: #FFF;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 7px 26px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: -3%;
+  border-radius: 3%;
 }
 
-.navbar-brand{
-  font-family: "Ubuntu";
-  font-weight: bold;
+.floatingNav {
+  transition: all 0.5s;
+  box-shadow: -5.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
 }
-
 .nav-link{
-  font-family: "Montserrat-Light";
+  font-size: 1rem;
+  color: #FFF;
 }
+/* Navbar css END
+============================================================================================ */
 
+/* Body css START
+============================================================================================ */
 .row-content{
     min-height: 400px;
 }
@@ -35,7 +75,14 @@ body{
 .download-button{
   margin:5% 3% 5% 0;
 }
+/* Body css END
+============================================================================================ */
+
+/* Footer css START
+============================================================================================ */
 .social-icon{
   margin:20px 10px;
   text-align: center;
 }
+/* Footer css END
+============================================================================================ */
