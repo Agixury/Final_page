@@ -87,6 +87,14 @@
      <!-- CSS Stylesheets -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <link rel="stylesheet" href="css/styles.css">
+     
+     <!--Search Bar-->
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="author" content="colorlib.com">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+     <link href="css/main.css" rel="stylesheet" />
 
      <!-- Font Awesome -->
      <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -166,26 +174,47 @@
             </div>
             <br><br>
 <!--Start of Search bar-->
-            <div class ="row">
+            <div class ="row s008">
                     <div class= "col-12 col-sm-12 align-self-center">
-                        <form class="form-inline d-flex justify-content-center md-form form-sm mt=0" >
-                            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" style="border: 0px; background-color:  #E8E8E8; border-bottom: 3px solid #FA8072;">
-                            <i class="fas fa-search" aria-hidden="true" style="margin-left: -2.5rem"></i>
-                        </form>
+                        <form  action="" method="get">
+                            <div class="inner-form">
+                              <div class="basic-search">
+                                <div class="input-field">
+                                  <input id="search" type="text" placeholder="Search" />
+                                  
+                                  <div class="icon-wrap mr-4">
+                                    <div class="mr-2">
+                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                      <path d="M18.869 19.162l-5.943-6.484c1.339-1.401 2.075-3.233 2.075-5.178 0-2.003-0.78-3.887-2.197-5.303s-3.3-2.197-5.303-2.197-3.887 0.78-5.303 2.197-2.197 3.3-2.197 5.303 0.78 3.887 2.197 5.303 3.3 2.197 5.303 2.197c1.726 0 3.362-0.579 4.688-1.645l5.943 6.483c0.099 0.108 0.233 0.162 0.369 0.162 0.121 0 0.242-0.043 0.338-0.131 0.204-0.187 0.217-0.503 0.031-0.706zM1 7.5c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5-6.5-2.916-6.5-6.5z"></path>
+                                    </svg></div>
+                                    <button value="Show/Hide" id="btnShowHide" ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square-fill mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                                      </svg></button>  
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="advance-search" id="advance-search" style="display:none;">
+                                <div class="row">
+                                  <div class="input-field">
+                                    <div >
+                                        <input class="form-control form-control-sm" type="text" placeholder="Add Dates" class="" autocomplete="on" name="location" onfocus="(this.type='date')">
+                                    </div>
+                                  </div>
+                                  <div class="input-field">
+                                    <div >
+                                        <input class="search-input" type="text" placeholder="Add Dates" class="" autocomplete="on" name="location" onfocus="(this.type='date')">
+                                    </div>
+                                  </div>
+                                  <div class="input-field">
+                                    <input class="search-input" type="text" placeholder="Number of People" class="" autocomplete="on" name="location" onfocus="(this.type='Number')">
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </form>
                     </div>
             </div>
-            <br><br>
-            <div class= "row expanded-search-bar">
-                <div class = "col-12 col-sm-4 align-self-center">
-                    <input class="form-control form-control-sm mr-2 w-75" type="text" placeholder="Number of people" style="margin-left: 5rem"> 
-               </div>
-               <div class = "col-12 col-sm-4 align-self-center">
-                    <input class="form-control form-control-sm mr-2 w-75" type="text" placeholder="Location" style="margin-left: 5rem" > 
-                </div>
-                <div class= " col-12 col-sm-4">
-                    <input class="form-control form-control-sm mr-2 w-75" type="text" placeholder="Date of arrival" style="margin-left: 4.5rem">
-                 </div>
-
             </div>
 <!--End of Search bar-->
         </div>
@@ -495,6 +524,17 @@
                 $('#navbar').removeClass('floatingNav');
             }
         });
+    </script>
+     <script type="text/javascript">
+        $(document).ready(function(){
+                    $("#btnShowHide").click(function(){
+                        $("#advance-search").toggle();
+                    });
+                });
+        $('#btnShowHide').click(function(e){
+        e.preventDefault();
+        // Code goes here
+    });
     </script>
 
 </body>

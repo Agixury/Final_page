@@ -1,0 +1,84 @@
+body{
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.body-border-demarcate{
+    border-bottom: 15px ridge;
+}
+
+.footer-base{
+    background-color: #fff;
+
+}
+
+.navbar-dark {
+    background-color: #000000;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-weight: bold;
+}
+
+.nav-link{
+  font-family: "Montserrat-Light";
+}
+
+.row-content{
+    min-height: 400px;
+}
+#address{
+  text-align: left;
+}
+
+.download-button{
+  margin:5% 3% 5% 0;
+}
+.social-icon{
+  margin:20px 10px;
+  text-align: center;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 180px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.flip-card{
+    width: 300px;
+    height: 300px;
+  }
+  
+  .flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;;
+  }
+  
+  .flip-card-back{
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
