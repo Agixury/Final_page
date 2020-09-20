@@ -12,11 +12,12 @@ html, body {
     background-color:  #ffffff;
 }
 body{
-    overflow-x: hidden; 
+    overflow-x: hidden;
     text-rendering: optimizeLegibility;
     font-family: "Montserrat";
     text-align: center;
 }
+
 
 .body-border-demarcate{
     border-bottom: 15px ridge;
@@ -87,6 +88,11 @@ button.btn-1{
 
 /* Footer css START
 ============================================================================================ */
+.links{
+  color: "black";
+}
+
+
 .social-icon{
   margin:20px 10px;
   text-align: center;
