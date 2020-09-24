@@ -9,21 +9,23 @@
 }
 html, body {
     max-width: 100%;
-    background-color:  #ffffff;
 }
 body{
-    overflow-x: hidden; 
+    overflow-x: hidden;
     text-rendering: optimizeLegibility;
-    font-family: "Montserrat";
+    font-family: "Raleway";
     text-align: center;
+    background-color:#ffffff;
 }
 
 .body-border-demarcate{
     border-bottom: 15px ridge;
 }
-
+.page-footer{
+  background-color: #dcdcdc;
+}
 .footer-base{
-    background-color: #fff;
+    background-color:#c0c0c0;
 }
 /* Navbar css START
 ============================================================================================ */
