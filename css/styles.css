@@ -189,26 +189,35 @@ button.btn-1{
 
    
   
+   #social-button-last{
+    display: none;
+  }
  
 
-   @media only screen and (max-width: 450px) {
-    #header-t {
-    background: url(/images/small-bg.png);
-    background-position: center ;
-    background-position-y: -260px;
-    display: flex;
-    background-repeat: no-repeat;
-    height: 40vh;
-    background-size: 250%;
-    max-width: 100%;
-    }
-    #social-button{
-      display: none;
-    }
-    #form-in{
-      display: none;
-    }
-  }
+  @media only screen and (max-width: 450px) {
+   #header-t {
+   background: url(/images/small-bg.png);
+   background-position: center ;
+   background-position-y: -260px;
+   display: flex;
+   background-repeat: no-repeat;
+   height: 40vh;
+   background-size: 250%;
+   max-width: 100%;
+   }
+   #empty-space{
+     height: 5vh;
+   }
+   #form-in{
+     display: none;
+   }
+   #social-button{
+     display: none;
+   }
+   #social-button-last{
+     display: block;
+   }
+ }
 
 
 
