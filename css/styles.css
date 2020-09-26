@@ -168,3 +168,230 @@ button.btn-1{
 }
 /* Footer css END
 ============================================================================================ */
+
+/* Header style css ======================================= BEGINS ==================================== */
+
+#empty-space{
+  height: 30vh;
+}
+
+
+
+  .jumbotron{
+   
+    background: url(/images/body-bg.jpg);
+    background-attachment: fixed;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+   }
+
+   
+  
+ 
+
+   @media only screen and (max-width: 450px) {
+    #header-t {
+    background: url(/images/small-bg.png);
+    background-position: center ;
+    background-position-y: -260px;
+    display: flex;
+    background-repeat: no-repeat;
+    height: 40vh;
+    background-size: 250%;
+    max-width: 100%;
+    }
+    #social-button{
+      display: none;
+    }
+    #form-in{
+      display: none;
+    }
+  }
+
+
+
+  .form-cont .Subscribe{
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
+.form-cont .Subscribe p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    width: 380px;
+
+}
+.form-cont .Subscribe form input[type="text"]{
+    width: 250px;
+    padding: 10px;
+    color: white;
+    background-color: #2b2b2b;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+}
+.form-cont .Subscribe form input[type="text"]::placeholder{
+    color: white;
+    font-size: 18px;
+    opacity: 0.7;
+}
+.form-cont .Subscribe form input:focus{
+    border: none;
+    outline: none;
+}
+.form-cont .Subscribe form input[type="submit"]{
+    width: 130px;
+    padding: 10px;
+    color: white;
+    background-color: #252525;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left:-04px
+}
+.form-cont .login-signup{
+    width: 100%;
+    display: inline-block;
+    height: 100%;  
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+}
+.form-cont .login-signup .inner{
+    width:100%;
+    height: fit-content;
+    background-color : rgba(19, 19, 19, 0.5);
+    display: flex;
+    border: 1px solid white;
+    /* align-content: space-around; */
+    flex-direction: column;
+}
+.form-cont .login-signup .inner .option{
+    width: 100%;
+    display: flex;
+}
+.form-cont .login-signup .inner .option button{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #000303;
+}
+.form-cont .login-signup .inner button.line{
+    border-right: 2px solid white;
+}
+.form-cont .login-signup .inner button a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.form-cont .login-signup .inner button a.active{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+
+}
+.form-cont .login-signup .inner button:focus{
+    border: none;
+    outline: none;
+}
+.form-cont .login-signup .inner form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.form-cont .login-signup .inner form input[type="text"],
+.form-cont .login-signup .inner form input[type="password"]{
+    width:90%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(1, 1, 1, .2);
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 3px -1px rgba(255,255,255,1);
+}
+.form-cont .login-signup .inner form input[type="submit"]{
+    width:90%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.form-cont .login-signup .inner form input:focus{
+    border: none;
+    outline: none;
+}
+.form-cont .login-signup .inner form input[type="text"]::placeholder,.cont .login-signup .inner form input[ type="password"]::placeholder{
+    color: white;
+    font-size: 15px;
+    opacity: 0.7;
+}
+.form-cont .login-signup .inner a{
+    width:100%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.form-cont .login-signup .inner a:hover{
+    text-decoration: underline;
+}
+.form-cont .login-signup .inner .botm-option{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.form-cont .login-signup .inner .botm-option button.line{
+    border-right: 2px solid white;
+}
+
+.form-cont .login-signup .inner .botm-option a{
+    width:100%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.form-cont .login-signup .inner .botm-option i{
+    margin-left: 2px;
+    font-size: 15px;
+    color: rgb(36, 36, 105);
+}
+.form-cont .login-signup .inner .botm-option i.mail{
+    margin-left: 4px;
+    font-size: 15px;
+    color: rgb(177, 28, 28);
+
+}
+.form-cont .login-signup .inner .botm-option button{
+    width:50%;
+    padding: 10px;
+    border: none;
+    background-color: #000303;
+}
+/* Header style css ======================================= ENDS ==================================== */
