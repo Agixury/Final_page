@@ -235,6 +235,7 @@ footer {
 .footer-bottom {
 	text-align: center;
 	padding-top: 10px;
+  margin-top : 20px;
 }
 
 .footer-list__item a,
@@ -246,6 +247,20 @@ footer {
 
 .footer-socials a {
 	padding: 5px;
+}
+.footer-socials{
+  position:relative;
+  left : 40% ;
+}
+.second-social{
+  position : relative;
+  left : 80px;
+  bottom: 48px;
+}
+.third-social{
+  position:relative;
+  left : 160px;
+  bottom : 95px;
 }
 /* Footer css END
 ============================================================================================ */
