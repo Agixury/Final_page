@@ -132,35 +132,49 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--Nav bar start-->
     <header role="banner">
-        <nav style = "color: rgba(255, 255, 255, 0.72);" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id = "navbar"">
-            <div class="container">
+        <nav style = "color: rgba(255, 255, 255, 0.72);" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id = "navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class = "container">
                 <a class=" nav-item active" href="#new">
-                    <img src="assets/images/logo.png" width="160" height="28" alt = "Logo" class="d-inline-block align-top" alt="">
+                    <img style = "margin-bottom: 46px;" src="assets/images/logo.png" width="160" height="28" alt = "Logo" class="d-inline-block align-top" alt="">
                 </a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
-                        <li class="nav-item mx-auto">
-                            <a class='nav-link active px-3' href='/'><b>+919999999999</b></a>
+                <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent" justify-content-end>
+                    <ul style = "margin-top: 9px" class="navbar-nav ml-auto">
+                        <li class="nav-item active px-lg-3">
+                            <a class="nav-link" href="#">+919999999999<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item mx-auto px-3">
-                            <a class="nav-link" href="/">HOME</a>
+                        <li class="nav-item active px-lg-3">
+                            <a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item mx-auto px-3">
-                            <a class="nav-link" href="/">ABOUT</a>
+                        <li class="nav-item active px-lg-3">
+                            <a class="nav-link" href="#">CONTACT US<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item mx-auto px-3">
-                            <a class="nav-link" href="/">CONTACT US</a>
+                        <li class="nav-item active px-lg-3">
+                            <a class="nav-link" href="#">THEME<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item mx-auto px-3">
-                            <a class="nav-link" href="/">THEME</a>
+                    </ul>
+                    <ul style = "margin-top: 20px;" class="navbar-nav flex-row mx-auto">
+                        <li  white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
+                            <a class="nav-link" href="#">HOTELS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
+                            <a class="nav-link" href="#">TOURS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
+                            <a class="nav-link" href="#">GIFT CARDS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
+                            <a class="nav-link" href="#">BLOGS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li style = " white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
+                            <a class="nav-link" href="#">PARTNER WITH US<span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+          </nav>
     </header>
 <!--End of Navbar-->
 
