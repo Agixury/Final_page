@@ -103,7 +103,7 @@
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+     
      <script>
         $(document).ready(function(){
 
@@ -113,8 +113,8 @@
 
        $(".form-control").click(function(){
 
-       $(".expanded-search-bar").show();
-       $(".fa-window-close").show();
+       $(".expanded-search-bar").show(); 
+       $(".fa-window-close").show();                                                          
        });
 
        $(".fa-window-close").click(function(){
@@ -130,93 +130,114 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <div>
- <!--Nav bar start-->
-            <nav style = "color: rgba(255, 255, 255, 0.72);"class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id = "navbar">
-                <a class="navbar-brand" href="#new">
-                    <img src="assets/images/logo.png" width="50" height="50" alt = "Logo" class="d-inline-block align-top" alt="">
+<!--Nav bar start-->
+    <header role="banner">
+        <nav style = "color: rgba(255, 255, 255, 0.72);" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id = "navbar"">
+            <div class="container">
+                <a class=" nav-item active" href="#new">
+                    <img src="assets/images/logo.png" width="160" height="28" alt = "Logo" class="d-inline-block align-top" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" justify-content-end>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#about">ABOUT<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#timeline">LOCATIONS<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#feature_area">CONTACT US<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <button class="btn"><a itemprop="url" rel="noopener" target="_blank" style = "color: #FFF; text-decoration: none;" href = "#">SIGN UP</a>
-                    </li>
-                    <li class="nav-item active">
-                        <button class="btn-1"><a itemprop="url" rel="noopener" target="_blank" style = "color: #000; text-decoration: none;" href = "#">LOGIN</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+                        <li class="nav-item mx-auto">
+                            <a class='nav-link active px-3' href='/'><b>+919999999999</b></a>
+                        </li>
+                        <li class="nav-item mx-auto px-3">
+                            <a class="nav-link" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item mx-auto px-3">
+                            <a class="nav-link" href="/">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-auto px-3">
+                            <a class="nav-link" href="/">CONTACT US</a>
+                        </li>
+                        <li class="nav-item mx-auto px-3">
+                            <a class="nav-link" href="/">THEME</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+    </header>
 <!--End of Navbar-->
 
 
 <!-- HEADER BEGINS HERE -->
 <header class ="jumbotron" id = "header-t" >
-        
-    <div class="cont" id="whole">
-        <div class="Subscribe">
+    <div class = "container" > 
+        <div class ="row" id="empty-space">
+
+        </div>
+        <div class=" form-cont row row-body-align align-content-center">
             
-            <p >Subscribe to our Newsletter</p>
-            <form  action="#">
-                <input type="text" placeholder="Please enter your Email">
-                <input type="submit" value="SUBSCRIBE">
-            </form>
-        </div>
-        <div class="login-signup">
-            <div class="inner">
-
-                <div class="option">
-                    <button class="line"><a href="#" class="active">Log In</a></button>
-                    <button><a href="#">Sign up</a></button>
+            <div class="col-1" id = "social-button">
+                <div class= "row">
+                    <a class= "btn btn-social-icon btn-facebook"href="http://www.facebook.com/profile.php?id="><img src="/images/facebook.svg"></a>
                 </div>
+                <div class="row">
+                    <a class= "btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><img src="/images/instagram.svg"></i></a>
+                   </div>
+                <div class="row">
+                      <a class= "btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><img src="/images/linkedin.svg"></a>
+                 </div>   
+             </div>
 
-                <form action="#">
-                    <input type="text" placeholder="Email or phone">
-                    <input type="password" placeholder="Password">
-                    <input type="submit" value="Log In">
-                </form>
-                <a href="#">forgotten password?</a>
-
-                <div class="botm-option">
-                    <button class="line"><a href="#">Log In with <i class="fa fa-facebook-square" aria-hidden="true"></i></a></button>
-                    <button><a href="#">Log In with<i class="fa fa-envelope mail" aria-hidden="true"></i></a></button>
+             <div class="col-sm-1 offset-10 " id = "social-button-last">
+                <div class= "row">
+                    <a class= "btn btn-social-icon btn-facebook"href="http://www.facebook.com/profile.php?id="><img src="/images/facebook.svg"></a>
                 </div>
+                <div class="row">
+                    <a class= "btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><img src="/images/instagram.svg"></i></a>
+                   </div>
+                <div class="row">
+                      <a class= "btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><img src="/images/linkedin.svg"></a>
+                 </div>   
+             </div>
 
-            </div>
+
+        
+
+             <div class = "offset-7 col-md-3 ">
+                <div class="login-signup" id="form-in">
+                    <div class="inner">
+        
+                        <div class="option">
+                            <button class="line"><a href="#" class="active">Log In</a></button>
+                            <button><a href="#">Sign up</a></button>
+                        </div>
+        
+                        <form action="#">
+                            <input type="text" placeholder="Email or phone">
+                            <input type="password" placeholder="Password">
+                            <input type="submit" value="Log In">
+                        </form>
+                        <a href="#">forgotten password?</a>
+        
+                        <div class="botm-option">
+                            <button class="line"><a href="#">Log In with <i class="fa fa-facebook-square" aria-hidden="true"></i></a></button>
+                            <button><a href="#">Log In with<i class="fa fa-envelope mail" aria-hidden="true"></i></a></button>
+                        </div>
+        
+                    </div>
+                </div>
+                
+                 
+             </div>
+           
         </div>
-    </div>
-    <div class="col-sm-1 offset-10 " id = "social-button-last">
-        <div class= "row">
-            <a class= "btn btn-social-icon btn-facebook"href="http://www.facebook.com/profile.php?id="><img src="/images/facebook.svg"></a>
-        </div>
-        <div class="row">
-            <a class= "btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><img src="/images/instagram.svg"></i></a>
-           </div>
-        <div class="row">
-              <a class= "btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><img src="/images/linkedin.svg"></a>
-         </div>   
-     </div>
+            
+   </div>
 </header>
 <!--End of HEADER-->
 
-
+    
             <!--list-->
 
             <div class="container">
-
+    
     <div class="row" style="border: 1px solid grey; box-shadow: 1px 1px #dcdcdc; display: flex; flex-wrap:wrap; text-align: left; margin:1.5rem; width:85%">
         <div class="col-12 col-sm-3" style="padding:0px;">
         <img src="assets/images/p.jpg" alt="" style= "margin: 0px; width: 100%;height:100%; "/></div>
@@ -267,88 +288,61 @@
             <button style="border-radius: 10% ; width: 15%; margin: 0.5%">4.2 <i class="fas fa-star" ></i></button>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;<button style="border-radius: 25% ; width: 15%; margin: 0.5%">5 days</button>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;<button style="border-radius: 25% ; width: 17%; margin: 0.5%">available</button>
         </span>
     </div></div>
-
+    
     </div>
             <!--list completed-->
-
+            
     <!-- Footer -->
     <footer class="page-footer font-small stylish-color-dark pt-4">
-    <div class="footer-mobile d-block d-md-none d-lg-none">
-        <div class="footer-mobile__wrapper d-flex flex-column justify-content-center align-items-center">
-            <div class="footer-title">
-                <h3>JOIN OUR NEWSLETTER</h3>
-            </div>
-            <div class="footer-caption">
-                <h5>To receive our best deals</h5>
-            </div>
-            <div class="footer-form">
-                <form submit="#">
-                    <div class="d-flex flex-column align-items-center form-group">
-                        <input class="footer-form__input" type="text" placeholder="Please enter your Email">
-                        <button class="footer-form__button btn btn-dark" type="submit">SUBSCRIBE</button>
-                    </div>
-                </form>
-            </div>
+        <div class="information-one container text-center text-md-left">
+          <div class="links"">
+            <a href="#!">About us</a><br />
+            <a href="#!">Contact us</a><br />
+            <a href="#!">Terms and Conditions</a><br />
+            <a href="#!">Help and Support</a><br />
+          </div>
         </div>
-    </div>
 
-    <div class="footer-top d-none d-md-block">
-        <div class="container">
-            <a href="#" style="text-decoration: none; color: black;">
-                <div class="footer-logo">
-                    <img src="assets/images/black_wt.png" />
-                </div>
-            </a>
+        <div class="container-fluid">
 
+          <h3 class="big-heading ">Download the app to get Agixurified!</h3>
+          <button class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-apple"></i>Download</button>
+          <button class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-google-play"></i>Download</button>
         </div>
-    </div>
 
-    <div class="footer-main d-none d-md-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-5 footer-list">
-                            <p class="footer-list__item"><a href="#">About Us</a></p>
-                            <p class="footer-list__item"><a href="#">Blogs</a></p>
-                            <p class="footer-list__item"><a href="#">Contact Us</a></p>
-                            <p class="footer-list__item"><a href="#">Terms & Conditions</a></p>
-                            <p class="footer-list__item"><a href="#">Partner With Us</a></p>
-                        </div>
-                        <div class="col-md-5 col-lg-7 footer-list">
-                            <p class="footer-list__item"><a href="#">Gift Cards</a></p>
-                            <p class="footer-list__item"><a href="#">FAQ</a></p>
-                            <p class="footer-list__item"><a href="#">Refer</a></p>
-                            <p class="footer-list__item"><a href="#">Refund Policy</a></p>
-                            <p class="footer-list__item"><a href="#">Careers</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 footer-about">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                        using
-                        "Content here, content here", making it look like readable English. Many desktop publishing packages and web page
-                        editors
-                        now use web sites still in their infancy.</p>
-                </div>
             </div>
-        </div>
-    </div>
+            </div>
+            <ul style="margin-top: 5%;" class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-pinterest mx-1">
+                        <i class="fab fa-instagram"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-pinterest mx-1">
+                        <i class="fab fa-pinterest"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+            </ul>
 
-    <div class="footer-bottom">
-        <div class="footer-socials d-none d-md-block" id="socials">
-            <a href="#">
-                <img class="first-social" src="assets/images/facebook.svg" />
-            </a>
-            <a href="#">
-                <img class="second-social" src="assets/images/instagram.svg" />
-            </a>
-            <a href="#">
-                <img class="third-social" src="assets/images/linkedin.svg" />
-            </a>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://agixury.com/"> AGIXURY</a>
         </div>
-    </div>
     </footer>
 <!-- Footer -->
 
@@ -360,9 +354,11 @@
         $('html').css('overflow-x', 'initial');
         $(window).scroll(function() {
             if ($(window).scrollTop() > 10) {
-                $('#navbar').addClass('floatingNav');
+                $('#navbar-top').addClass('floatingNav');
+                $('#navbar-bottom').addClass('floatingNav');
             } else {
-                $('#navbar').removeClass('floatingNav');
+                $('#navbar-top').removeClass('floatingNav');
+                $('#navbar-bottom').removeClass('floatingNav');
             }
         });
     </script>
@@ -370,9 +366,11 @@
         $('html').css('overflow-x', 'initial');
         $(window).scroll(function() {
             if ($(window).scrollTop() > 10) {
-                $('#navbar').addClass('floatingNav');
+                $('#navbar-top').addClass('floatingNav');
+                $('#navbar-bottom').addClass('floatingNav');
             } else {
-                $('#navbar').removeClass('floatingNav');
+                $('#navbar-top').removeClass('floatingNav');
+                $('#navbar-bottom').removeClass('floatingNav');
             }
         });
     </script>
