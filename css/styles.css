@@ -162,9 +162,89 @@ button.btn-1{
 
 /* Footer css START
 ============================================================================================ */
-.social-icon{
-  margin:20px 10px;
-  text-align: center;
+footer {
+	padding-top: 40px;
+	padding-left: 65px;
+	padding-bottom: 20px;
+	padding-right: 65px;
+	background-color: #f0eeee;
+}
+
+.footer-mobile {
+	background-image: url('assets/Rectangle_53@2x.png');
+}
+
+@media (max-width: 767.98px) {
+	footer {
+		padding: 0;
+	}
+
+	.footer-logo {
+		padding-left: 20px;
+	}
+}
+
+.footer-mobile__wrapper {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.footer-title h3 {
+	font-weight: 700;
+}
+
+.footer-caption h5 {
+	font-weight: 500;
+}
+
+.footer-form {
+	width: 60%;
+}
+
+.footer-form__input {
+	border: 2px solid #000000;
+	border-radius: 3px;
+	margin: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-form__input::placeholder {
+	text-align: center;
+}
+
+.footer-form__button {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.footer-logo img {
+	height: 80px;
+	margin-left: -20px;
+}
+
+.footer-about {
+	font-size: 13px;
+	line-height: 1.75rem;
+}
+
+.footer-bottom {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.footer-list__item a,
+.footer-socials a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.footer-socials a {
+	padding: 5px;
 }
 /* Footer css END
 ============================================================================================ */
@@ -178,7 +258,7 @@ button.btn-1{
 
 
   .jumbotron{
-   
+
     background: url(/images/body-bg.jpg);
     background-attachment: fixed;
     background-position: center ;
@@ -187,12 +267,12 @@ button.btn-1{
     height: 100vh;
    }
 
-   
-  
+
+
    #social-button-last{
     display: none;
   }
- 
+
 
   @media only screen and (max-width: 450px) {
    #header-t {
@@ -272,8 +352,8 @@ button.btn-1{
 .form-cont .login-signup{
     width: 100%;
     display: inline-block;
-    height: 100%;  
-    display: flex; 
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
 }
