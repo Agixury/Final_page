@@ -19,5 +19,13 @@
     "lite": "^4.0.5",
     "popper.js": "^1.12.9",
     "server": "^1.0.30"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agixury/Final_page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Agixury/Final_page/issues"
+  },
+  "homepage": "https://github.com/Agixury/Final_page#readme"
 }

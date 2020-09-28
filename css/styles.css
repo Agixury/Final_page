@@ -180,6 +180,20 @@ button.btn-1{
   margin:20px 10px;
   text-align: center;
 }
+.footer-socials{
+  position:relative;
+  left : 40% ;
+}
+.second-social{
+  position : relative;
+  left : 80px;
+  bottom: 48px;
+}
+.third-social{
+  position:relative;
+  left : 160px;
+  bottom : 95px;
+}
 /* Footer css END
 ============================================================================================ */
 
@@ -208,6 +222,27 @@ button.btn-1{
   }
  
 
+  
+
+  .jumbotron{
+   
+    background: url(/images/body-bg.jpg);
+    background-attachment: fixed;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+   }
+
+  
+  
+   
+  
+   #social-button-last{
+    display: none;
+  }
+ 
+
   @media only screen and (max-width: 450px) {
    #header-t {
    background: url(/images/small-bg.png);
@@ -219,20 +254,17 @@ button.btn-1{
    background-size: 250%;
    max-width: 100%;
    }
-   #empty-space{
-     height: 5vh;
-   }
-   #form-in{
-     display: none;
-   }
-   #social-button{
-     display: none;
-   }
-   #social-button-last{
-     display: block;
-   }
- }
+   
+  #whole{
+    display: none;
+  }
 
+  #social-button-last{
+    display: block;
+  }
+ 
+   
+  }  
 
 
   .form-cont .Subscribe{
