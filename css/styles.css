@@ -69,13 +69,18 @@ button.btn-1{
 ============================================================================================ */
 @font-face {
   font-family: 'SegoeUI';
-  src: url('../assets/fonts/SegoeUI/SegoeUI.eot');
-  src: url('../assets/fonts/Neoteric Bold/NeotericBold?#iefix') format('embedded-opentype'),
+  src: url('../assets/fonts/SegoeUI/SegoeUI.eot'),
        url('../assets/fonts/SegoeUI/SegoeUI.woff') format('woff'),
        url('../assets/fonts/SegoeUI/SegoeUI.ttf')  format('truetype'),
        url('../assets/fonts/SegoeUI/SegoeUI.svg') format('svg');
 }
-
+@font-face {
+  font-family: 'SegoeUISemibold';
+  src: url('../assets/fonts/SegoeUI/SegoeUI-Semibold.eot'),
+       url('../assets/fonts/SegoeUI/SegoeUI-Semibold.woff') format('woff'),
+       url('../assets/fonts/SegoeUI/SegoeUI-Semibold.ttf')  format('truetype'),
+       url('../assets/fonts/SegoeUI/SegoeUI-Semibold.svg') format('svg');
+}
 /* FONTS END
 ============================================================================================ */
 
@@ -532,4 +537,19 @@ footer {
     border: none;
     background-color: #000303;
 }
+.abt{
+  height:30vw;
+  width:20vw;
+}
 /* Header style css ======================================= ENDS ==================================== */
+@media only screen and (max-width: 760px) {
+  .abt{
+    margin-bottom: 12%;
+  }
+  .text{
+    margin-left: 20px;
+  }
+  #top{
+    margin-top: 50px;
+  }
+}
