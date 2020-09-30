@@ -29,6 +29,14 @@ body{
 }
 /* Navbar css START
 ============================================================================================ */
+.navbar-dark{
+  background-color: #a2a8ae;
+}
+
+.navbar-space{
+  width: 30%;
+}
+
 button.btn{
   background-color: #000;
   color: white;
