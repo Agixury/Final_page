@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <header>
+            <div class="menu-toggle"></div>
+            <div class="pro-pic">
+                <img src="./images/demo.png" alt="">
+            </div>
+            <nav class="nav-1">
+                <div class="logo">
+                    <a href="../index.html#"><img src="./images/logo.png" alt="AGIXURY" style="height:100px; width:220px"></a>
+                </div>
+                <div class="lists">
+                    <ul id = "top">
+                        <li><a href="tel : +91 9999999999">+91 9999999999</a></li>
+                        <li><a class="active" href="#">HOME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">THEME</a></li>
+                    </ul>
+                </div>
+            </nav>
+                <nav class="nav-2">
+                    <ul>
+                        <li class="about">
+                                <img src="./images/demo.png" alt="">
+                                <p>JHON WICK</p>
+                        </li>
+                        <li><a class="active" href="#">HOTELS</a></li>
+                        <li><a href="#">TOURS</a></li>
+                        <li><a href="#">GIFT CARDS</a></li>
+                        <li><a href="#">BLOGS</a></li>
+                        <li><a href="#">PARTNER WITH US</a></li>
+                        <li class="about"><a href="#">CONTACT</a></li>
+                        <li class="about"><a href="#">ABOUT</a></li>
+                        <li class="about"><a href="#">THEME</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <div class="cont">
+            <div class="container">
+                <h1>Welcome to Our Customer Support</h1>
+                <p>Submit your queries, Our Team will Contact you in 48 hours</p>
+            </div>
+            <div class="container1">
+                <form action="http://localhost:3000/api/feedback" method="POST">
+                    <div class="container1_1">
+                        <select name="query">
+                            <option>Query type</option>
+                            <option>Booking</option>
+                            <option>Payment</option>
+                            <option>Cancellation</option>
+                        </select><br>
+                        <input name="name" type="text" placeholder="   Name*"><br>
+                        <input name="email" type="email" placeholder="   Email*"><br>
+                        <input name="contactNumber" type="number" placeholder="   Contact Number*"><br>
+                        <input name="document" type="file" placeholder="   Upload a File" id="file">
+                        <input type="button" value="document" id="Browse">
+                        <p>(only doc, jpg, png, pdf, txt, allowed. Max. file sie is 500KB)</p>
+                        <button type="submit">SUBMIT</button>
+                    </div>
+                    </form>
+                    <div class="container1_2">
+                        <textarea name="description" cols="40" rows="20" placeholder="Your Complaints/questions/Suggestions"></textarea>
+                    </div>
+            </div>
+            <div class="container2_1">
+                <h1>Any Problem, Want to Talk?</h1>
+                <p>Available MON-FRI, 9:00 AM to 5:00 PM</p>
+            </div>
+            <div class="container2">
+                <div class="container2_2">
+                    <h2>Contact - +91-7000497089</h2>
+                    <h2>Email - agixury@gmail.com</h2>
+                    <h2>Address - Sector 13 Delhi</h2>
+                </div>
+                <div class="container2_3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7591779201134!2d77.30426501472202!3d28.666928589274967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb0ee3c59e17%3A0xad6ab05f6d6b4bba!2sPolice%20Station%20Vivek%20Vihar!5e0!3m2!1sen!2sin!4v1601361240140!5m2!1sen!2sin" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div id="Image">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <footer>
+                
+                <div class="footer1">
+                    <p>About Us</p>
+                    <p>Blogs</p>
+                    <p>Contact Us</p>
+                    <p>Refer</p>
+                    <p>Partner With Us</p>
+                </div>
+                <div class="footer2">
+                    <p>Gift Cards</p>
+                    <p>FAQ</p>
+                    <p>Terma & Conditions</p>
+                    <p>Refund Policy</p>
+                    <p>Careers</p>
+                </div>
+                <div class="footer3">
+                    <p>It is a long established fact that a reader will be distracted by the
+                        readable content of a page when looking at its layout. The point
+                        of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here,
+                        content here', making it look like readable English. Many
+                        desktop publishing packages and web page editors now use
+                        web sites still in their infancy.</p>
+                </div>
+            </footer>
+            <div class="icons">
+                <img class="first-social" src="facebook.svg">
+                <img class="second-social" src="instagram.svg" id ="middle">
+                <img class="third-social" src="linkedin.svg">
+            </div>
+        </div>   
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
