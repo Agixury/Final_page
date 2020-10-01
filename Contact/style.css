@@ -95,10 +95,10 @@ header .nav-2  ul li a{
     border-bottom: 2px solid black;
     color:black;
     opacity: 1;
-    
+
 }
 nav.nav-2 ul .about{
-    display: none;   
+    display: none;
     align-items: center;
 }
 
@@ -147,7 +147,7 @@ header{
     .nav-2 ul{
         width: 100%;
     }
-    
+
 }
 @media(max-width:764px){
     .pro-pic{
@@ -230,8 +230,8 @@ header{
     }
 
 
-    
-    
+
+
 }
 .container, .container2_1{
     margin-top: 5%;
@@ -294,7 +294,7 @@ header{
     font-weight: 200;
 }
 .container2_3{
-    
+
     margin-left: 8%;
 }
 .container2_3 img{
@@ -340,7 +340,7 @@ header{
     opacity: 0.6;
     border: 1px solid black;
     display: inline-block;
-    flex: 1;  
+    flex: 1;
 }
 
 .form .container .left label.right{
@@ -354,7 +354,7 @@ header{
     /* opacity: 0.6; */
     border: 1px solid black;
     display: inline-block;
-    float: left;    
+    float: left;
 }
 .form .container .left p{
     width:100%;
@@ -370,7 +370,7 @@ header{
     border: none;
     color: white;
     border-radius: 08px;
-    
+
 }
 .form .container .left input[type="submit"]::{
     width: 50%;
@@ -379,7 +379,7 @@ header{
     border: none;
     color: white;
     border-radius: 08px;
-    
+
 }
 .form .container .right{
     width:50%;
@@ -390,7 +390,7 @@ header{
     width: 80%;
     margin-top: 10px;
     resize: none;
-} 
+}
 .form .container .right textarea::placeholder{
     text-align: center;
     margin-top: 10px;
@@ -422,7 +422,7 @@ footer{
 #Image img{
     height: 50px;
     width: 100px;
-    margin-left: 15%;  
+    margin-left: 15%;
 }
 .footer2{
     margin-left: 5%;
