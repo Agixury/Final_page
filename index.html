@@ -97,6 +97,7 @@
       <link href="css/main.css" rel="stylesheet" />
 
      <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
      <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
      <!-- Bootstrap Scripts -->
@@ -131,58 +132,41 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--Nav bar start-->
-    <header role="banner">
-
-        <nav style = "color: rgba(255, 255, 255, 0.72);" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id = "navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-               <img  src="assets/images/logo.png" width="40%" height="26" alt = "Logo" class="d-inline-block align-top" alt="" style="margin-left: 20%;margin-right: 30%;margin-top: 5px; float: right;">
-            </button>
-
-            <div class = "container">
-
-                <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent" justify-content-end>
-                    <ul style = "margin-top: 9px" class="navbar-nav ml-auto">
-                        <li class="nav-item active px-lg-3" >
-                <a class=" nav-item active" href="#new" >
-                    <img  src="assets/images/logo.png" width="170" height="20" alt = "Logo" class="d-inline-block align-top" alt="" style="margin-right: 350px;  margin-top: 0%;">
-                </a></li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="index.html">+919999999999<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="/about.html">ABOUT<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="./Contact/contact.html">CONTACT US<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="#"style="margin-right:100px">THEME<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-
-
-                    <ul style = "margin-top: 20px;" class="navbar-nav flex-row mx-auto">
-                        <li  style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 60px;">HOTELS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 40px;">TOURS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 40px;">GIFT CARDS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 40px;">BLOGS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = " white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="/partner.html">PARTNER WITH US<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-
-                </div>
+    <header>
+        <div class="menu-toggle"></div>
+        <div class="pro-pic">
+            <img src="assets/images/demo.png" alt="">
+        </div>
+        <nav class="nav-1">
+            <div class="logo">
+                <img src="assets/images/logo.png" width="160" height="28" alt = "Agixury logo" class="d-inline-block align-top">
             </div>
-          </nav>
+            <div class="lists">
+                <ul id = "top">
+                    <li><a href="tel : +91 9999999999">+91 9999999999</a></li>
+                    <li><a class="active" href="#">HOME</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">THEME</a></li>
+                </ul>
+            </div>
+        </nav>
+            <nav class="nav-2">
+                <ul>
+                    <li class="about">
+                            <img src="assets/images/demo.png" alt="">
+                            <p>JOHN WICK</p>
+                    </li>
+                    <li><a class="active" href="#">HOTELS</a></li>
+                    <li><a href="#">TOURS</a></li>
+                    <li><a href="#">GIFT CARDS</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">PARTNER WITH US</a></li>
+                    <li class="about"><a href="#">CONTACT</a></li>
+                    <li class="about"><a href="#">ABOUT</a></li>
+                    <li class="about"><a href="#">THEME</a></li>
+                </ul>
+            </nav>
     </header>
 <!--End of Navbar-->
 
@@ -207,7 +191,7 @@
                  </div>
              </div>
 
-
+             
 
 
 
@@ -352,7 +336,7 @@
                                    <p class="footer-list__item"><a href="#">Gift Cards</a></p>
                                    <p class="footer-list__item"><a href="#">FAQ</a></p>
                                    <p class="footer-list__item"><a href="#">Refer</a></p>
-                                   <p class="footer-list__item"><a href="/refund.html">Refund Policy</a></p>
+                                   <p class="footer-list__item"><a href="#">Refund Policy</a></p>
                                    <p class="footer-list__item"><a href="#">Careers</a></p>
                                </div>
                            </div>
@@ -401,6 +385,21 @@
                 $('#navbar-bottom').removeClass('floatingNav');
             }
         });
+       let toggler = document.querySelector(".menu-toggle");
+       let nav = document.querySelector(".nav-2");
+       let bottom_nav_iteam = document.querySelectorAll(".about");
+    
+
+
+        // ASINGN EVENTS
+        toggler.addEventListener("click",do_task);
+
+        // FUNCTION
+
+        function do_task(){
+            toggler.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
     </script>
      <script>
         $('html').css('overflow-x', 'initial');
