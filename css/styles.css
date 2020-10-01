@@ -116,10 +116,10 @@ header .nav-2  ul li a{
 .nav-2 ul li a:hover{
   color:black;
   opacity: 1;
-  
+
 }
 nav.nav-2 ul .about{
-  display: none;   
+  display: none;
   align-items: center;
 }
 
@@ -161,7 +161,7 @@ header{
   .nav-2 ul{
       width: 100%;
   }
-  
+
 }
 @media(max-width:764px){
   .pro-pic{
@@ -244,8 +244,8 @@ header{
       position: sticky;
       top: 0;
   }
-  
-  
+
+
 }
 /* Navbar css END
 ============================================================================================ */
