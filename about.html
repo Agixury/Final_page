@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,50 +19,41 @@
   <body>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--Nav bar start-->
-        <header role="banner">
-            <nav style = "color: rgba(255, 255, 255, 0.72);" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id = "navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class = "container">
-                    <a class=" nav-item active" href="#new">
-                        <img style = "margin-bottom: 46px;" src="assets/images/logo.png" width="160" height="28" alt = "Logo" class="d-inline-block align-top" alt="">
-                    </a>
-                    <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent" justify-content-end>
-                        <ul style = "margin-top: 9px" class="navbar-nav ml-auto">
-                            <li class="nav-item active px-lg-3">
-                                <a class="nav-link" href="#">+919999999999<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active px-lg-3">
-                                <a class="nav-link" href="frontend\about.html">ABOUT<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active px-lg-3">
-                                <a class="nav-link" href="#">CONTACT US<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active px-lg-3">
-                                <a class="nav-link" href="#">THEME<span class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                        <ul style = "margin-top: 20px;" class="navbar-nav flex-row mx-auto">
-                            <li  white-space: nowrap;overflow: hidden; class="nav-item active px-lg-5">
-                                <a class="nav-link" href="#">HOTELS<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                                <a class="nav-link" href="#">TOURS<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                                <a class="nav-link" href="#">GIFT CARDS<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                                <a class="nav-link" href="#">BLOGS<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li style = " white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                                <a class="nav-link" href="#">PARTNER WITH US<span class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                    </div>
+                <header>
+            <div class="menu-toggle"></div>
+            <div class="pro-pic">
+                <img src="assets/images/demo.png" alt="">
+            </div>
+            <nav class="nav-1">
+                <div class="logo">
+                    <img src="assets/images/logo.png" width="160" height="78" alt = "Agixury logo" class="d-inline-block align-top">
                 </div>
-              </nav>
+                <div class="lists">
+                    <ul id = "top">
+                        <li><a href="tel : +91 9999999999">+91 9999999999</a></li>
+                        <li><a class="active" href="#">HOME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">THEME</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="nav-2">
+                <ul>
+                    <li class="about">
+                       <img src="assets/images/demo.png" alt="">
+                         <p>JOHN WICK</p>
+                    </li>
+                    <li><a class="active" href="#">HOTELS</a></li>
+                    <li><a href="#">TOURS</a></li>
+                    <li><a href="#">GIFT CARDS</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">PARTNER WITH US</a></li>
+                    <li class="about"><a href="#">CONTACT</a></li>
+                    <li class="about"><a href="#">ABOUT</a></li>
+                    <li class="about"><a href="#">THEME</a></li>
+                </ul>
+            </nav>
         </header>
     <!--End of Navbar-->
     <section id = "projects">
