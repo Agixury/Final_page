@@ -228,6 +228,8 @@ header{
         position: sticky;
         top: 0;
     }
+
+
     
     
 }
@@ -299,6 +301,115 @@ header{
     height: 200px;
     width: 400px;
 }
+
+/* FEEDBACK STARTS */
+
+
+.form{
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid black; */
+    height: 100vh;
+
+}
+
+.form .container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.form .container .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form .container .left select,input{
+    width:100%;
+    padding: 10px;
+    margin: 10px;
+}
+.form .container .left .upload{
+    display: flex;
+    width: 100%;
+    /* margin-left:10PX; */
+}
+.form .container .left label.left{
+    padding: 10px;
+    margin:10px 0px 0px 0px;
+    text-align: center;
+    opacity: 0.6;
+    border: 1px solid black;
+    display: inline-block;
+    flex: 1;  
+}
+
+.form .container .left label.right{
+    width: 35%;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    border-left: none;
+    background-color: black;
+    color:white;
+    /* opacity: 0.6; */
+    border: 1px solid black;
+    display: inline-block;
+    float: left;    
+}
+.form .container .left p{
+    width:100%;
+    margin-left:10px;
+    margin-top: 2px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.form .container .left input[type="submit"]{
+    width: 50%;
+    margin-top: 60px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+    border-radius: 08px;
+    
+}
+.form .container .left input[type="submit"]::{
+    width: 50%;
+    margin-top: 60px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+    border-radius: 08px;
+    
+}
+.form .container .right{
+    width:50%;
+    margin-left: 20px;
+}
+.form .container .right textarea{
+    height: 70%;
+    width: 80%;
+    margin-top: 10px;
+    resize: none;
+} 
+.form .container .right textarea::placeholder{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Contact starts */
+.form{
+    display: flex;
+}
+
+/* FEEDBACK ENDS */
+
+
+
+
+
+
+
 footer{
     background-color: lightgrey;
     display: flex;
