@@ -203,12 +203,18 @@ header{
       top: 5px;
   }
   .menu-toggle.active{
-      left:150px;
+      left:170px;
+      top:30px;
+      z-index:9999;
   }
+  .lastelement {
+    margin-bottom: 150px;
+  }
+
   .menu-toggle.active::before{
       content: '\f00d';
       font-family: fontAwesome;
-      line-height: 40px;
+      line-height: 60px;
   }
   .nav-1 .lists{
       display: none;
@@ -219,19 +225,27 @@ header{
   header .nav-2 ul{
       flex-direction: column;
   }
+
+  header .nav-2 ul li a {
+    padding: 2px 20px;
+  }
+
   header .nav-2{
-      z-index: 1;
       position: absolute;
-      top: 0;
+      left:0;
       padding-top: 50px;
       background-color: #fff;
       outline-color: white;
       display: none;
+      padding-right: 20px;
+      z-index: 2;
   }
   header .nav-2.active{
       display: flex;
+      padding-top:10px;
+
   }
-  header .nav-2.active li.about{
+  header .nav-2.active li{
       display: flex;
   }
   .nav-2 ul li a.active,.nav-2 ul li a:hover{
@@ -243,6 +257,17 @@ header{
   header{
       position: sticky;
       top: 0;
+  }
+
+  /* Sidebar CSS */
+  .navbar-container {
+    z-index: 9;
+  }
+
+  .sidebar-avatar-image{
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
   }
 
 
