@@ -470,271 +470,242 @@ footer {
 /* Footer css END
 ============================================================================================ */
 
+
 /* Header style css ======================================= BEGINS ==================================== */
-
-#empty-space{
-  height: 30vh;
+/* Media queries for the header and bg section */
+#social-button-last{
+  display: none;
 }
 
+.row-mob{
+  justify-content: end;
+}
 
+@media only screen and (max-width: 850px) {
+  .head_cont {
+  background: url(/assets/images/tab.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+ #header-to-go{
+   display: none;
+ }
+ 
+ #social-button-last{
+   display: block;
+ }
+ 
+  
+ }  
 
-  .jumbotron{
+ 
 
-    background: url(/images/body-bg.jpg);
-    background-attachment: fixed;
-    background-position: center ;
+ /*container class prop for header*/
+
+.container-fluid{
+  width: 100%;
+  height: 500px;
+    min-height: 75vh;
+}
+
+.head_cont{
+    /* The image used */
+    background-image: url(/assets/images/web.jpg);
+    /* Full height */
+    /* Center and scale the image nicely */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-   }
-
-
-
-   #social-button-last{
-    display: none;
-  }
-
-
-
-
-  .jumbotron{
-
-    background: url(/images/body-bg.jpg);
-    background-attachment: fixed;
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-   }
-
-
-
-
-
-   #social-button-last{
-    display: none;
-  }
-
-
-  @media only screen and (max-width: 450px) {
-   #header-t {
-   background: url(/images/small-bg.png);
-   background-position: center ;
-   background-position-y: -260px;
-   display: flex;
-   background-repeat: no-repeat;
-   height: 40vh;
-   background-size: 250%;
-   max-width: 100%;
-   }
-
-  #whole{
-    display: none;
-  }
-
-  #social-button-last{
-    display: block;
-  }
-
-
-  }
-
-
-  .form-cont .Subscribe{
-    width: 50%;
-    display: inline-block;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-bottom: 30px;
-    padding-right: 40px;
-}
-.form-cont .Subscribe p{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 18px;
-    width: 380px;
-
-}
-.form-cont .Subscribe form input[type="text"]{
-    width: 250px;
-    padding: 10px;
-    color: white;
-    background-color: #2b2b2b;
-    border: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-
-}
-.form-cont .Subscribe form input[type="text"]::placeholder{
-    color: white;
-    font-size: 18px;
-    opacity: 0.7;
-}
-.form-cont .Subscribe form input:focus{
-    border: none;
-    outline: none;
-}
-.form-cont .Subscribe form input[type="submit"]{
-    width: 130px;
-    padding: 10px;
-    color: white;
-    background-color: #252525;
-    border: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    position: relative;
-    left:-04px
-}
-.form-cont .login-signup{
-    width: 100%;
-    display: inline-block;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.form-cont .login-signup .inner{
-    width:100%;
-    height: fit-content;
-    background-color : rgba(19, 19, 19, 0.5);
-    display: flex;
-    border: 1px solid white;
-    /* align-content: space-around; */
-    flex-direction: column;
-}
-.form-cont .login-signup .inner .option{
-    width: 100%;
-    display: flex;
-}
-.form-cont .login-signup .inner .option button{
-    width: 50%;
-    padding: 10px;
-    border: none;
-    background-color: #000303;
-}
-.form-cont .login-signup .inner button.line{
-    border-right: 2px solid white;
-}
-.form-cont .login-signup .inner button a{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: white;
-}
-.form-cont .login-signup .inner button a.active{
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-
-}
-.form-cont .login-signup .inner button:focus{
-    border: none;
-    outline: none;
-}
-.form-cont .login-signup .inner form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-.form-cont .login-signup .inner form input[type="text"],
-.form-cont .login-signup .inner form input[type="password"]{
-    width:90%;
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: rgba(1, 1, 1, .2);
-    color: white;
-    font-size: 18px;
-    box-shadow: 0px 0px 3px -1px rgba(255,255,255,1);
-}
-.form-cont .login-signup .inner form input[type="submit"]{
-    width:90%;
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: white;
-}
-.form-cont .login-signup .inner form input:focus{
-    border: none;
-    outline: none;
-}
-.form-cont .login-signup .inner form input[type="text"]::placeholder,.cont .login-signup .inner form input[ type="password"]::placeholder{
-    color: white;
-    font-size: 15px;
-    opacity: 0.7;
-}
-.form-cont .login-signup .inner a{
-    width:100%;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-}
-.form-cont .login-signup .inner a:hover{
-    text-decoration: underline;
-}
-.form-cont .login-signup .inner .botm-option{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
 }
 
-.form-cont .login-signup .inner .botm-option button.line{
-    border-right: 2px solid white;
+.row-header-empty{
+  height:20vh;
 }
 
-.form-cont .login-signup .inner .botm-option a{
-    width:100%;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+.row-subscribe{
+  height: 100%;
 }
-.form-cont .login-signup .inner .botm-option i{
-    margin-left: 2px;
-    font-size: 15px;
-    color: rgb(36, 36, 105);
-}
-.form-cont .login-signup .inner .botm-option i.mail{
-    margin-left: 4px;
-    font-size: 15px;
-    color: rgb(177, 28, 28);
+
+/*end of container class */
+/* subscribe button css */
+
+.row-subscribe .Subscribe p{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 130%;
+  width: 100%;
 
 }
-.form-cont .login-signup .inner .botm-option button{
-    width:50%;
-    padding: 10px;
-    border: none;
-    background-color: #000303;
+.row-subscribe .Subscribe form input[type="text"]{
+  
+  padding: 3%;
+  color: white;
+  background-color: #2b2b2b;
+  border: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+
 }
-.abt{
-  height:30vw;
-  width:20vw;
+.row-subscribe .Subscribe form input[type="text"]::placeholder{
+  color: white;
+  font-size: 100%;
+  opacity: 0.7;
 }
-/* Header style css ======================================= ENDS ==================================== */
-@media only screen and (max-width: 760px) {
-  .abt{
-    margin-bottom: 12%;
-  }
-  .text{
-    margin-left: 20px;
-  }
-  #top{
-    margin-top: 50px;
-  }
+.row-subscribe .Subscribe form input:focus{
+  border: none;
+  outline: none;
 }
+.row-subscribe .Subscribe form input[type="submit"]{
+  
+  width: 33%;
+  padding: 3%;
+  color: white;
+  background-color: #252525;
+  border: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  position: relative;
+  left:-04px
+}
+
+/* end of subscribe button css */
+
+/* begin login form css */
+
+.row-login .login-signup{
+  width: 100%;
+  height: 100%;  
+  display: flex; 
+  justify-content: center;
+  align-items: flex-end;
+}
+.row-login .login-signup .inner{
+  width:55%;
+  height: fit-content;
+  background-color : rgba(19, 19, 19, 0.5);
+  display: flex;
+  border: 1px solid white;
+ align-content: space-around; 
+  flex-direction: column;
+}
+.row-login .login-signup .inner .option{
+  width: 100%;
+  display: flex;
+}
+.row-login .login-signup .inner .option button{
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #000303;
+}
+.row-login .login-signup .inner button.line{
+  border-right: 2px solid white;
+}
+.row-login .login-signup .inner button a{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.row-login .login-signup .inner button a.active{
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+
+}
+.row-login .login-signup .inner button:focus{
+  border: none;
+  outline: none;
+}
+.row-login .login-signup .inner form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.row-login .login-signup .inner form input[type="text"],
+.row-login .login-signup .inner form input[type="password"]{
+  width:90%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgba(1, 1, 1, .2);
+  color: white;
+  font-size: 18px;
+  box-shadow: 0px 0px 3px -1px rgba(255,255,255,1);
+}
+.row-login .login-signup .inner form input[type="submit"]{
+  width:90%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.row-login .login-signup .inner form input:focus{
+  border: none;
+  outline: none;
+}
+.row-login .login-signup .inner form input[type="text"]::placeholder,.cont .login-signup .inner form input[ type="password"]::placeholder{
+  color: white;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.row-login .login-signup .inner a{
+  width:100%;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+.row-login .login-signup .inner a:hover{
+  text-decoration: underline;
+}
+.row-login .login-signup .inner .botm-option{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.row-login .login-signup .inner .botm-option button.line{
+  border-right: 2px solid white;
+}
+
+.row-login .login-signup .inner .botm-option a{
+  width:100%;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+.row-login .login-signup .inner .botm-option i{
+  margin-left: 2px;
+  font-size: 15px;
+  color: rgb(36, 36, 105);
+}
+.row-login .login-signup .inner .botm-option i.mail{
+  margin-left: 4px;
+  font-size: 15px;
+  color: rgb(177, 28, 28);
+
+}
+.row-login .login-signup .inner .botm-option button{
+  width:50%;
+  padding: 10px;
+  border: none;
+  background-color: #000303;
+}
+/* end of login form css *//
