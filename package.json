@@ -1,37 +1,37 @@
 {
-	"name": "agixuryfinal",
-	"version": "1.0.0",
-	"description": "This is a website for Ristorante Con Fusion",
-	"main": "app.js",
-	"scripts": {
-		"start": "nodemon",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "agixury",
-	"license": "ISC",
-	"devDependencies": {
-		"dotenv": "^8.2.0",
-		"nodemon": "^2.0.4"
-	},
-	"dependencies": {
-		"body-parser": "^1.19.0",
-		"bootstrap": "^4.5.2",
-		"crypto": "^1.0.1",
-		"ejs": "^3.1.5",
-		"express": "^4.17.1",
-		"install": "^0.13.0",
-		"jquery": "^3.5.1",
-		"mongoose": "^5.10.7",
-		"multer": "^1.4.2",
-		"multer-gridfs-storage": "^4.2.0",
-		"popper.js": "^1.12.9"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Agixury/Final_page.git"
-	},
-	"bugs": {
-		"url": "https://github.com/Agixury/Final_page/issues"
-	},
-	"homepage": "https://github.com/Agixury/Final_page#readme"
+  "name": "agixuryfinal",
+  "version": "1.0.0",
+  "description": "This is a website for Ristorante Con Fusion",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "agixury",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.2",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.10.7",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0",
+    "popper.js": "^1.12.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agixury/Final_page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Agixury/Final_page/issues"
+  },
+  "homepage": "https://github.com/Agixury/Final_page#readme"
 }
