@@ -9,7 +9,7 @@ const multer = require('multer');
 const crypto = require('crypto');
 
 const feedback = require('./routes/feedback');
-
+/*
 mongoose.connect(process.env.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
@@ -36,15 +36,15 @@ const storage = new GridFsStorage({
 			});
 		});
 	},
-});
+});*/
 
-const upload = multer({ storage });
+//const upload = multer({ storage });
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use('/api/feedback', feedback(upload));
+//app.use('/api/feedback', feedback(upload));
 
 app.get('/', (req, res) => {
 	res.render('index');
