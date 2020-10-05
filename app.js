@@ -82,6 +82,10 @@ app.get('/career', (req, res) => {
 	return res.render('career');
 });
 
+app.get('/faq', (req, res) => {
+	return res.render('faq');
+});
+
 app.listen(process.env.PORT || 3000, () => {
 	console.log('Server running at port: ', process.env.PORT || 3000);
 });
