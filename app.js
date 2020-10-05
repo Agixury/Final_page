@@ -47,31 +47,39 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //app.use('/api/feedback', feedback(upload));
 
 app.get('/', (req, res) => {
-	res.render('index');
+	return res.render('index');
 });
 
 app.get('/about', (req, res) => {
-	res.render('about');
+	return res.render('about');
 });
 
 app.get('/contact', (req, res) => {
-	res.render('contact');
+	return res.render('contact');
 });
 
 app.get('/giftcards', (req, res) => {
-	res.render('giftcards');
+	return res.render('giftcards');
 });
 
 app.get('/partner', (req, res) => {
-	res.render('partner');
+	return res.render('partner');
 });
 
 app.get('/refund', (req, res) => {
-	res.render('refund');
+	return res.render('refund');
 });
 
 app.get('/terms', (req, res) => {
-	res.render('terms');
+	return res.render('terms');
+});
+
+app.get('/refer', (req, res) => {
+	return res.render('refer');
+});
+
+app.get('/career', (req, res) => {
+	return res.render('career');
 });
 
 app.listen(process.env.PORT || 3000, () => {
