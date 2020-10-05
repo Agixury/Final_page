@@ -393,11 +393,6 @@ input {
 
 /* FEEDBACK ENDS */
 
-footer {
-	background-color: lightgrey;
-	display: flex;
-	justify-content: center;
-}
 #Image {
 	margin-top: 5%;
 	background-color: lightgrey;
