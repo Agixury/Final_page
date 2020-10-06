@@ -264,6 +264,13 @@ header {
     margin-right: 10px;
   }
 }
+
+/* Fix transparent header issue on non mobile screens*/
+@media (min-width:765px) {
+  header {
+    z-index: 999;
+  }
+}
 /* Navbar css END
 ============================================================================================ */
 
