@@ -36,6 +36,9 @@ header {
   box-shadow: 0 2px 5px rgba(1, 1, 1, 0.2);
   z-index: 0;
 }
+  #nb:visited {
+    color: #1a1b1b;
+  }
 
 /* NAVIGATION BAR 1 STARTS */
 
@@ -278,17 +281,17 @@ header {
 ============================================================================================ */
 @font-face {
   font-family: 'SegoeUI';
-  src: url('../fonts/SegoeUI/SegoeUI.eot'),
-    url('../fonts/SegoeUI/SegoeUI.woff') format('woff'),
-    url('../fonts/SegoeUI/SegoeUI.ttf') format('truetype'),
-    url('../fonts/SegoeUI/SegoeUI.svg') format('svg');
+  src: url('../public/fonts/SegoeUI/SegoeUI.eot'),
+    url('../public/fonts/SegoeUI/SegoeUI.woff') format('woff'),
+    url('../public/fonts/SegoeUI/SegoeUI.ttf') format('truetype'),
+    url('../public/fonts/SegoeUI/SegoeUI.svg') format('svg');
 }
 @font-face {
   font-family: 'SegoeUISemibold';
-  src: url('../fonts/SegoeUI/SegoeUI-Semibold.eot'),
-    url('../fonts/SegoeUI/SegoeUI-Semibold.woff') format('woff'),
-    url('../fonts/SegoeUI/SegoeUI-Semibold.ttf') format('truetype'),
-    url('../fonts/SegoeUI/SegoeUI-Semibold.svg') format('svg');
+  src: url('../public/fonts/SegoeUI/SegoeUI-Semibold.eot'),
+    url('../public/fonts/SegoeUI/SegoeUI-Semibold.woff') format('woff'),
+    url('../public/fonts/SegoeUI/SegoeUI-Semibold.ttf') format('truetype'),
+    url('../public/fonts/SegoeUI/SegoeUI-Semibold.svg') format('svg');
 }
 /* FONTS END
 ============================================================================================ */
@@ -383,7 +386,13 @@ header {
 .team-boxed .social a:hover {
   opacity: 1;
 }
-
+.responsive{
+  width: 100%;
+  height: auto;
+}
+.content{
+  margin-left: 20px;
+}
 /* Body css END
 ============================================================================================ */
 
@@ -416,6 +425,11 @@ footer {
 
   .footer-logo {
     padding-left: 20px;
+  }
+  .content{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
