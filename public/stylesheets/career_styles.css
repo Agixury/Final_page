@@ -1,0 +1,55 @@
+.joinus_heading {
+    font-family:normal normal 600 25px/30px Raleway;
+    font-size:16px; 
+    margin-top: 120px; 
+    text-align: center; 
+    font: normal normal 600 44px/51px Raleway; 
+    letter-spacing: 0px; 
+    color: #000000; 
+    opacity: 1;
+}
+
+.card_style {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:480px;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    box-shadow: 2px 2px 2px #EEEEEE;
+}
+
+.card-columns{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+}
+
+.cards-small-screen {
+    display: none;
+}
+
+.hide-non-mobile {
+    display: none;
+}
+
+@media (max-width: 764px) {
+    .cards-large-screen{
+        display: none;
+    }
+    .cards-small-screen {
+        display: block;
+    }
+    .card_style{
+        min-width: 80%;
+        max-height: 10%;
+    }
+    .right{
+        display: none;
+    }
+    .hide-non-mobile {
+        display: block;
+    }    
+    form .row textarea {
+        min-height: 100px;
+    }
+
+}
