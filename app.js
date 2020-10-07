@@ -86,6 +86,14 @@ app.get('/faq', (req, res) => {
 	return res.render('faq');
 });
 
+app.get('/tours', (req, res) => {
+	return res.render('tours');
+});
+
+app.get('/blogs', (req, res) => {
+	return res.render('blogs');
+});
+
 app.listen(process.env.PORT || 3000, () => {
 	console.log('Server running at port: ', process.env.PORT || 3000);
 });
