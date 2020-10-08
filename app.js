@@ -50,6 +50,10 @@ app.get('/', (req, res) => {
 	return res.render('index');
 });
 
+app.get('/hotels', (req, res) => {
+	return res.render('hotels');
+});
+
 app.get('/about', (req, res) => {
 	return res.render('about');
 });
