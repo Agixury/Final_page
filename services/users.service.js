@@ -14,22 +14,17 @@ const validateRegisterInputs = (req, res, next) => {
 		contactNumber: Joi.string().min(9).max(14).pattern(new RegExp('^[0-9]+$')).required(),
 	}).with('password', 'repeatPassword');
 
-	validateInputs(req, next, schema);
+	validateInputs(req, res, next, schema);
 };
 
 const validateLoginInputs = (req, res, next) => {
 	const schema = Joi.object({
-		email: Joi.string()
-			.email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
-			.required(),
-		username: Joi.string().alphanum().min(3).max(30).required(),
+		email: Joi.string().email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
+		username: Joi.string().alphanum().min(3).max(30),
 		password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{6,30}$')).required(),
-		repeatPassword: Joi.ref('password'),
-	})
-		.with('password', 'repeatPassword')
-		.xor('email', 'username');
+	}).xor('email', 'username');
 
-	validateInputs(req, next, schema);
+	validateInputs(req, res, next, schema);
 };
 
 const authenticate = (req, res, next) => {

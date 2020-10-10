@@ -17,6 +17,7 @@ const authorize = () => {
 			console.log('user found: ', user);
 
 			req.user = user.get();
+			console.log('authorized... req.user: ', req.user);
 			next();
 		},
 	];
