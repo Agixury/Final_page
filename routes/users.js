@@ -4,8 +4,9 @@ const jwt = require('jsonwebtoken');
 
 const db = require('../models');
 const userService = require('../services/users.service');
+const authorize = require('../middleware/authorize');
 
-// @route POST /users
+// @route POST /users/register
 // register new user
 router.post('/register', userService.validateRegisterInputs, async (req, res) => {
 	if ((await db.User.findOne({ where: { username: req.body.username } })) || (await db.User.findOne({ where: { email: req.body.email } }))) {
@@ -30,7 +31,7 @@ router.post('/register', userService.validateRegisterInputs, async (req, res) =>
 	}
 });
 
-// @route POST /users
+// @route POST /users/login
 // user login
 router.post('/login', userService.validateLoginInputs, async (req, res) => {
 	try {
@@ -60,7 +61,7 @@ router.post('/login', userService.validateLoginInputs, async (req, res) => {
 });
 
 // @route GET /users
-router.get('/', async (req, res) => {
+router.get('/', authorize(), async (req, res) => {
 	const users = await db.User.findAll();
 	return res.json({ message: 'listing all users', users: users });
 });

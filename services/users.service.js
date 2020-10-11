@@ -27,10 +27,6 @@ const validateLoginInputs = (req, res, next) => {
 	validateInputs(req, res, next, schema);
 };
 
-const authenticate = (req, res, next) => {
-	// validate password with hash and return jwt token
-};
-
 module.exports = {
 	validateRegisterInputs,
 	validateLoginInputs,

@@ -1,11 +1,9 @@
 const jwt = require('express-jwt');
 const db = require('../models');
 
-module.exports = authorize;
+const secret = process.env.JWT_SECRET;
 
 const authorize = () => {
-	const secret = process.env.JWT_SECRET;
-
 	return [
 		jwt({ secret, algorithms: ['HS256'] }),
 
@@ -22,3 +20,5 @@ const authorize = () => {
 		},
 	];
 };
+
+module.exports = authorize;
