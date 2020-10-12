@@ -200,6 +200,7 @@ header {
     font-family: fontAwesome;
     line-height: 40px;
     top: 5px;
+    color:white;
   }
   .menu-toggle.active {
     left: 170px;
@@ -213,6 +214,8 @@ header {
     content: '\f00d';
     font-family: fontAwesome;
     line-height: 60px;
+    font-weight: 100;
+    color: grey
   }
   .nav-1 .lists {
     display: none;
@@ -241,6 +244,8 @@ header {
   header .nav-2.active {
     display: flex;
     padding-top: 10px;
+      transition: 1s;
+      left: 0;
   }
   header .nav-2.active li {
     display: flex;
@@ -253,8 +258,9 @@ header {
     background-color: rgba(146, 146, 146, 0.7);
   }
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
   }
   /* Sidebar CSS */
   .navbar-container {
@@ -265,6 +271,40 @@ header {
     margin-left: 10px;
     border-radius: 5px;
     margin-right: 10px;
+  }
+
+  .logo-img{
+    margin:0;
+    filter: invert(100%);
+  }
+
+  .navbar-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0;
+  }
+}
+
+/* Sliding animation */
+.active {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
