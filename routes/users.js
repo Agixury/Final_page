@@ -9,8 +9,11 @@ const authorize = require('../middleware/authorize');
 // @route POST /users/register
 // register new user
 router.post('/register', userService.validateRegisterInputs, async (req, res) => {
-	if ((await db.User.findOne({ where: { username: req.body.username } })) || (await db.User.findOne({ where: { email: req.body.email } }))) {
-		res.status(400).send({ message: 'Username or email is already taken' });
+	if (
+		(await db.User.findOne({ where: { contactNumber: req.body.contactNumber } })) ||
+		(await db.User.findOne({ where: { email: req.body.email } }))
+	) {
+		return res.status(400).send({ message: 'contact number or email is already taken' });
 	}
 
 	try {
@@ -35,20 +38,20 @@ router.post('/register', userService.validateRegisterInputs, async (req, res) =>
 // user login
 router.post('/login', userService.validateLoginInputs, async (req, res) => {
 	try {
-		const username = req.body.username;
 		const email = req.body.email;
+		const contactNumber = req.body.contactNumber;
 		let user;
-
-		if (username) {
-			user = await db.User.scope('withHash').findOne({ where: { username } });
-		}
 
 		if (email) {
 			user = await db.User.scope('withHash').findOne({ where: { email } });
 		}
 
+		if (contactNumber) {
+			user = await db.User.scope('withHash').findOne({ where: { contactNumber } });
+		}
+
 		if (!user || !(await bcrypt.compare(req.body.password, user.hash))) {
-			return res.status(404).send({ message: 'Username, email or password is incorrect.' });
+			return res.status(404).json({ message: 'Wrong credentials.' });
 		}
 
 		const token = jwt.sign({ sub: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' });

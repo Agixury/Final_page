@@ -10,11 +10,6 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 			allowNull: true,
 		},
-		username: {
-			type: DataTypes.STRING,
-			allowNull: false,
-			unique: true,
-		},
 		email: {
 			type: DataTypes.STRING,
 			allowNull: false,
@@ -26,6 +21,10 @@ module.exports = (sequelize) => {
 		},
 		contactNumber: {
 			type: DataTypes.STRING,
+		},
+		confirmed: {
+			type: DataTypes.BOOLEAN,
+			defaultValue: false,
 		},
 	};
 
