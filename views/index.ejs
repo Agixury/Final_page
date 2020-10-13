@@ -294,6 +294,8 @@
                 authFormContainer.style.display = 'none'
             }).catch(err => {
                 console.log(err.response)
+                console.log(err.response.data.message)
+                alert(err.response.data.message)
                 alert('Wrong credentials.')
             })
         }
@@ -332,7 +334,8 @@
 
                 authFormContainer.style.display = 'none'
             }).catch(err => {
-                console.log(err.response)
+                console.log(err.response.data.message)
+                alert(err.response.data.message)
                 alert('Invalid credentials.')
             })
         }

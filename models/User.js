@@ -1,6 +1,4 @@
-const { DataTypes } = require('sequelize');
-
-module.exports = (sequelize) => {
+module.exports = (sequelize, DataTypes) => {
 	const attributes = {
 		firstName: {
 			type: DataTypes.STRING,
@@ -23,7 +21,7 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 		},
 		confirmed: {
-			type: DataTypes.BOOLEAN,
+			type: DataTypes.BOOLEAN, // use this to indicate email confirmation
 			defaultValue: false,
 		},
 	};
@@ -37,5 +35,10 @@ module.exports = (sequelize) => {
 		},
 	};
 
-	return sequelize.define('users', attributes, options);
+	const User = sequelize.define('User', attributes, options);
+	User.associate = (models) => {
+		User.belongsTo(models.PackageStore); // Will add PackageStoreId to User model
+	};
+
+	return User;
 };
