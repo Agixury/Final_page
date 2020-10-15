@@ -52,4 +52,8 @@ router.get('/blogs', (req, res) => {
 	return res.render('blogs');
 });
 
+router.get('/packages', (req, res) => {
+	return res.render('packages');
+});
+
 module.exports = router;
