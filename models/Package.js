@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
-		no_of_packages: {
+		numberOfPackages: {
 			type: DataTypes.INTEGER, // available number of packages
 			allowNull: false,
 		},

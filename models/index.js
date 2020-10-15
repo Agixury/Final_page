@@ -6,7 +6,7 @@ const db = {};
 
 const initialize = async () => {
 	const connection = await mysql.createConnection({ host, user, password });
-	//await connection.query(`CREATE DATABASE IF NOT EXISTS \`${database}\`;`);
+	await connection.query(`CREATE DATABASE IF NOT EXISTS \`${database}\`;`);
 
 	const sequelize = new Sequelize(database, user, password, { dialect: 'mysql' });
 
@@ -22,7 +22,7 @@ const initialize = async () => {
 	});
 
 	await sequelize.sync({ force: true }); // reset databse
-	await sequelize.sync();
+	// await sequelize.sync();
 };
 
 initialize();
