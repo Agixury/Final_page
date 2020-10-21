@@ -18,7 +18,9 @@ body {
   text-align: center;
   background-color: #ffffff;
 }
-
+#authFormContainer{
+    padding-top: 40px;
+ }
 .body-border-demarcate {
   border-bottom: 15px ridge;
 }
