@@ -292,7 +292,7 @@ header {
   -webkit-animation: slide-in 0.5s forwards;
 }
 
-@keyframes slide-in {
+/* @keyframes slide-in {
   0% {
     -webkit-transform: translateX(-100%);
   }
@@ -308,7 +308,7 @@ header {
   100% {
     transform: translateX(0%);
   }
-}
+} */
 
 /* Fix transparent header issue on non mobile screens*/
 @media (min-width:765px) {
