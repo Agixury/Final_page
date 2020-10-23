@@ -558,7 +558,7 @@ footer {
   justify-content: end;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 100px) {
   .head_cont {
     background: url('../images/tab.jpg');
 
