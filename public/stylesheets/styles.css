@@ -87,10 +87,15 @@ header .nav-1 .lists ul li a {
   white-space: nowrap;
   overflow: hidden;
 }
-.nav-1 .lists ul li a.active,
-.nav-1 .lists ul li a:hover {
+.nav-1 .lists ul li a.active {
   color: black;
   opacity: 1;
+}
+
+.nav-1 .lists ul li a:hover {
+  transition: 100ms transform ease-in;
+  transform: translateY(-2px) scale(1.05);
+  text-decoration: underline #eb5d1e;
 }
 
 /* NAVIGATION BAR 1 ENDS */
@@ -117,11 +122,19 @@ header .nav-2 ul li a {
   font-size: 20px;
 }
 
-.nav-2 ul li a.active,
-.nav-2 ul li a:hover {
+.nav-2 ul li a.active {
   color: black;
   opacity: 1;
 }
+
+.nav-2 ul li a:hover {
+  transition: 100ms transform ease-in-out;
+  transform: translateX(2px) scale(1.05);
+  transition: 500ms color ease-in;
+  transform-origin: 0em;
+  color: slategrey;
+}
+
 nav.nav-2 ul .about {
   display: none;
   align-items: center;
