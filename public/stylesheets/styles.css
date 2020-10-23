@@ -138,6 +138,19 @@ nav.nav-2 ul li.about img {
   display: none;
 }
 
+/* Landing Page list section start */
+.list:hover{
+  transform: scale(1.05);
+  box-shadow: -1px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Landing Page list section end */
+
+
+
+
+
+
 /* NAVIGATION BAR 2 ENDS */
 
 /* STICKY IS WORKING..... */
