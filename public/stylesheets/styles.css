@@ -832,5 +832,9 @@ footer {
   border: none;
   background-color: #000303;
 }
+.placeColor input::placeholder{
+  font-size: small;
+  color: #000!important;
+}
 
 /* end of login form css */
