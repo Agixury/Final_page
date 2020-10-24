@@ -11,6 +11,25 @@ html,
 body {
   max-width: 100%;
 }
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a1b1b;
+}
+
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+
 body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
