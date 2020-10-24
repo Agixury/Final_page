@@ -368,10 +368,20 @@ header {
   color: inherit;
 }
 
+.container{
+  margin-top:5%;
+}
+
 .card-wrap{
   width:80%;
   margin: auto;
   margin-bottom:10%;
+  background-color: white;
+}
+
+.card-wrap:hover{
+  transform: scale(1.08);
+  box-shadow: 10px 10px 10px black;
 }
 
 .card-title{
