@@ -11,26 +11,26 @@
     <%- include('partials/header-navbar.ejs') %>
     
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-md" role="content">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Log in / Sign up</h4>
+                    <h4 class="modal-title" style="margin: auto;">Log in / Sign up</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div id="authFormContainer" style="margin: 0; padding: 0; height: auto;">
+                    <div id="authFormContainer">
                         <div class="row row-login">
                             <div class="login-signup" style="z-index: 2;">
-                                <div class="inner" style="margin: 0; width: 80%;">
+                                <div class="inner" style="width: 80%;">
         
                                     <div class="option">
                                         <button class="line" id="Lbtn" style="background-color: #0275d8;"><a href="#">Log In</a></button>
-                                        <button class="signupbtn" id="Sbtn" style="background-color: grey;"><a href="#">Sign up</a></button>
+                                        <button class="signupbtn" id="Sbtn" style="background-color: #5cb85c;"><a href="#">Sign up</a></button>
                                     </div>
                                     <div class="loginform" style="background-color: #fff; color: #000;">
                                         <form id="loginForm" class="placeColor">
-                                            <input id="emailOrContact" type="text" placeholder="Email or phone">
-                                            <input id="passwordLogin" type="password" placeholder="Password">
+                                            <input style="background-color: rbg(192,192,192); color: #000;" id="emailOrContact" type="text" placeholder="Email or phone">
+                                            <input style="background-color: rbg(192,192,192); color: #000;" id="passwordLogin" type="password" placeholder="Password">
                                             <input class="bg-success" type="submit" value="Log In">
                                         </form>
                                         <a href="#">forgotten password?</a>
@@ -41,15 +41,15 @@
                                         </div>
         
                                     </div>
-                                    <div class="signupform" style="background-color: #fff;">
+                                    <div class="signupform" style="background-color: #fff; color: #000;">
                                         <form id="registerForm" class="placeColor">
-                                            <input id="firstName" type="text" placeholder="First name">
-                                            <input id="lastName" type="text" placeholder="Last name">
-                                            <input id="email" type="email" placeholder="Enter email">
-                                            <input id="contactNumber" type="text" placeholder="Contact number">
-                                            <input id="password" type="password" placeholder="Password">
-                                            <input id="repeatPassword" type="password" placeholder="Confirm password">
-                                            <input class="bg-success" type="submit" value="Sign up">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="firstName" type="text" placeholder="First name">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="lastName" type="text" placeholder="Last name">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="email" type="email" placeholder="Enter email">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="contactNumber" type="text" placeholder="Contact number">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="password" type="password" placeholder="Password">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="repeatPassword" type="password" placeholder="Confirm password">
+                                            <input  class="bg-success" type="submit" value="Sign up">
                                         </form>
                                     </div>
                                 </div>
@@ -508,13 +508,13 @@
         $(".signupform").hide();
         $(".loginform").show();
         $("#Lbtn").css("background-color", "#0275d8");
-        $("#Sbtn").css("background-color", "grey");
+        $("#Sbtn").css("background-color", "#5cb85c");
     });
     $("#Sbtn").click(function () {
         $(".signupform").show();
         $(".loginform").hide();
         $("#Sbtn").css("background-color", "#0275d8");
-        $("#Lbtn").css("background-color", "grey");
+        $("#Lbtn").css("background-color", "#5cb85c");
     });
     
 </script>
