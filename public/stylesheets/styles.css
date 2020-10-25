@@ -848,3 +848,23 @@ footer {
 }
 
 /* end of login form css */
+
+
+/* start of custom scrollbar */
+
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #555;
+}
+
+/* end of custom scrollbar */
