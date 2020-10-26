@@ -444,7 +444,8 @@ header {
 
 .card-wrap:hover{
   transform: scale(1.08);
-  box-shadow: 10px 10px 10px black;
+  transition: 1s;
+  box-shadow: 10px 10px 10px #3d3939;
 }
 
 .card-title{
