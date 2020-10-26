@@ -19,7 +19,7 @@
                 </div>
                 <div class="modal-body">
                     <div id="authFormContainer">
-                        <div class="row row-login">
+                         <div class="row row-login">
                             <div class="login-signup" style="z-index: 2;">
                                 <div class="inner" style="width: 80%;">
         
@@ -45,7 +45,7 @@
                                         <form id="registerForm" class="placeColor">
                                             <input  style="background-color: rbg(192,192,192); color: #000;" id="firstName" type="text" placeholder="First name">
                                             <input  style="background-color: rbg(192,192,192); color: #000;" id="lastName" type="text" placeholder="Last name">
-                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="email" type="email" placeholder="Enter email">
+                                            <input  class="emailSignup" id="email" type="email" placeholder="Enter email">
                                             <input  style="background-color: rbg(192,192,192); color: #000;" id="contactNumber" type="text" placeholder="Contact number">
                                             <input  style="background-color: rbg(192,192,192); color: #000;" id="password" type="password" placeholder="Password">
                                             <input  style="background-color: rbg(192,192,192); color: #000;" id="repeatPassword" type="password" placeholder="Confirm password">
@@ -67,54 +67,7 @@
         <div class="row row-header-empty">
             <div class="col-6"></div>
             <div class="col-6" id="authFormContainer">
-                <div class="row row-login">
-                    <div class="login-signup" style=" z-index: 2;">
-                        <div class="inner">
-
-                            <div class="option">
-                                <button class="line" id="loginbtn"><a href="#">Log In</a></button>
-                                <button class="signupbtn"><a href="#">Sign up</a></button>
-                            </div>
-                            <div class="loginform">
-                                <form id="loginForm">
-                                    <input id="emailOrContact" type="text" placeholder="Email or phone">
-                                    <input id="passwordLogin" type="password" placeholder="Password">
-                                    <input type="submit" value="Log In">
-                                </form>
-                                <a href="#">forgotten password?</a>
-
-                                <div class="botm-option">
-                                    <button class="line"><a href="#">Log In with <i class="fa fa-facebook" aria-hidden="true"></i></a></button>
-                                    <button><a href="#">Log In with&nbsp;<i class="fa fa-envelope mail" aria-hidden="true"></i></a></button>
-                                </div>
-
-                            </div>
-                            <div class="signupform" style="margin-bottom:8px; padding-top :0.5px ;">
-                                <form id="registerForm">
-                                    <input id="firstName" type="text" placeholder="First name" style="margin-top: 0.5rem; height:2.5rem;">
-                                    <input id="lastName" type="text" placeholder="Last name" style="margin-top: 0.5rem; height:2.5rem;">
-                                    <input id="email" type="email" placeholder="Enter email" style="width: 90%;
-                                    margin-top: 20px;
-                                    padding: 10px;
-                                    color:white;
-                                    border: none;
-                                    outline: none;
-                                    background-color: rgba(1, 1, 1, 0.2);
-                                    margin-top: 0.5rem; height:2.5rem;
-                                    font-size: 18px;
-                                    box-shadow: 0px 0px 3px -1px rgba(255, 255, 255, 1);">
-                                    <input id="contactNumber" type="text" placeholder="Contact number" style="margin-top: 0.5rem; height:2.5rem;">
-                                    <input id="password" type="password" placeholder="Password" style="margin-top: 0.5rem; height:2.5rem;">
-                                    <input id="repeatPassword" type="password" placeholder="confirm password"
-                                        style="margin-top: 0.5rem; height:2.5rem;">
-                                    <input type="submit" value="Sign up">
-                                </form>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
+      
                 <!--forms-->
             </div>
         </div>
