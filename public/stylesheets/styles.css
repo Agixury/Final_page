@@ -322,6 +322,24 @@ header {
     top: 0;
     width: 100%;
   }
+	
+ .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter .para-1,
+  .newsletter .para-2 {
+    display: none;
+  }
+
+  .newsletter > form {
+    margin-left: -12px;
+  }
+  .newsletter-input {
+    margin-left: 40px;
+  }	
+	
+	
   /* Sidebar CSS */
   .navbar-container {
     z-index: 9;
