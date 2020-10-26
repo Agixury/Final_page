@@ -57,7 +57,7 @@ header {
   box-shadow: 0 2px 5px rgba(1, 1, 1, 0.2);
   z-index: 0;
 }
-  #nb:visited {
+  .nb:visited {
     color: #1a1b1b;
   }
 
