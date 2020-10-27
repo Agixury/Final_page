@@ -633,7 +633,7 @@ footer {
 }
 
 .footer-about {
-  font-size: 13px;
+  font-size: 19.4px;
   line-height: 1.75rem;
 }
 
@@ -642,7 +642,7 @@ footer {
 }
 
 .footer-list__item a {
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
   color: #000000;
 }
