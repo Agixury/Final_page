@@ -167,6 +167,17 @@ header .nav-2 ul li a {
   background: linear-gradient(to right, #ff9800 0%, #ff9800 5px, transparent);
 }
 
+.nav-2 ul li .log{
+  display: none;
+}
+
+@media (max-width: 758px){
+	
+  .nav-2 ul li .log{
+        display:flex;
+  }
+}
+
 nav.nav-2 ul .about {
   display: none;
   align-items: center;
