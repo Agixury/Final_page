@@ -12,5 +12,5 @@ deployment:
     - /bin/cp -R public $DEPLOYPATH
     - /bin/cp -R models $DEPLOYPATH
     - /bin/cp -R middleware $DEPLOYPATH
-    - /bin/cp -R ocnfig $DEPLOYPATH
+    - /bin/cp -R config $DEPLOYPATH
     
