@@ -777,12 +777,11 @@ footer {
 .row-login .login-signup .inner {
   width: 55%;
   height: fit-content;
-  background-color: rgba(19, 19, 19, 0.5);
   display: flex;
-  border: 1px solid white;
   align-content: space-around;
   flex-direction: column;
 }
+
 .row-login .login-signup .inner .option {
   width: 100%;
   display: flex;
@@ -798,13 +797,9 @@ footer {
 }
 .row-login .login-signup .inner button a {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: white;
-}
-.row-login .login-signup .inner button a.active {
-  border-bottom: 2px solid white;
-  padding-bottom: 10px;
 }
 .row-login .login-signup .inner button:focus {
   border: none;
@@ -815,8 +810,8 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.row-login .login-signup .inner form input[type='text'],
-.row-login .login-signup .inner form input[type='password'] {
+.row-login .login-signup .inner form input[type="text"],
+.row-login .login-signup .inner form input[type="password"] {
   width: 90%;
   margin-top: 20px;
   padding: 10px;
@@ -827,7 +822,7 @@ footer {
   font-size: 18px;
   box-shadow: 0px 0px 3px -1px rgba(255, 255, 255, 1);
 }
-.row-login .login-signup .inner form input[type='submit'] {
+.row-login .login-signup .inner form input[type="submit"] {
   width: 90%;
   margin-top: 20px;
   padding: 10px;
@@ -835,7 +830,7 @@ footer {
   outline: none;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: white;
 }
@@ -843,8 +838,8 @@ footer {
   border: none;
   outline: none;
 }
-.row-login .login-signup .inner form input[type='text']::placeholder,
-.cont .login-signup .inner form input[type='password']::placeholder {
+.row-login .login-signup .inner form input[type="text"]::placeholder,
+.cont .login-signup .inner form input[type="password"]::placeholder {
   color: white;
   font-size: 15px;
   opacity: 0.7;
@@ -855,7 +850,7 @@ footer {
   margin-top: 10px;
   color: white;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
 .row-login .login-signup .inner a:hover {
@@ -879,7 +874,7 @@ footer {
   margin-top: 10px;
   color: white;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
 .row-login .login-signup .inner .botm-option i {
@@ -898,17 +893,20 @@ footer {
   border: none;
   background-color: #000303;
 }
-.placeColor input::placeholder{
-  font-size: small;
-  color: #000!important;
+.placeColor input::placeholder {
+  font-size: 10px;
+  color: #fff !important;
 }
 
-.emailSignup{
-  background-color: rgb(192, 192, 192) !important;
-  color: #000 !important;
+.placeColor input[type="password"]::placeholder {
+  font-size: 15px;
+  color: #fff !important;
+}
+
+.emailSignup {
   margin: 20px 0 0;
-  padding:10px;
-  width:90%;
+  padding: 10px;
+  width: 90%;
 }
 
 /* end of login form css */
