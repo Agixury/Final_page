@@ -9,12 +9,66 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <%- include('partials/header-navbar.ejs') %>
+    
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="margin: auto; width:100%">Log in / Sign up</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="authFormContainer">
+                         <div class="row row-login">
+                            <div class="login-signup" style="z-index: 2;">
+                                <div class="inner" style="width: 80%; border: 5px solid black;"">
+        
+                                    <div class="option" style="border-bottom: 5px solid black;">
+                                        <button class="line" id="Lbtn" style="background-color: #0275d8;"><a href="#">Log In</a></button>
+                                        <button class="signupbtn" id="Sbtn" style="background-color: #5cb85c;"><a href="#">Sign up</a></button>
+                                    </div>
+                                    <div class="loginform" style="background-color: #fff; color: #000;">
+                                        <form id="loginForm" class="placeColor">
+                                            <input style="background-color: rbg(192,192,192); color: #000;" id="emailOrContact" type="text" placeholder="Email or phone">
+                                            <input style="background-color: rbg(192,192,192); color: #000;" id="passwordLogin" type="password" placeholder="Password">
+                                            <input class="bg-success" type="submit" value="Log In">
+                                        </form>
+                                        <a href="/forgot-password" style="color: black;">forgotten password?</a>
+        
+                                        <div class="botm-option">
+                                            <button class="line"><a href="#">Log In with&nbsp;<i class="fa fa-facebook" aria-hidden="true"></i></a></button>
+                                            <button><a href="#">Log In with&nbsp;<i class="fa fa-envelope mail" aria-hidden="true"></i></a></button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="signupform" style="background-color: #fff; color: #000;">
+                                        <form id="registerForm" class="placeColor">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="firstName" type="text" placeholder="First name">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="lastName" type="text" placeholder="Last name">
+                                            <input  class="emailSignup" id="email" type="email" placeholder="Enter email">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="contactNumber" type="text" placeholder="Contact number">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="password" type="password" placeholder="Password">
+                                            <input  style="background-color: rbg(192,192,192); color: #000;" id="repeatPassword" type="password" placeholder="Confirm password">
+                                            <input  class="bg-success" type="submit" value="Sign up">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
 
     <!-- HEADER BEGINS HERE -->
     <div class="head_cont container-fluid">
         <div class="row row-header-empty">
             <div class="col-6"></div>
-            
+            <div class="col-6" id="authFormContainer">
+      
+                <!--forms-->
             </div>
         </div>
 
@@ -73,69 +127,28 @@
 
                     </div>
                 </div><br ><br>
-                <div class="row row-subscribe"
-
-                    style=" width: 3000px;height: 80px; margin-top: 2%; position:fixed;z-index: 1; bottom:0;margin-bottom:9.5rem;">
-                    <!--sub--><center>
-                        <div class="offset-4 col-8 justify-content-center" style="background: #0000007C; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px;padding-bottom:5px;">
-                        <center>
-                            <div style="float: left; color: #ffffff;margin-top:2%;font-size: 12px;padding-top: 2%;">
-                            <div class="d-none d-md-block d-lg-block">
-                            <h3>Never miss a deal</h3>
-                            <p>Get the best travel deals in you inbox</p>
-
-                            
-                        </div>
-                        <div class=" d-block d-md-none ">
-                            <div class="row " style="margin-top: ;">
-                                <center>
-                                <div style="margin-top: 2px; margin-bottom: 2px;text-align: center;" class="col-sm-12">
-                                    <h5>Never miss a deal</h5>
-                                    <p>Get the best travel deals in you inbox</p>
-                                    <h5>Subscribe to our Newsletter</h5>
-                                    <form action="#" style="width:450px;">
-                                        <input type="text" placeholder="Please enter your Email" style="background: #000000; padding: 11px; "><br><br>
-                                        <input type="submit" value="SUBSCRIBE" style="padding: 13px;background: #000000;"><br>
-                                        <label style=" color: #ffffff;text-align: left;"><input type="checkbox" name="t&c"> I, agree to the <a
-                                                href="#">Terms & conditions</a><br>and would like to subscribe to offers,alerts and services. </label>
-                                    </form>
-                                </div></center>
-                                
-                                
-                            </div>
-                            
-                         
-                        </div>
-                        </div>
-                    </center>
-                        <div class="d-none d-md-block d-lg-block">
-                        <div class="Subscribe" style="float: right;margin-right: 60%; padding-top: 2%;position:absoluete;z-index: 5;">
-                            <h5 style="color: #fff;">Subscribe to our Newsletter</h5>
-                            <form action="#" style="width:450px;">
-                                <input type="text" placeholder="Please enter your Email" style="background: #000000; padding: 11px;margin: 3px ">
-                                <input type="submit" value="SUBSCRIBE" style="padding: 13px;background: #000000;">
-
-                    style=" width: 3000px;height: 80px; margin-top: 9%; position:fixed;z-index: 1; bottom:0;margin-bottom:9.5rem;">
+                <div class="row"
+                    style=" width: 100%; height: 80px; margin-top: 9%; position:fixed; z-index: 1; bottom:0; margin-bottom:9.5rem;">
                     <!--sub-->
-                        <div class="offset-4 col-8" style="background: #0000007C; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px;padding-bottom:5px;">
-                        <div style="float: left; color: #ffffff; margin-left:2%;margin-top:2%;font-size: 12px;padding-top: 2%;">
-                            <h3>Never miss a deal</h3>
-                            <p>Get the best travel deals in you inbox</p>
+                    <div id="close-component" class="newsletter" style="background: #0000007C; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px; display: flex; width: 100%;justify-content: space-evenly;">
+                        <div style="color: #ffffff; margin-left:4%; margin-top:2%; font-size: 21px;padding-top: 1%;">
+                            <h3 style="font-size: 2rem;">Never miss a deal</h3>
+                            <p class="para-1">
+                                Get the best travel deals in you inbox</p>
                         </div>
-                        <div class="Subscribe" style="float: right;margin-right: 63%; padding-top: 2%;position:absoluete;z-index: 5;">
-                            <h5 style="color: #fff;">Subscribe to our Newsletter</h5>
-                            <form action="#" style="width:450px;">
-                                <input type="text" placeholder="Please enter your Email" style="background: #000000; padding: 11px; ">
-                                <input type="submit" value="SUBSCRIBE" style="padding: 13px;">
-
-                                <label style=" margin-left:5px;color: #ffffff;text-align: left;"><input type="checkbox" name="t&c"> I, agree to the <a
-                                        href="#">Terms & conditions</a>and would like to subscribe to offers,alerts and services. </label>
+                        <div class="Subscribe" style="float: right;margin-right: 10%; padding-top: 1%;position:absoluete;z-index: 5; flex: 0.6;">
+                            <h5 class="para-2"style="color: #fff;">Subscribe to our Newsletter</h5>
+                            <form action="#">
+                                <div style="display: flex;">
+                                    <input class="input" type="text" placeholder="Please enter your Email" style="padding: 11px; width: 450px;margin-left:40px;">
+                                    <input type="submit" value="SUBSCRIBE" style="padding: 13px; background-color: orangered; color: white;">
+                                </div>
+                                <label style="margin-left:40px;color: #ffffff;text-align: left;"><input type="checkbox" name="t&c"> I, agree to the <a
+                                        href="#">Terms & conditions</a> and would like to subscribe to offers,alerts and services. </label>
                             </form>
                         </div>
+                        <span onclick="close_newsletter()" style="margin-right:-7%; margin-top:5px; cursor: pointer;"><i style="color: white;" class="far fa-2x fa-times-circle"></i></span>
                     </div>
-
-                    </div></center>
-
                 </div>
             </div>
             
@@ -147,85 +160,122 @@
 
     <!--list-->
     <div class="container" style="z-index: 0;">
-
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card" style="margin-top: 1rem;">
-                    <img class="card-img-top" src="images/p.jpg" alt="Jaipur">
-                    <div class="card-body" style="text-align: left;">
-                        <h3 class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3>
-                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                        
-                        <h3><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                        <h5><i class="fa fa-clock"></i> Limited Time Offer</h5>
+        <div class="card-wrap">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div>
+                        <img class="image-place" src="images/p.jpg" alt="Jaipur">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card" style="margin-top: 1rem;">
-                    <img class="card-img-top" src="images/p.jpg" alt="Jaipur">
-                    <div class="card-body" style="text-align: left;">
-                        <h3 class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3>
-                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                        
-                        <h3><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                        <h5><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                    </div>
+            <div class="row">
+                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                </div>
+                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
+                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card" style="margin-top: 1rem;">
-                    <img class="card-img-top" src="images/p.jpg" alt="Jaipur">
-                    <div class="card-body" style="text-align: left;">
-                        <h3 class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3>
-                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                        
-                        <h3><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                        <h5><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card" style="margin-top: 1rem;">
-                    <img class="card-img-top" src="images/p.jpg" alt="Jaipur">
-                    <div class="card-body" style="text-align: left;">
-                        <h3 class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3>
-                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                        
-                        <h3><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                        <h5><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card" style="margin-top: 1rem;">
-                    <img class="card-img-top" src="images/p.jpg" alt="Jaipur">
-                    <div class="card-body" style="text-align: left;">
-                        <h3 class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3>
-                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                        
-                        <h3><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                        <h5><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card" style="margin-top: 1rem;">
-                    <img class="card-img-top" src="images/p.jpg" alt="Jaipur">
-                    <div class="card-body" style="text-align: left;">
-                        <h3 class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3>
-                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                        
-                        <h3><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                        <h5><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <div class="card-wrap">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div>
+                        <img class="image-place" src="images/p.jpg" alt="Jaipur">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                </div>
+                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
+                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div>
+                        <img class="image-place" src="images/p.jpg" alt="Jaipur">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                </div>
+                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
+                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div>
+                        <img class="image-place" src="images/p.jpg" alt="Jaipur">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                </div>
+                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
+                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div>
+                        <img class="image-place" src="images/p.jpg" alt="Jaipur">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                </div>
+                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
+                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div>
+                        <img class="image-place" src="images/p.jpg" alt="Jaipur">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                </div>
+                <div style="padding-right: 25px;"style="padding-right:25px;"  class="col-md-6 col-lg-6">
+                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
         <!--
         <div class="row"
             style=" border: 1px solid grey; box-shadow: 1px 1px #dcdcdc; display: flex; flex-wrap:wrap; text-align: left; margin:1.5rem; width:85%">
@@ -362,6 +412,35 @@
         })
     });
 
+    setTimeout(function(){
+        $('#loginModal').modal('show');
+        }, 2000
+    );
+    $("#Lbtn").click(function () {
+        $(".signupform").hide();
+        $(".loginform").show();
+        $("#Lbtn").css("background-color", "#0275d8");
+        $("#Sbtn").css("background-color", "#5cb85c");
+    });
+    $("#Sbtn").click(function () {
+        $(".signupform").show();
+        $(".loginform").hide();
+        $("#Sbtn").css("background-color", "#0275d8");
+        $("#Lbtn").css("background-color", "#5cb85c");
+    });
+    $('#loginButton').click(function(){
+        $('#loginModal').modal('show');
+    });
+    
+      $('#loginButtonmobileview').click(function(){
+        $('#loginModal').modal('show');
+    });
+
+    function close_newsletter(){
+        var close=document.getElementById("close-component");
+        close.innerHTML='';
+    }
+    
 </script>
 
 </html>

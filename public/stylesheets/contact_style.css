@@ -18,7 +18,9 @@ body {
 	text-align: center;
 	background-color: #ffffff;
 }
-
+.gmaps{
+	padding-bottom: 50px;
+}
 .body-border-demarcate {
 	border-bottom: 15px ridge;
 }
