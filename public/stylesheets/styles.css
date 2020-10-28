@@ -775,23 +775,21 @@ footer {
   align-items: flex-end;
 }
 .row-login .login-signup .inner {
-  width: 55%;
   height: fit-content;
   background-color: rgba(19, 19, 19, 0.5);
   display: flex;
-  border: 1px solid white;
   align-content: space-around;
   flex-direction: column;
+  margin-top: -30px;
 }
 .row-login .login-signup .inner .option {
   width: 100%;
   display: flex;
 }
 .row-login .login-signup .inner .option button {
-  width: 50%;
+  width: 80%;
   padding: 10px;
   border: none;
-  background-color: #000303;
 }
 .row-login .login-signup .inner button.line {
   border-right: 2px solid white;
@@ -901,6 +899,11 @@ footer {
 .placeColor input::placeholder{
   font-size: small;
   color: #000!important;
+}
+
+.placeColor input[type="Password"]::placeholder {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .emailSignup{
