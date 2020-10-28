@@ -1,0 +1,16 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nytwwaxq/Final_page_f
+    - /bin/cp app.js $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH  
+    - /bin/cp -R views $DEPLOYPATH
+    - /bin/cp -R routes $DEPLOYPATH
+    - /bin/cp -R config $DEPLOYPATH
+    - /bin/cp -R services $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R models $DEPLOYPATH
+    - /bin/cp -R middleware $DEPLOYPATH
+    - /bin/cp -R ocnfig $DEPLOYPATH
+    
