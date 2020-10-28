@@ -56,4 +56,8 @@ router.get('/packages', (req, res) => {
 	return res.render('packages');
 });
 
+router.get('/forgot-password', (req, res) => {
+	return res.render('forgot-password');
+});
+
 module.exports = router;
