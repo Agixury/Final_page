@@ -4,6 +4,7 @@
 <head>
     <%- include('partials/head.ejs') %>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -11,17 +12,352 @@
     <%- include('partials/header-navbar.ejs') %>
 
     <!-- Blogs START -->
+    
     <div id="blogs" class="container">
+      <div class="topnav">
+        <a class="active" href="#home">Hello Welcome You all </a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
 
+      <!--
       <center>
-        <h1 style="font-family:Breeze Personal Use Regular; font-size:100px; margin-top :200px; margin-bottom:200px;"><strong><em>coming soon.</em></strong></h1>
-      </center>
+        <h1 style="font-family:Breeze Personal Use Regular; font-size:150px; margin-top :200px; margin-bottom:200px;"><strong><em>coming soon.</em></strong></h1>
+      </center>  -->
+
+      <div class="container ">  
+        <h3 style="text-align: left;">Europe</h3>
+        <hr style="width: 65%;">    
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img src="images/p.jpg" alt="" height="200px">
+            <h5 style="font-weight: bold;">When is the best time to visit Europe</h5>
+            <p>By Man | October 2020</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam.
+          </div>
+          <div class="col-sm-4">
+            <img src="images/p.jpg" alt="" height="200px">
+            <h5 style="font-weight: bold;">When is the best time to visit Europe</h5>
+            <p>By Man | October 2020</p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.    
+          </div>
+          
+          <div class="col-sm-4 ">
+            <h3>Contact With Us</h3>
+            <hr style="width: 100%;">
+            
+            <div class="col">
+              <div class="row-sm-3">
+                <a href="#" class="fa fa-facebook">FACEBOOK</a>
+
+              </div>
+              <div class="row-sm-3">
+                <a href="#" class="fa fa-twitter">TWITTER</a>
+              </div>
+              <div class="row-sm-3">
+                <a href="#" class="fa fa-linkedin">LINKEDIN</a>
+              </div>
+              <div class="row-sm-3">
+                <a href="#" class="fa fa-google">GOOGLE</a>
+              </div>
+              
+              
+
+            </div>
+    
+          </div>
+        </div>
+      </div>
+      
+      <div class="container" id="dad"> 
+        <hr style="width: 65%; margin-top: -30px;"> 
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  </h6>
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   </h6> 
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4 ">
+            <h5>RECENT POST</h5>
+            <hr width="100%">
+            <div class="row">
+              <div class="col-sm-6">
+                <img style="float:left" src="images/p.jpg" alt="" height="100px" width="100px">
+
+              </div>
+              <div class="col-sm-6">
+                <p class="bah">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <p style="font-size: x-small;">By Man | October 2020</p>
+                
+              </div>
+            </div>
+            
+                
+          </div>
+        </div>
+      </div>
+      <div class="container" id="zip">     
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  </h6>
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   </h6> 
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4 ">
+            <div class="row" id="oops">
+              <div class="col-sm-6">
+                <img style="float:left" src="images/p.jpg" alt="" height="100px" width="100px">
+
+              </div>
+              <div class="col-sm-6">
+                <p class="bah">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <p style="font-size: x-small;">By Man | October 2020</p>
+                
+              </div>
+            </div>
+            <div class="row" id="oops">
+              <div class="col-sm-6">
+                <img style="float:left" src="images/p.jpg" alt="" height="100px" width="100px">
+
+              </div>
+              <div class="col-sm-6">
+                <p class="bah">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <p style="font-size: x-small; ">By Man | October 2020</p>
+                
+              </div>
+            </div>
+            
+                
+          </div>
+        </div>
+      </div>
+      <div class="container" id="mongo"> 
+        <h2 style="text-align: left;">ASIA</h2>  
+        <hr style="width: 65%;">
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img src="images/a.jpg" alt="">
+          </div>
+          <div class="col-sm-4" id="lol">
+            <h5 style="font-weight: bold;">When is the Best Time to Visit Europe</h5>
+            <p style="font-size: medium ; padding-left: 20px;">By Man | October 2020</p>
+            <br>
+            <p style="padding-bottom: 9%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              
+          </div>
+          <div class="col-sm-4 ">
+            <h4>FACEBOOK FEED</h4>
+            <hr style="width: 100%; font-weight: bold;">
+              
+          </div>
+        </div>
+      </div>
+      <div class="container"> 
+           
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  </h6>
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   </h6> 
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4 ">
+                
+          </div>
+        </div>
+      </div>
+      <div class="container">     
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  </h6>
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4">
+            <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
+            <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   </h6> 
+            <p class="sil">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-4 ">
+                
+          </div>
+        </div>
+      </div>
+      <div class="con">
+      <div class="container">     
+        <div class="row">
+          <div class="col-sm-2 ">
+            <img style="float: inline-start;" src="images/p.jpg" alt="" height="150px" width="150px">
+            <p class="hello"> Lorem ipsum dolor sit amet, consectetur.</p>
+            <p class="mo">By Man | October 2020</p>
+          </div>  
+          <div class="col-sm-2">
+            <img style="float: inline-start;" src="images/p.jpg" alt="" height="150px" width="150px">
+            <p class="hello"> Sed ut perspiciatis unde omnis iste natus.</p>
+            <p class="mo">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-2">
+            <img style="float: inline-start;" src="images/p.jpg" alt="" height="150px" width="150px">
+            <p class="hello">Sed ut perspiciatis unde omnis iste natus.</p> 
+            <p class="mo">By Man | October 2020</p>  
+          </div>
+          <div class="col-sm-6">
+            <h4 style="text-align: left; padding-left: 90px;">ON INSTAGRAM</h4>
+            <hr style="width: 100%;"> 
+                
+          </div>
+          
+        </div>
+      </div>
+      <div class="container" id="oo">     
+        <div class="row">
+          <div class="col-sm-2 ">
+            <img style="float: inline-start;" src="images/p.jpg" alt="" height="150px" width="150px">
+            <p class="hello">Lorem ipsum dolor sit amet, consectetur.</p>
+            <p class="mo">By Man | October 2020</p>
+          </div>  
+          <div class="col-sm-2">
+            <img style="float: inline-start;" src="images/p.jpg" alt="" height="150px" width="150px">
+            <p class="hello">Sed ut perspiciatis unde omnis iste natus.</p>
+            <p class="mo">By Man | October 2020</p>
+          </div>
+          <div class="col-sm-2">
+            <img style="float: inline-start;" src="images/p.jpg" alt="" height="150px" width="150px">
+            <p class="hello">Sed ut perspiciatis unde omnis iste natus.</p> 
+            <p class="mo">By Man | October 2020</p>  
+          </div>
+          <div class="col-sm-2">
+                
+          </div>
+          <div class="col-sm-2">
+           
+          </div>
+          <div class="col-sm-2">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> 
+      <h2 style="text-align: left;">ASIA</h2>  
+      <hr style="width: 65%;">
+      <div class="row">
+        <div class="col-sm-4 ">
+          <img src="images/a.jpg" alt="">
+        </div>
+        <div class="col-sm-4" id="lol">
+          <h5 style="font-weight: bold; color: aqua;">America</h5>
+          <h5 style="font-weight: bold;">When is the Best Time to Visit Europe</h5>
+          <p style="font-size: medium ; padding-left: 20px;">By Man | October 2020</p>
+          
+          <p style="padding-bottom: 9%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            
+        </div>
+        <div class="col-sm-4 ">
+          <h4>CATEGORIES</h4>
+          <hr style="width: 100%;">
+          <h5>Destination</h5>
+          <hr style="width: 70%;">
+          <pre>
+            1.Asia
+            2.America
+            3.Europe
+          </pre>
+           <h5>Features</h5>
+           <hr style="width: 70%;"> 
+           
+
+
+        </div>
+      </div>
+    </div>
+    <div class="container" id="zig"> 
+      <div class="row">
+        <div class="col-sm-4 ">
+          <img src="images/a.jpg" alt="">
+        </div>
+        <div class="col-sm-4" id="lol">
+          <h5 style="font-weight: bold; color: aqua;">America</h5>
+          <h5 style="font-weight: bold;">When is the Best Time to Visit Europe</h5>
+          <p style="font-size: medium ; padding-left: 20px;">By Man | October 2020</p>
+          
+          <p style="padding-bottom: 9%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            
+        </div>
+        <div class="col-sm-4 ">
+          <h5>Hotels & Resorts</h5>
+           <hr style="width: 70%;">
+           <h5>Trip Issues</h5> 
+           <hr style="width: 70%;"> 
+         
+            
+        </div>
+      </div>
+    </div>
+    <div class="container" id="zig"> 
+      <div class="row">
+        <div class="col-sm-4 ">
+          <img src="images/a.jpg" alt="">
+        </div>
+        <div class="col-sm-4" id="lol">
+          <h5 style="font-weight: bold; color: aqua;">America</h5>
+          <h5 style="font-weight: bold;">When is the Best Time to Visit Europe</h5>
+          <p style="font-size: medium ; padding-left: 20px;">By Man | October 2020</p>
+         
+          <p style="padding-bottom: 9%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            
+        </div>
+        <div class="col-sm-4 ">
+            
+        </div>
+      </div>
+    </div>
+    <div class="container" id="zig"> 
+      <div class="row">
+        <div class="col-sm-4 ">
+          <img src="images/a.jpg" alt="">
+        </div>
+        <div class="col-sm-4" id="lol">
+          <h5 style="font-weight: bold; color: aqua;">America</h5>
+          <h5 style="font-weight: bold;">When is the Best Time to Visit Europe</h5>
+          <p style="font-size: medium ; padding-left: 20px;">By Man | October 2020</p>
+         
+          <p style="padding-bottom: 9%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            
+        </div>
+        <div class="col-sm-4 ">
+            
+        </div>
+      </div>
+    </div>
 
     </div>
     <!-- Blogs END -->
 
     <%- include('partials/footer.ejs') %>
 
-</body>
+</body> 
 
 </html>
+ 
