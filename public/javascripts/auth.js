@@ -22,7 +22,7 @@ const loginHandler = async (event) => {
 	}
 
 	const body = email ? { email, password } : { contactNumber, password };
-	const url = 'https://agixury.com:3000/users/login';
+	const url = '/users/login';
 
 	// error handling needs some work
 	axios
@@ -62,7 +62,7 @@ const registerHandler = async (event) => {
 		repeatPassword,
 	};
 
-	const url = 'https://agixury.com:3000/users/register';
+	const url = '/users/register';
 
 	const resp = await axios.post(url, body);
 	console.log('[DEBUG] resp: ', resp);
