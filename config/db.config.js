@@ -1,6 +1,6 @@
 module.exports = {
-	database: 'nytwwaxq_agixury',
-	host: 'localhost',
-	user: process.env.MYSQL_USERNAME,
-	password: process.env.MYSQL_PASSWORD,
+	database: 'test',
+	host: '127.0.0.1',
+	user: 'root',
+	password: '',
 };
