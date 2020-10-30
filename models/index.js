@@ -21,7 +21,7 @@ const initialize = async () => {
 		}
 	});
 
-	await sequelize.sync({ force: true }); // reset databse
+	//await sequelize.sync({ force: true }); // reset databse
 	// await sequelize.sync();
 };
 
