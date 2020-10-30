@@ -56,6 +56,7 @@ router.post('/login', userService.validateLoginInputs, async (req, res) => {
 
 		const token = jwt.sign({ sub: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 		user.token = token;
+		console.log(user);
 		return res.send({ user: user, token: token });
 	} catch (err) {
 		console.error(err.name, ' ', err.message);
