@@ -11,13 +11,195 @@
     <%- include('partials/header-navbar.ejs') %>
 
     <!-- Tour START -->
-    <div id="tours" class="container">
-
-      <center>
-        <h1 style="font-family:Breeze Personal Use Regular; font-size:100px; margin-top :200px; margin-bottom:200px;"><strong><em>coming soon.</em></strong></h1>
-      </center>
-
+    <div class="jumbotron jumbotron-fluid big-banner col-12">
+      <div class="container col-6">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" >Library</li>
+          </ol>
+        </nav>
+        <p class="text-uppercase" style="color: white;font-size: 50px; text-align: left;;">Tour</p>
+      </div>
+      <hr color="white" style="width: 5%; margin-left: 400px; border: 2px white solid ;">
+      <div class="container col-6"></div>
     </div>
+
+    <b>Visit by Destination:</b>
+    
+    <div class="row-md-7">
+        <b style="color: rgb(9, 8, 88);margin-top: 100px; font-size: 40px;">Tours </b>
+    </div>
+    <hr style="width: 15%;color:  rgb(9, 8, 88); margin-left: 650px; border: dotted;">
+
+    <div class="container">
+      <div class="row" style="margin-left: 20px;">
+        <img src="/images/a.jpg" class="circle" width="200" height="200">
+        <p class="text">FRANCE</p>
+        <img src="/images/m.jpg" class="circle" width="200" height="200">
+        <p class="text" style="margin-left: 400px; color: black;">FRANCE</p>
+        <img src="/images/d.jpg" class="circle" width="200" height="200">
+        <p class="text" style="margin-left: 650px;">FRANCE</p>
+        <img src="/images/b.jpg" class="circle" width="200" height="200">
+        <p class="text" style="margin-left: 900px; color:white;">FRANCE</p>
+      </div>
+    </div>
+
+    <select class="custom-select space col-md-2" style="margin-left: 950px; margin-top: 40px; margin-bottom: ;" id="validationTooltip04" required>
+      <option selected disabled value="">Tour Type</option>
+      <option>...</option>
+    </select>
+    <div class="container" style="margin-top: 8;">
+      <div class="row">
+        <div class="col-md-3">
+          <div id="form">
+            <form>
+              <h4>Search Tour</h4>
+              <label>Find Your Dream Tour Today!</label>
+              <input type="text" class="form-control space" id="validationTooltip01" value="Select Tour" required">
+              <select class="custom-select space" id="validationTooltip04" required>
+                <option selected disabled value="">Tour Type</option>
+                <option>...</option>
+              </select>
+              <br>
+              <select class="custom-select space" id="validationTooltip04" required>
+                <option selected disabled value="">Destination</option>
+                <option>...</option>
+              </select>
+              <select class="custom-select space" id="validationTooltip04" required>
+                <option selected disabled value="">Month</option>
+                <option>...</option>
+              </select>
+              <a href="#" class="button space">Read More</a>
+            </form>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card shadow" style="width: 25rem;">
+            <img src="/images/new-york.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pull-left">Anchorage to La Paz</h5><br>
+              <h6 style="margin-right:220px;"><i class="far fa-clock clock"></i> 6 Days - 5 Nights</h6>
+              <p class=" pull-left" style="margin-bottom: 0px;margin-top: 5px;">Some quick example text to build on the card.Lorem Ipsum text for trial basis to check alignment</p><br>
+            </div>
+            <div id="forms">
+              <form>
+                <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star-half pull-left star" aria-hidden="true"></i><a href="#" class="b1 pull-right">Read More</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <div class="card shadow" style="width: 25rem;">
+            <img src="/images/new-york.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pull-left">Anchorage to La Paz</h5><br>
+              <h6 style="margin-right:220px;"><i class="far fa-clock clock"></i> 6 Days - 5 Nights</h6>
+              <p class=" pull-left" style="margin-bottom: 0px;margin-top: 5px;">Some quick example text to build on the card.Lorem Ipsum text for trial basis to check alignment</p><br>
+            </div>
+            <div id="forms">
+              <form>
+                <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star-half pull-left star" aria-hidden="true"></i><a href="#" class="b1 pull-right">Read More</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 25rem;">
+              <img src="/images/new-york.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title pull-left">Anchorage to La Paz</h5><br>
+                <h6 style="margin-right:220px;"><i class="far fa-clock clock"></i> 6 Days - 5 Nights</h6>
+                <p class=" pull-left" style="margin-bottom: 0px;margin-top: 5px;">Some quick example text to build on the card.Lorem Ipsum text for trial basis to check alignment</p><br>
+              </div>
+              <div id="forms">
+                <form>
+                  <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star-half pull-left star" aria-hidden="true"></i><a href="#" class="b1 pull-right">Read More</a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 25rem;">
+              <img src="/images/new-york.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title pull-left">Anchorage to La Paz</h5><br>
+                <h6 style="margin-right:220px;"><i class="far fa-clock clock"></i> 6 Days - 5 Nights</h6>
+                <p class=" pull-left" style="margin-bottom: 0px;margin-top: 5px;">Some quick example text to build on the card.Lorem Ipsum text for trial basis to check alignment</p><br>
+              </div>
+              <div id="forms">
+                <form>
+                  <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star-half pull-left star" aria-hidden="true"></i><a href="#" class="b1 pull-right">Read More</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 25rem;">
+              <img src="/images/new-york.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title pull-left">Anchorage to La Paz</h5><br>
+                <h6 style="margin-right:220px;"><i class="far fa-clock clock"></i> 6 Days - 5 Nights</h6>
+                <p class=" pull-left" style="margin-bottom: 0px;margin-top: 5px;">Some quick example text to build on the card.Lorem Ipsum text for trial basis to check alignment</p><br>
+              </div>
+              <div id="forms">
+                <form>
+                  <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star-half pull-left star" aria-hidden="true"></i><a href="#" class="b1 pull-right">Read More</a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 25rem;">
+              <img src="/images/new-york.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title pull-left">Anchorage to La Paz</h5><br>
+                <h6 style="margin-right:220px;"><i class="far fa-clock clock"></i> 6 Days - 5 Nights</h6>
+                <p class=" pull-left" style="margin-bottom: 0px;margin-top: 5px;">Some quick example text to build on the card.Lorem Ipsum text for trial basis to check alignment</p><br>
+              </div>
+              <div id="forms">
+                <form>
+                  <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i> <i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star pull-left star" aria-hidden="true"></i><i class="fa fa-star-half pull-left star" aria-hidden="true"></i><a href="#" class="b1 pull-right">Read More</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-md-4">
+        <nav aria-label="...">
+          <ul class="pagination pagination-md">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">
+                1
+                <span class="sr-only">(current)</span>
+              </span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+          </ul>
+        </nav>
+      </div>
+     
     <!-- Tour END -->
 
     <%- include('partials/footer.ejs') %>
