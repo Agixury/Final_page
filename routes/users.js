@@ -27,7 +27,10 @@ router.post('/register', userService.validateRegisterInputs, async (req, res) =>
 		const user = await db.User.create(params);
 		const token = jwt.sign({ sub: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 		user.token = token;
-		return res.json({ message: 'user created', user: user });
+		// console.log(user);
+		res.render('index.ejs',{user:user});
+		return;
+		// return res.json({ message: 'user created', user: user });
 	} catch (err) {
 		console.error(err.name, ' ', err.message);
 		return res.status(500).json({ error: err.name, message: err.message });
@@ -56,7 +59,7 @@ router.post('/login', userService.validateLoginInputs, async (req, res) => {
 
 		const token = jwt.sign({ sub: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 		user.token = token;
-		return res.send({ user: user, token: token });
+		res.render('index.ejs',{user:user});
 	} catch (err) {
 		console.error(err.name, ' ', err.message);
 		return res.status(500).json({ error: err.name, message: err.message });

@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-	return res.render('index');
+	return res.render('index',{user:{}});
 });
 
 router.get('/hotels', (req, res) => {

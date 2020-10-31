@@ -1,7 +1,9 @@
 const loginForm = document.getElementById('loginForm');
 const registerForm = document.getElementById('registerForm');
 const authFormContainer = document.getElementById('authFormContainer');
-
+if(localStorage.getItem('token')){
+	authFormContainer.style.display = 'none';
+}
 const loginHandler = async (event) => {
 	event.preventDefault();
 
@@ -33,7 +35,7 @@ const loginHandler = async (event) => {
 
 			localStorage.setItem('user', JSON.stringify(resp.data.user));
 			localStorage.setItem('token', resp.data.token);
-			alert('Logged in successfully');
+			alert('Logged in successfully. Click OK');
 			authFormContainer.style.display = 'none';
 		})
 		.catch((err) => {
