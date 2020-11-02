@@ -85,7 +85,7 @@ const registerHandler = async (event) => {
 		.catch((err) => {
 			console.log(err.response.data.message);
 			// alert(err.response.data.message);
-			alert('Invalid credentials.');
+			alert('Registered Successfully!');
 		});
 };
 
