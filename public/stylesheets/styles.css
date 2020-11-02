@@ -12,6 +12,68 @@ body {
   max-width: 100%;
 }
 
+.big-banner{
+  background-image: url(/images/BG.jpg);
+  width: 2000px;
+}
+.circle{
+  border-radius:50%;
+  margin-left: 50px;
+}
+
+.space{
+  margin-bottom: 10px;
+}
+.clock{
+  color: orange;
+}
+#form{
+  border: 1px white solid;
+  border-radius: 10px;
+  background-color: lightgray;
+  padding: 5%;
+}
+#forms{
+  border: 1px white solid;
+  border-radius: 0;
+  background-color: lightgray;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.button{
+    background:rgb(9, 8, 88);
+  
+    padding:10px 20px 10px 20px;
+    border-radius:10px 10px 10px 10px;
+    color:white;
+    margin-top: 10px;
+}
+
+.b1{
+  background:rgb(9, 8, 88);
+
+  padding:10px 20px 10px 20px;
+  border-radius:0 20px 0 20px;
+  color:white;
+  margin-top: 10px;
+  margin-right: 10px;
+  }
+
+.star{
+    margin-top: 25px;
+    margin-left: 10px;
+    color:orange;
+  }
+.text{
+  color:white;
+  font-size: 20px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin-top: 65px;
+  border: 2  solid;
+  margin-left: 150px;
+  text-shadow: 0 0 0 black;
+}
 /* custom scroll bar */
 
 ::-webkit-scrollbar {
@@ -105,6 +167,16 @@ header .nav-1 .lists ul li a {
   opacity: 0.7;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media (max-width:995px){
+
+  header .nav-1 .lists ul li a {
+    
+    padding: 10px 10px;
+    
+  }
+
 }
 .nav-1 .lists ul li a.active {
   color: black;
@@ -443,7 +515,7 @@ header {
 }
 
 .container{
-  margin-top:5%;
+  /* margin-top:5%; */
 }
 
 .card-wrap{
@@ -669,6 +741,83 @@ footer {
 
 /* Footer css END
 ============================================================================================ */
+
+
+
+ /* .newsletter ssection start  */
+ 
+ .newsletter_container{
+  width: auto;
+  font-family: 'Baloo Bhai 2', cursive;
+ 
+}
+
+.newsletter_brand{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+cursor: pointer;
+line-height: initial;
+filter: drop-shadow( 2px 4px 30px rgba(0, 0, 0, 0.7));     
+font-family: 'Roboto', sans-serif  ;
+}
+
+.newsletter{
+  /* justify-content: space-between; */
+  /* letter-spacing: 2px; */
+  /* color: whitesmoke; */
+  font-family: 'Grenze Gotisch', cursive !important;
+}
+.newsletters{
+  font-family: 'Roboto', sans-serif  ;
+  /* filter: drop-shadow(-1px 5px 20px rgba(0, 0, 0, 0.7)); */
+   font-weight: bolder;
+}
+
+ 
+   
+.subscribe{
+  display: flex;
+  display: block;
+  margin-left: 100%;
+  margin-top: -38px ;
+cursor: pointer;
+/* border: 2px solid black; */
+background-color: red;
+color: white;
+padding: 0.61rem;
+/* border-radius: 3px; */
+ 
+
+}
+
+@media (max-width:770px){
+
+  .Slogans {
+    display: none;
+  }
+}
+@media (max-width:1095px){
+
+  .subscribe {
+    margin-left: auto;
+  }
+   
+}
+
+/* @media only screen and (max-width: 1110px) {
+  .white_newsletter {
+    display: none;
+  }
+}
+  */
+
+  /* .newsletter ssection end */
+
+
+
 
 /* Header style css ======================================= BEGINS ==================================== */
 /* Media queries for the header and bg section */
