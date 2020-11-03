@@ -1189,37 +1189,7 @@ body {
 #zig{
   margin-top: -10px;
 }
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
 .bah{
   text-align: left;
   margin-left: -69px;
@@ -1238,5 +1208,84 @@ body {
   margin-top: -10px;
   margin-bottom: -30px;
 }
+pre{
+  font-size: 20px;
+}
+hr{ 
+ 
+  height: 1px; 
+  background: black; 
+}
+.mount{
+  border-style: solid;
+  border-width: medium;
+}  
+#gym{
+  margin-top: -90px;
+}
+
+
+
+.middle{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+.btn{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: #F1F1F1F1;
+	margin: 10px;
+	border-radius: 30%;
+	color: #3498DB;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 5px 15px -5px #00000070;color: #3498DB;
+}
+.btn i{
+	line-height: 90px;
+	font-size: 26px;
+	transition: 0.2s linear;
+}
+.btn:hover i{
+	transform: scale(1.3);
+	color: #F1F1F1;
+}
+.btn::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #3498DB;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+.btn:hover:before{
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+@keyframes aaa{
+	0%{
+	   top: 90%;
+	   left: -110%;
+	}50%{
+	   left: 10%;
+	   top: -30%;
+	}
+	100%{
+		top: -10%;
+		left: -10%;
+	}
+}
+
+.container6{
+  float: right;
+}
+
 
 /*End of the Blogs*/

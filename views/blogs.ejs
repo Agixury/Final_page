@@ -4,7 +4,8 @@
 <head>
     <%- include('partials/head.ejs') %>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -32,45 +33,47 @@
       </center>  -->
 
       <div class="container ">  
-        <h3 style="text-align: left;">Europe</h3>
+        <h3 style="text-align: left; ">Europe</h3>
         <hr style="width: 65%;">    
         <div class="row">
           <div class="col-sm-4 ">
             <img src="images/p.jpg" alt="" height="200px">
             <h5 style="font-weight: bold;">When is the best time to visit Europe</h5>
             <p>By Man | October 2020</p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-            Ut enim ad minim veniam.
+            <p style="font-weight: bold;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam.</p>
           </div>
           <div class="col-sm-4">
             <img src="images/p.jpg" alt="" height="200px">
             <h5 style="font-weight: bold;">When is the best time to visit Europe</h5>
             <p>By Man | October 2020</p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.    
+            <p style="font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam.</p>
           </div>
           
           <div class="col-sm-4 ">
             <h3>Contact With Us</h3>
             <hr style="width: 100%;">
-            
-            <div class="col">
-              <div class="row-sm-3">
-                <a href="#" class="fa fa-facebook">FACEBOOK</a>
-
-              </div>
-              <div class="row-sm-3">
-                <a href="#" class="fa fa-twitter">TWITTER</a>
-              </div>
-              <div class="row-sm-3">
-                <a href="#" class="fa fa-linkedin">LINKEDIN</a>
-              </div>
-              <div class="row-sm-3">
-                <a href="#" class="fa fa-google">GOOGLE</a>
-              </div>
-              
-              
+          <div class="container">
+            <div class="middle">
+              <a class="btn" href="#">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn" href="#">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn" href="#">
+                <i class="fab fa-google"></i>
+                </a>
+                <a class="btn" href="#">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn" href="#">
+                <i class="fab fa-youtube"></i>
+                </a>  
 
             </div>
+          </div>  
     
           </div>
         </div>
@@ -165,13 +168,16 @@
           <div class="col-sm-4 ">
             <h4>FACEBOOK FEED</h4>
             <hr style="width: 100%; font-weight: bold;">
-              
+            <div class="container p-3 my-3 border">
+              <h1>Our Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus tincidunt sapien.</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="container"> 
            
-        <div class="row">
+        <div class="row" id="gym">
           <div class="col-sm-4 ">
             <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
             <h6 class="mom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  </h6>
@@ -183,11 +189,14 @@
             <p class="sil">By Man | October 2020</p>
           </div>
           <div class="col-sm-4 ">
-                
+            <div class="container p-3 my-3 border">
+              <h1>Our Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus tincidunt sapien.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container">     
+      <div class="container" id="gym">     
         <div class="row">
           <div class="col-sm-4 ">
             <img style="float:left" src="images/p.jpg" alt="" height="150px" width="150px">
@@ -205,7 +214,7 @@
         </div>
       </div>
       <div class="con">
-      <div class="container">     
+      <div class="container" >     
         <div class="row">
           <div class="col-sm-2 ">
             <img style="float: inline-start;" src="images/p.jpg" alt="" height="150px" width="150px">
@@ -222,11 +231,33 @@
             <p class="hello">Sed ut perspiciatis unde omnis iste natus.</p> 
             <p class="mo">By Man | October 2020</p>  
           </div>
-          <div class="col-sm-6">
-            <h4 style="text-align: left; padding-left: 90px;">ON INSTAGRAM</h4>
-            <hr style="width: 100%;"> 
-                
+
+        
+          
+          <div class="col-sm-2">
+            
+            <div class="container p-3 my-3 border">
+              <h1> Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
+          <div class="col-sm-2">
+            <div class="container p-3 my-3 border">
+              <h1> Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           
+          </div>
+          <div class="col-sm-2">
+            <div class="container p-3 my-3 border">
+              <h1> Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            
+
+
+        </div>
+          
           
         </div>
       </div>
@@ -248,12 +279,23 @@
             <p class="mo">By Man | October 2020</p>  
           </div>
           <div class="col-sm-2">
-                
+            <div class="container p-3 my-3 border">
+              <h1> Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
           <div class="col-sm-2">
+            <div class="container p-3 my-3 border">
+              <h1> Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
            
           </div>
           <div class="col-sm-2">
+            <div class="container p-3 my-3 border">
+              <h1>Posts</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
            
           </div>
         </div>
