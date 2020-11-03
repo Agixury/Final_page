@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Playfair+Display+SC:wght@700&family=Volkhov&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -93,11 +94,15 @@ body {
 }
 
 body {
-  overflow-x: hidden;
+   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   font-family: 'SegoeUI';
   text-align: center;
-  background-color: #ffffff;
+background-image:url('https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg') ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 }
 #authFormContainer{
     padding-top: 40px;
@@ -831,8 +836,6 @@ padding: 0.61rem;
 
 @media only screen and (max-width: 100px) {
   .head_cont {
-    background: url('../images/tab.jpg');
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -857,12 +860,37 @@ padding: 0.61rem;
 
 .head_cont {
   /* The image used */
-  background-image: url('../images/web.jpg');
+ 
   /* Full height */
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.mainhead{
+  position: absolute;
+  top:44vh;
+  left:38%;
+}
+
+.hometext1{
+  color: #ffeaea;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.hometext{
+  color: white; 
+  font-size: 30px;
+  font-family: 'Volkhov', serif;
+}
+
+@media (max-width: 766px){
+  .mainhead{
+    display: none;
+  }
 }
 
 .row-header-empty {
