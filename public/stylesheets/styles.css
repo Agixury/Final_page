@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Playfair+Display+SC:wght@700&family=Volkhov&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -98,11 +97,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: 'SegoeUI';
   text-align: center;
-  background-image:url('https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg') ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #ffffff;
 }
 #authFormContainer{
     padding-top: 40px;
@@ -172,6 +167,16 @@ header .nav-1 .lists ul li a {
   opacity: 0.7;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media (max-width:995px){
+
+  header .nav-1 .lists ul li a {
+    
+    padding: 10px 10px;
+    
+  }
+
 }
 .nav-1 .lists ul li a.active {
   color: black;
@@ -510,7 +515,7 @@ header {
 }
 
 .container{
-  margin-top:5%;
+  /* margin-top:5%; */
 }
 
 .card-wrap{
@@ -737,6 +742,83 @@ footer {
 /* Footer css END
 ============================================================================================ */
 
+
+
+ /* .newsletter ssection start  */
+ 
+ .newsletter_container{
+  width: auto;
+  font-family: 'Baloo Bhai 2', cursive;
+ 
+}
+
+.newsletter_brand{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+cursor: pointer;
+line-height: initial;
+filter: drop-shadow( 2px 4px 30px rgba(0, 0, 0, 0.7));     
+font-family: 'Roboto', sans-serif  ;
+}
+
+.newsletter{
+  /* justify-content: space-between; */
+  /* letter-spacing: 2px; */
+  /* color: whitesmoke; */
+  font-family: 'Grenze Gotisch', cursive !important;
+}
+.newsletters{
+  font-family: 'Roboto', sans-serif  ;
+  /* filter: drop-shadow(-1px 5px 20px rgba(0, 0, 0, 0.7)); */
+   font-weight: bolder;
+}
+
+ 
+   
+.subscribe{
+  display: flex;
+  display: block;
+  margin-left: 100%;
+  margin-top: -38px ;
+cursor: pointer;
+/* border: 2px solid black; */
+background-color: red;
+color: white;
+padding: 0.61rem;
+/* border-radius: 3px; */
+ 
+
+}
+
+@media (max-width:770px){
+
+  .Slogans {
+    display: none;
+  }
+}
+@media (max-width:1095px){
+
+  .subscribe {
+    margin-left: auto;
+  }
+   
+}
+
+/* @media only screen and (max-width: 1110px) {
+  .white_newsletter {
+    display: none;
+  }
+}
+  */
+
+  /* .newsletter ssection end */
+
+
+
+
 /* Header style css ======================================= BEGINS ==================================== */
 /* Media queries for the header and bg section */
 #social-button-last {
@@ -749,6 +831,8 @@ footer {
 
 @media only screen and (max-width: 100px) {
   .head_cont {
+    background: url('../images/tab.jpg');
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -773,35 +857,12 @@ footer {
 
 .head_cont {
   /* The image used */
+  background-image: url('../images/web.jpg');
   /* Full height */
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.mainhead{
-  position: absolute;
-  top:44vh;
-  left:38%;
-}
-
-.hometext1{
-  color: #ffeaea;
-  font-size: 50px;
-  font-weight: bold;
-  font-family: 'Playfair Display SC', serif;
-}
-
-.hometext{
-  color: white; 
-  font-size: 30px;
-  font-family: 'Volkhov', serif;
-}
-
-@media (max-width: 766px){
-  .mainhead{
-    display: none;
-  }
 }
 
 .row-header-empty {
