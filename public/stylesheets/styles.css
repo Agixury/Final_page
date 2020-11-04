@@ -1132,7 +1132,7 @@ padding: 0.61rem;
 * {box-sizing: border-box;}
 
 body {
-  margin: 0;
+  margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1140,6 +1140,7 @@ body {
   overflow: hidden;
   background-color: #e9e9e9;
   margin-bottom: -39px;
+  margin-top: 10px;
 }
 
 .topnav a {
@@ -1205,12 +1206,16 @@ body {
 .col-sm-4{
   text-align: left;
 }
+#dad{
+  margin-top: 30px;
+}
 .mom{
   font-size: small;
   font-weight: bold;
   padding-left: 3px;
   margin-right: 3px;
 }
+
 .sil{
   font-size: x-small;
 }
@@ -1230,6 +1235,7 @@ body {
 }
 .con{
   margin-right: auto;
+  margin-top: 30px;
 }
 #zig{
   margin-top: -10px;
@@ -1266,71 +1272,74 @@ hr{
   border-width: medium;
 }  
 #gym{
+  margin-top: 10px;
+}
+#gym1{
   margin-top: -90px;
 }
 
 
-
 .middle{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-	text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  display : flex;
+  justify-content: centre;
+  align-items: center;
 }
 .btn{
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	background: #F1F1F1F1;
-	margin: 10px;
-	border-radius: 30%;
-	color: #3498DB;
-	overflow: hidden;
-	position: relative;
-	box-shadow: 0 5px 15px -5px #00000070;color: #3498DB;
+  display: inline-block;
+  padding: 15px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+  
 }
 .btn i{
-	line-height: 90px;
-	font-size: 26px;
-	transition: 0.2s linear;
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
 }
 .btn:hover i{
-	transform: scale(1.3);
-	color: #F1F1F1;
+  transform: scale(1.3);
+  color: #f1f1f1;
 }
 .btn::before{
-	content: "";
-	position: absolute;
-	width: 120%;
-	height: 120%;
-	background: #3498DB;
-	transform: rotate(45deg);
-	left: -110%;
-	top: 90%;
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
 }
-.btn:hover:before{
-	animation: aaa 0.7s 1;
-	top: -10%;
-	left: -10%;
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
 }
-@keyframes aaa{
-	0%{
-	   top: 90%;
-	   left: -110%;
-	}50%{
-	   left: 10%;
-	   top: -30%;
-	}
-	100%{
-		top: -10%;
-		left: -10%;
-	}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
 }
 
 .container6{
   float: right;
 }
-
 
 /*End of the Blogs*/
