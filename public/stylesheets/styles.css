@@ -98,11 +98,13 @@ body {
   text-rendering: optimizeLegibility;
   font-family: 'SegoeUI';
   text-align: center;
-background-image:url('https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg') ;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
+}
+.homepageback{
+  background-image:url('https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #authFormContainer{
     padding-top: 40px;
@@ -889,8 +891,23 @@ padding: 0.61rem;
 
 @media (max-width: 766px){
   .mainhead{
-    display: none;
-  }
+  position: absolute;
+  top:35vh;
+  left:33%;
+}
+
+.hometext1{
+  color: #ffeaea;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.hometext{
+  color: white; 
+  font-size: 25px;
+  font-family: 'Volkhov', serif;
+}
 }
 
 .row-header-empty {
