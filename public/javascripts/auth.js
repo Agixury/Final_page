@@ -1,8 +1,31 @@
 const loginForm = document.getElementById('loginForm');
 const registerForm = document.getElementById('registerForm');
 const authFormContainer = document.getElementById('authFormContainer');
+const logoutbutton = document.getElementById('logoutButton');
+function capitalizeFirstLetter(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1);
+}
 if(localStorage.getItem('token')){
 	authFormContainer.style.display = 'none';
+	let userx=JSON.parse(localStorage.getItem('user'));
+	let tosend=capitalizeFirstLetter(userx.firstName)+" "+capitalizeFirstLetter(userx.lastName);
+	document.getElementById("loginButton").innerHTML = '<div class="dropdown"><button id="dropbtn"><em><strong><div id="userName">User</div></strong></em></button><div id="myDropdown" class="dropdown-content"><a id="logoutdesktop" href="#">Logout</a></div></div>';
+	document.getElementById("userName").innerText = `${tosend}`;
+	document.getElementById("dropbtn").addEventListener('click', ()=>{
+		document.getElementById("myDropdown").classList.toggle("show");
+	});
+	document.getElementById('logoutdesktop').addEventListener('click',async ()=>{
+		localStorage.removeItem('user');
+		localStorage.removeItem('token');
+		window.location.reload();
+	});
+	document.getElementById('loginButtonmobileview').innerText = tosend;
+	document.getElementById('logoutButton').innerText = 'LOGOUT';
+	document.getElementById('logoutButton').addEventListener('click',async ()=>{
+		localStorage.removeItem('user');
+		localStorage.removeItem('token');
+		window.location.reload();
+	});
 }
 const loginHandler = async (event) => {
 	event.preventDefault();
@@ -32,11 +55,11 @@ const loginHandler = async (event) => {
 		.then((resp) => {
 			// console.log('[DEBUG] resp: ', resp);
 			// console.log('[DEBUG] resp.data: ', resp.data);
-
 			localStorage.setItem('user', JSON.stringify(resp.data.user));
 			localStorage.setItem('token', resp.data.token);
 			alert('Logged in successfully. Click OK');
 			authFormContainer.style.display = 'none';
+			window.location.reload();
 		})
 		.catch((err) => {
 			// console.log(err.response);
@@ -81,13 +104,23 @@ const registerHandler = async (event) => {
 			alert('Registered successfully');
 
 			authFormContainer.style.display = 'none';
+			window.location.reload();
 		})
 		.catch((err) => {
 			console.log(err.response.data.message);
 			// alert(err.response.data.message);
 			alert('Invalid credentials.');
+			window.location.reload();
 		});
 };
 
+// const logoutHandler = async (event) => {
+// 	// event.preventDefault();
+// 	localStorage.removeItem('user');
+// 	localStorage.removeItem('token');
+// 	window.location.reload();
+// }
+
 loginForm.addEventListener('submit', loginHandler);
 registerForm.addEventListener('submit', registerHandler);
+// logoutbutton.addEventListener('click',logoutHandler);

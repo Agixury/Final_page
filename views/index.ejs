@@ -489,7 +489,11 @@
       $('#loginButtonmobileview').click(function(){
         $('#loginModal').modal('show');
     });
-
+    if(window.innerWidth>641){
+        $("#logoutButton").hide();
+    }else{
+        $("logoutButton").show();
+    }
     function close_newsletter(){
         var close=document.getElementById("close-component");
         close.innerHTML='';

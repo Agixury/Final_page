@@ -28,9 +28,7 @@ router.post('/register', userService.validateRegisterInputs, async (req, res) =>
 		const token = jwt.sign({ sub: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 		user.token = token;
 		// console.log(user);
-		res.render('index.ejs',{user:user});
-		return;
-		// return res.json({ message: 'user created', user: user });
+		return res.json({ message: 'user created', user: user });
 	} catch (err) {
 		console.error(err.name, ' ', err.message);
 		return res.status(500).json({ error: err.name, message: err.message });
@@ -59,7 +57,7 @@ router.post('/login', userService.validateLoginInputs, async (req, res) => {
 
 		const token = jwt.sign({ sub: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 		user.token = token;
-		res.render('index.ejs',{user:user});
+		return res.json({ message: 'user created', user: user });
 	} catch (err) {
 		console.error(err.name, ' ', err.message);
 		return res.status(500).json({ error: err.name, message: err.message });
