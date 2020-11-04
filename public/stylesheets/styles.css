@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Playfair+Display+SC:wght@700&family=Volkhov&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +79,6 @@ body {
 }
 .button{
     background:rgb(9, 8, 88);
-  
     padding:10px 20px 10px 20px;
     border-radius:10px 10px 10px 10px;
     color:white;
@@ -87,7 +87,6 @@ body {
 
 .b1{
   background:rgb(9, 8, 88);
-
   padding:10px 20px 10px 20px;
   border-radius:0 20px 0 20px;
   color:white;
@@ -133,8 +132,16 @@ body {
   text-rendering: optimizeLegibility;
   font-family: 'SegoeUI';
   text-align: center;
-  background-color: #ffffff;
 }
+
+.homepageback{
+  background-image:url('https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #authFormContainer{
     padding-top: 40px;
  }
@@ -203,6 +210,16 @@ header .nav-1 .lists ul li a {
   opacity: 1;
   white-space: nowrap;
   overflow: show;
+}
+
+@media (max-width:995px){
+
+  header .nav-1 .lists ul li a {
+    
+    padding: 10px 10px;
+    
+  }
+
 }
 .nav-1 .lists ul li a.active {
   color: black;
@@ -540,9 +557,6 @@ header {
   color: inherit;
 }
 
-.container{
-  margin-top:5%;
-}
 
 .card-wrap{
   width:80%;
@@ -768,6 +782,83 @@ footer {
 /* Footer css END
 ============================================================================================ */
 
+
+
+ /* .newsletter ssection start  */
+ 
+ .newsletter_container{
+  width: auto;
+  font-family: 'Baloo Bhai 2', cursive;
+ 
+}
+
+.newsletter_brand{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+cursor: pointer;
+line-height: initial;
+filter: drop-shadow( 2px 4px 30px rgba(0, 0, 0, 0.7));     
+font-family: 'Roboto', sans-serif  ;
+}
+
+.newsletter{
+  /* justify-content: space-between; */
+  /* letter-spacing: 2px; */
+  /* color: whitesmoke; */
+  font-family: 'Grenze Gotisch', cursive !important;
+}
+.newsletters{
+  font-family: 'Roboto', sans-serif  ;
+  /* filter: drop-shadow(-1px 5px 20px rgba(0, 0, 0, 0.7)); */
+   font-weight: bolder;
+}
+
+ 
+   
+.subscribe{
+  display: flex;
+  display: block;
+  margin-left: 100%;
+  margin-top: -38px ;
+cursor: pointer;
+/* border: 2px solid black; */
+background-color: red;
+color: white;
+padding: 0.61rem;
+/* border-radius: 3px; */
+ 
+
+}
+
+@media (max-width:770px){
+
+  .Slogans {
+    display: none;
+  }
+}
+@media (max-width:1095px){
+
+  .subscribe {
+    margin-left: auto;
+  }
+   
+}
+
+/* @media only screen and (max-width: 1110px) {
+  .white_newsletter {
+    display: none;
+  }
+}
+  */
+
+  /* .newsletter ssection end */
+
+
+
+
 /* Header style css ======================================= BEGINS ==================================== */
 /* Media queries for the header and bg section */
 #social-button-last {
@@ -780,8 +871,6 @@ footer {
 
 @media only screen and (max-width: 100px) {
   .head_cont {
-    background: url('../images/tab.jpg');
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -806,12 +895,53 @@ footer {
 
 .head_cont {
   /* The image used */
-  background-image: url('../images/web.jpg');
+ 
   /* Full height */
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.mainhead{
+  position: absolute;
+  top:50vh;
+  left:38%;
+}
+
+.hometext1{
+  color: #ffeaea;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.hometext{
+  color: white; 
+  font-size: 30px;
+  font-family: 'Volkhov', serif;
+}
+
+@media (max-width: 766px){
+  
+.mainhead{
+  position: absolute;
+  top:35vh;
+  left:33%;
+}
+
+.hometext1{
+  color: #ffeaea;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.hometext{
+  color: white; 
+  font-size: 25px;
+  font-family: 'Volkhov', serif;
+}
 }
 
 .row-header-empty {
@@ -1138,37 +1268,7 @@ body {
 #zig{
   margin-top: -10px;
 }
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
 .bah{
   text-align: left;
   margin-left: -69px;
@@ -1187,5 +1287,84 @@ body {
   margin-top: -10px;
   margin-bottom: -30px;
 }
+pre{
+  font-size: 20px;
+}
+hr{ 
+ 
+  height: 1px; 
+  background: black; 
+}
+.mount{
+  border-style: solid;
+  border-width: medium;
+}  
+#gym{
+  margin-top: -90px;
+}
+
+
+
+.middle{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+.btn{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: #F1F1F1F1;
+	margin: 10px;
+	border-radius: 30%;
+	color: #3498DB;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 5px 15px -5px #00000070;color: #3498DB;
+}
+.btn i{
+	line-height: 90px;
+	font-size: 26px;
+	transition: 0.2s linear;
+}
+.btn:hover i{
+	transform: scale(1.3);
+	color: #F1F1F1;
+}
+.btn::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #3498DB;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+.btn:hover:before{
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+@keyframes aaa{
+	0%{
+	   top: 90%;
+	   left: -110%;
+	}50%{
+	   left: 10%;
+	   top: -30%;
+	}
+	100%{
+		top: -10%;
+		left: -10%;
+	}
+}
+
+.container6{
+  float: right;
+}
+
 
 /*End of the Blogs*/

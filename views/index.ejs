@@ -5,11 +5,17 @@
     <%- include('partials/head.ejs') %>
     <script data-ad-client="ca-pub-1312936521283570" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="homepageback">
+    
+   
     <%- include('partials/header-navbar.ejs') %>
+   
     
     <div id="loginModal" class="modal fade" role="dialog">
         <div id="authFormContainer">
@@ -71,6 +77,11 @@
                 <!--forms-->
             </div>
         </div>
+       
+       <div class="mainhead">
+            <h1 class="hometext1">AGIXURY</h1>
+            <h3 class="hometext">We strive only for the best!</h3>
+        </div>
 
         <div class="container" id="social-button-last">
 
@@ -127,29 +138,48 @@
 
                     </div>
                 </div><br ><br>
-                <div class="row"
-                    style=" width: 100%; height: 80px; margin-top: 9%; position:fixed; z-index: 1; bottom:0; margin-bottom:9.5rem;">
+                <!-- newsletter_container  start -->
+                <div class="row white_newsletter" style=" width: 100%; height: 80px; margin-top: 5%; position:fixed; z-index: 1; bottom:0; margin-bottom:9.5rem;">
                     <!--sub-->
-                    <div id="close-component" class="newsletter" style="background: #0000007C; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px; display: flex; width: 100%;justify-content: space-evenly;">
-                        <div style="color: #ffffff; margin-left:4%; margin-top:2%; font-size: 21px;padding-top: 1%;">
-                            <h3 style="font-size: 2rem;">Never miss a deal</h3>
+                    <div class="newsletter" style="background: white; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px; display: flex; width: 100%;justify-content: space-evenly;">
+                        <div class="deal Slogans" style="color: black; margin-left:16%; margin-top:2%; font-size: 21px;padding-top: 1%;">
+                            <!-- <h3 style="font-size: 3rem;"> Great deals! Never miss a deal</h3> -->
+                            <h3 style="font-size: 3rem;">  Don't Delay!</h3>
+                            <h3 style="font-size: 2rem;">Keep Clam and Carry on</h3>
                             <p class="para-1">
                                 Get the best travel deals in you inbox</p>
+                            </div>
+                    
+                            
+                        
+                            
+                        
+                            <!-- abhi jo naayaa wala newsletter banya h wo start -->
+                            <div class="container newsletter_container">
+                            <nav class="navbar navbar-light  ">
+                                <a class="navbar-brand newsletter_brand" href="#">
+                                    <img class="email_logo" src= "http://i.xp.io/17PJiVmY.png" width="55px" height="50px" class="d-inline-block align-top" alt="email-logo" loading="lazy">
+                                <span class="newsletters" style="color: black;"> NEWSLETTER    </span>  
+                            </a>
+                              </nav>
+                              <span class="tag_line">Stay up to date with our latest offers,alters and services. </span>
+                            
+                              
+                               
+                              <label for="exampleInputEmail1"></label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your Email">
+                              
+                              <input class="subscribe" type="submit" value="SUBSCRIBE">
+                              <span>Your email is safe with us,we don't spam.</span>
+                            </div>
+                            
+                            
+                            
+                            <!-- abhi jo banya h wo end -->
                         </div>
-                        <div class="Subscribe" style="float: right;margin-right: 10%; padding-top: 1%;position:absoluete;z-index: 5; flex: 0.6;">
-                            <h5 class="para-2"style="color: #fff;">Subscribe to our Newsletter</h5>
-                            <form action="#">
-                                <div style="display: flex;">
-                                    <input class="input" type="text" placeholder="Please enter your Email" style="padding: 11px; width: 450px;margin-left:40px;">
-                                    <input type="submit" value="SUBSCRIBE" style="padding: 13px; background-color: orangered; color: white;">
-                                </div>
-                                <label style="margin-left:40px;color: #ffffff;text-align: left;"><input type="checkbox" name="t&c"> I, agree to the <a
-                                        href="#">Terms & conditions</a> and would like to subscribe to offers,alerts and services. </label>
-                            </form>
-                        </div>
-                        <span onclick="close_newsletter()" style="margin-right:-7%; margin-top:5px; cursor: pointer;"><i style="color: white;" class="far fa-2x fa-times-circle"></i></span>
                     </div>
                 </div>
+                <!-- newsletter_container  end -->
             </div>
             
         </div>
@@ -159,7 +189,7 @@
 
 
     <!--list-->
-    <div class="container" style="z-index: 0;">
+    <br><br><br><div class="container" style="z-index: 0;">
      <a href="/packages">
         <div class="card-wrap">
             <div class="row">
