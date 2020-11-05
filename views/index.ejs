@@ -8,16 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="homepageback">
+    
+   
     <%- include('partials/header-navbar.ejs') %>
+   
     
     <div id="loginModal" class="modal fade" role="dialog">
         <div id="authFormContainer">
@@ -79,6 +77,11 @@
                 <!--forms-->
             </div>
         </div>
+       
+       <div class="mainhead">
+            <h1 class="hometext1">AGIXURY</h1>
+            <h3 class="hometext">We strive only for the best!</h3>
+        </div>
 
         <div class="container" id="social-button-last">
 
@@ -136,50 +139,52 @@
                     </div>
                 </div><br ><br>
                 <!-- newsletter_container  start -->
-                <div id="newsletter_white_background"  class="row white_newsletter" style=" width: 100%; height: 80px; margin-top: 5%; position:fixed; z-index: 1; bottom:0; margin-bottom:9.5rem;">
-                    <!--sub-->
-                    <div class="newsletter" style="background: white; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px; display: flex; width: 100%;justify-content: space-evenly;">
-                        <div id="Slogans_id" class="deal Slogans" style="color: black; margin-left:16%; margin-top:2%; font-size: 21px;padding-top: 1%;">
-                            <!-- <h3 style="font-size: 3rem;"> Great deals! Never miss a deal</h3> -->
-                            <h3 style="font-size: 3rem;">  Don't Delay!</h3>
-                            <h3 style="font-size: 2rem;">Keep Clam and Carry on</h3>
-                            <p class="para-1">
-                                Get the best travel deals in you inbox</p>
-                            </div>
-                            
-                            <div id="newsletter_id" class="container newsletter_container ">
-                             <nav class="navbar navbar-light  ">
-                                <a class="navbar-brand newsletter_brand" href="#">
-                                    <img class="email_logo" src= "http://i.xp.io/17PJiVmY.png" width="55px" height="50px" class="d-inline-block align-top" alt="email-logo" loading="lazy">
-                                <span class="newsletters" style="color: black;"> NEWSLETTER    </span>  
-                            </a>
-                              </nav>
-                              <span class="tag_line">Stay up to date with our latest offers,alters and services. </span>
-                            
-                              
-                               
-                               <form    action="#"> 
-                              <input  onclick="ValidateEmail()"  type="email" class="form-control" id="MyEmail1" name="Email"  aria-describedby="emailHelp" placeholder="Please enter your Email" required>
-                              
-                               <input id="subscribe_button" onclick="subscribefunction()" class="subscribe" type="submit" value="SUBSCRIBE"  >
-                               
-                            </form>
-                              <span>Your email is safe with us,we don't spam.</span>
-                            </div>
-                            
-                                 <span id="blackclosebotton" onclick="close_newsletter()">
-                                    <i class="far fa-times-circle" style="font-size: 40px; cursor: pointer; color:rgba(140, 153, 255  ); position: relative;"></i>
-
-                                </span>
-
-
-
-
-                            
-                             
+               <!-- newsletter_container  start -->
+               <div id="newsletter_white_background"  class="row white_newsletter" style=" width: 100%; height: 80px; margin-top: 5%; position:fixed; z-index: 1; bottom:0; margin-bottom:9.5rem;">
+                <!--sub-->
+                <div class="newsletter" style="background: white; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px; display: flex; width: 100%;justify-content: space-evenly;">
+                    <div id="Slogans_id" class="deal Slogans" style="color: black; margin-left:16%; margin-top:2%; font-size: 21px;padding-top: 1%;">
+                        <!-- <h3 style="font-size: 3rem;"> Great deals! Never miss a deal</h3> -->
+                        <h3 style="font-size: 3rem;">  Don't Delay!</h3>
+                        <h3 style="font-size: 2rem;">Keep Clam and Carry on</h3>
+                        <p class="para-1">
+                            Get the best travel deals in you inbox</p>
                         </div>
+                        
+                        <div id="newsletter_id" class="container newsletter_container ">
+                         <nav class="navbar navbar-light  ">
+                            <a class="navbar-brand newsletter_brand" href="#">
+                                <img class="email_logo" src= "http://i.xp.io/17PJiVmY.png" width="55px" height="50px" class="d-inline-block align-top" alt="email-logo" loading="lazy">
+                            <span class="newsletters" style="color: black;"> NEWSLETTER    </span>  
+                        </a>
+                          </nav>
+                          <span class="tag_line">Stay up to date with our latest offers,alters and services. </span>
+                        
+                          
+                           
+                           <form    action="#"> 
+                          <input  onclick="ValidateEmail()"  type="email" class="form-control" id="MyEmail1" name="Email"  aria-describedby="emailHelp" placeholder="Please enter your Email" required>
+                          
+                           <input id="subscribe_button" onclick="subscribefunction()" class="subscribe" type="submit" value="SUBSCRIBE"  >
+                           
+                        </form>
+                          <span>Your email is safe with us,we don't spam.</span>
+                        </div>
+                        
+                             <span id="blackclosebotton" onclick="close_newsletter()">
+                                <i class="far fa-times-circle" style="font-size: 40px; cursor: pointer; color:rgba(140, 153, 255  ); position: relative;"></i>
+
+                            </span>
+
+
+
+
+                        
+                         
                     </div>
                 </div>
+            </div>
+            <!-- newsletter_container  end -->
                 <!-- newsletter_container  end -->
             </div>
             
@@ -521,9 +526,13 @@
         $('#loginModal').modal('show');
     });
 
-  
+    function close_newsletter(){
+        var close=document.getElementById("close-component");
+        close.innerHTML='';
+    }
 
-function close_newsletter(){
+
+    function close_newsletter(){
 document.getElementById("newsletter_white_background").style.display="none";
      
 }
@@ -544,12 +553,7 @@ function subscribefunction(){
  
 }
 
-
+    
 </script>
 
 </html>
-
-
-
- 
-    
