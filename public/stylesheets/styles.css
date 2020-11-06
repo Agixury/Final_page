@@ -54,23 +54,18 @@ body {
   width: 2000px;
 }
 
-.col-12
-{
+.col-12{
   background-image: url(/images/lake.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-origin: initial;
 }
 
 .circle{
   border-radius:50%;
   margin-left: 50px;
-}
-
-.col-12{
-  background-image: url(/images/frankfurt.jpg);
 }
 
 .space{
