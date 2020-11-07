@@ -1,5 +1,5 @@
 
-const db=require('../config/db.config')
+const db=require('../config/db.config1')
 
 const passport = require('passport');
 

@@ -7,7 +7,7 @@ const db = mysql.createConnection({
   database: 'test'
 });
 */
-const db = require('../config/db.config')
+const db = require('../config/db.config1')
 
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
