@@ -39,7 +39,13 @@
         <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="#"><i class="fa fa-fw fa-user"></i> User</a>
         <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
-        <a href="#"><i class="fa fa-fw fa-plane"></i> Tour Packages</a>
+        <div id="show"><a href="#"><i class="fa fa-fw fa-plane"></i> Tour Packages</a></div>
+        <div class="subMenu" style="display: none;">
+            <a href="#" style="font-size: medium; text-indent: 5px;">All Packages</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">Add Packages</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">All Package Category</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
+        </div>
         <a href="#"><i class="fa fa-fw fa-building"></i> Hotels</a>
         <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
         <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
@@ -419,6 +425,12 @@
 </body>
 
 <script>
+
+        $(document).ready(function(){
+            $('#show').click(function(){
+                $('.subMenu').toggle("slide");
+            });
+        });
     
 let myBarChart = document.getElementById('myBarChart').getContext('2d');
 let myPieChart = document.getElementById('myPieChart').getContext('2d');
