@@ -64,4 +64,8 @@ router.get('/admin', (req, res) => {
 	return res.render('admin');
 });
 
+router.get('/admin/all-packages', (req, res) => {
+	return res.render('all-packages');
+});
+
 module.exports = router;
