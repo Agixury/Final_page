@@ -60,8 +60,4 @@ router.get('/forgot-password', (req, res) => {
 	return res.render('forgot-password');
 });
 
-router.get('/admin', (req, res) => {
-	return res.render('admin');
-});
-
 module.exports = router;
