@@ -52,6 +52,10 @@ router.get('/blogs', (req, res) => {
 	return res.render('blogs');
 });
 
+router.get('/blog', (req, res) => {
+	return res.render('blog');
+});
+
 router.get('/packages', (req, res) => {
 	return res.render('packages');
 });
