@@ -9,7 +9,7 @@ if(localStorage.getItem('token')){
 	authFormContainer.style.display = 'none';
 	let userx=JSON.parse(localStorage.getItem('user'));
 	let tosend=capitalizeFirstLetter(userx.firstName)+" "+capitalizeFirstLetter(userx.lastName);
-	document.getElementById("loginButton").innerHTML = '<div class="dropdown"><button id="dropbtn"><em><strong><div id="userName">User</div></strong></em></button><div id="myDropdown" class="dropdown-content"><a id="logoutdesktop" href="#">Logout</a></div></div>';
+	document.getElementById("loginButton").innerHTML = '<div class="dropdown"><button id="dropbtn"><em><strong><div id="userName">User</div></strong></em></button><div id="myDropdown" class="dropdown-content"><a id="useroption" href="#">Profile</a><a id="logoutdesktop" href="#">Logout</a></div></div>';
 	document.getElementById("userName").innerText = `${tosend}`;
 	document.getElementById("dropbtn").addEventListener('click', ()=>{
 		document.getElementById("myDropdown").classList.toggle("show");

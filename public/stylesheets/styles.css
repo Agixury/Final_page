@@ -1005,7 +1005,7 @@ padding: 0.61rem;
 
 /* begin login form css */
 
-.row-login .login-signup {
+/* .row-login .login-signup {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1147,6 +1147,14 @@ padding: 0.61rem;
   margin: 20px 0 0;
   padding:10px;
   width:90%;
+} */
+
+.btnx{
+  border-radius: 25px !important;
+}
+
+.active{
+  color:black !important;
 }
 
 /* end of login form css */
@@ -1387,3 +1395,239 @@ hr{
 }
 
 /*End of the Blogs*/
+
+
+/*start of the single Blog page*/
+
+
+.title{
+  background-image: url('https://images.unsplash.com/photo-1519922639192-e73293ca430e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title h1{
+   text-align: center;
+   color: white ;
+   line-height: 40vh;
+}
+
+/*new portion*/
+
+
+.newblog .heading{
+  text-align: center;
+  color: skyblue;
+}
+
+.newblog  .text1 h2{
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+}
+
+.newblog  .text1 p{
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+}
+
+.newblog  .text1 img{
+  padding-top: 15px;
+  height: 500px;
+  width: 100%;
+}
+.newblog  .icon{
+  text-align: center;
+}
+
+
+.newblog   .icon a{
+ background-color: #e0edf3;
+ color:black;
+ text-align: center;
+ display: block;
+ border-radius: 50%;
+height: 40px;
+width: 40px;
+ margin-bottom: 8px;
+ padding-top: 5px;
+}
+
+.container-fluid  .icon a:hover{
+  color: black;
+  background-color: skyblue;
+}
+
+.container-fluid  .icon p{
+  text-align: left;
+  font-size: 16px;
+}
+
+.container-fluid  .heading1{
+  text-align: center;
+  color: skyblue;
+  text-decoration: underline;
+}
+
+.part img{
+  padding-top: 30px;
+  width: 100%;
+  height: 250px;
+  display: block;
+  margin: auto;
+  justify-content: center;
+}
+
+.part p{
+  padding-top: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: center;
+}
+
+.part .btns{
+  display: flex;
+   justify-content: center;
+   padding: 8px;
+   color: skyblue;
+   border: 1px solid black;
+   background-color: transparent;
+   transition: all 0.3s ease;
+   border-radius: 2px;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.part .btns:hover{
+  color: black;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+}
+
+.part .pic{
+  width: 100%;
+  height: 150px;
+}
+
+.social{
+  margin-top: 40px;
+}
+
+.social a{
+ background-color:#e0edf3;
+ text-decoration: none;
+ color:black;
+ text-align: center;
+ margin: 2px;
+ padding: 10px 15px;
+ font-weight: bold;
+ font-size: 16px;
+ border-radius: 50%;
+}
+ 
+.social a:hover{
+   color: black;
+   background-color: skyblue;
+}
+
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  padding: 5px 8px;
+  color: black;
+}
+
+.centered a{
+  text-decoration: none;
+}
+
+.icon h3{
+  color: black;
+  text-align: left;
+}
+
+.bts{
+  border-radius: 2px;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+    border: 1px solid rgb(1,1,1,0.2);
+  font-size: 16px;
+  padding: 3px 10px;
+}
+
+.bts:hover{
+  color: skyblue;
+}
+
+.bts1{
+  border-radius: 8px;
+  cursor: pointer;
+  color: skyblue;
+  margin-left: 20px;
+  background-color: transparent;
+  border: 1px solid rgb(1,1,1,0.2);
+  font-size: 16px;
+  padding: 3px 8px;
+}
+
+.bts2{
+ background-color:#e0edf3;
+ text-decoration: none;
+ color:black;
+ display: inline;
+ margin: 5px;
+ padding: 11px 13px;
+ font-weight: bold;
+ font-size: 16px;
+ border-radius: 50%;
+}
+
+
+.picicon{
+  display: inline;
+  padding: 10px;
+  margin:7px;
+}
+
+::placeholder{
+  color: rgb(1,1,1,0.2);
+  padding: 3px;
+}
+
+.bts3{
+ color:black;
+ float: left;
+ background: transparent;
+ border: 1px solid rgb(1,1,1,0.5);
+ margin-top: 10px;
+ padding: 8px 13px;
+ font-weight: bold;
+ font-size: 16px;
+ outline: none;
+ display: block;
+}
+
+.bts3:hover{
+   background-color: skyblue;
+    border: 1px solid skyblue;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }

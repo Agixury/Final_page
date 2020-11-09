@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
+    <!--CSS for Login/Signup Popup-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="homepageback">
@@ -17,7 +25,7 @@
     <%- include('partials/header-navbar.ejs') %>
    
     
-    <div id="loginModal" class="modal fade" role="dialog">
+    <!-- <div id="loginModal" class="modal fade" role="dialog">
         <div id="authFormContainer">
         <div class="modal-dialog modal-md modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -65,7 +73,141 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <!--Modal: Login / Register Form-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+    
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+    
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                <li class="nav-item">
+                <a style="color: white;" class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                    Login</a>
+                </li>
+                <li class="nav-item">
+                <a style="color: white;" class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                    Register</a>
+                </li>
+            </ul>
+    
+            <!-- Tab panels -->
+            <div class="tab-content">
+                <!--Panel 7-->
+                <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+    
+                <!--Body-->
+                <div class="modal-body mb-1">
+                    <form id="loginForm">
+                    <div class="md-form form-sm mb-5">
+                    <input type="email" id="emailOrContact" class="form-control form-control-sm validate" required>
+                    <label data-error="wrong" data-success="right" for="emailOrContact">Your email</label>
+                    </div>
+    
+                    <div class="md-form form-sm mb-4">
+                    <input type="password" id="passwordLogin" class="form-control form-control-sm validate" required>
+                    <label data-error="wrong" data-success="right" for="passwordLogin">Your password</label>
+                    <p class="font-small blue-text d-flex justify-content-end"><a href="/forgot-password" class="blue-text ml-1">
+                        Forgot Password?</a></p>
+                    </div>
+                    <div class="text-center mb-3">
+                        <button type="submit" class="btn btnx blue-gradient btn-block btn-rounded z-depth-1a">Log in</button>
+                    </div>
+                      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Log In
+                        with:</p>
+              
+                      <div class="row my-3 d-flex justify-content-center">
+                        <!--Facebook-->
+                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+                        <!--Twitter-->
+                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+                        <!--Google +-->
+                        <button type="button" class="btn btnx btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+                      </div>
+                    </form>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer mx-5 pt-3 mb-1">
+                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">
+                        Sign Up</a></p>
+                  </div>
+    
+                </div>
+                <!--/.Panel 7-->
+    
+                <!--Panel 8-->
+                <div class="tab-pane fade" id="panel8" role="tabpanel">
+    
+                <!--Body-->
+                <div class="modal-body">
+                    <form id="registerForm">
+                    <div class="md-form form-sm mb-5">
+                        <input type="text" id="firstName" class="form-control form-control-sm validate" required>
+                        <label data-error="wrong" data-success="right" for="firstName">First Name</label>
+                    </div>
+
+                    <div class="md-form form-sm mb-5">
+                        <input type="text" id="lastName" class="form-control form-control-sm validate" required>
+                        <label data-error="wrong" data-success="right" for="lastName">Last Name</label>
+                    </div>
+
+                    <div class="md-form form-sm mb-5">
+                    <input type="email" id="email" class="form-control form-control-sm validate" required>
+                    <label data-error="wrong" data-success="right" for="email">Your email</label>
+                    </div>
+
+                    <div class="md-form form-sm mb-5">
+                        <input type="number" id="contactNumber" class="form-control form-control-sm validate" required>
+                        <label data-error="wrong" data-success="right" for="contactNumber">Contact Number</label>
+                    </div>
+    
+                    <div class="md-form form-sm mb-5">
+                    <input type="password" id="password" class="form-control form-control-sm validate" required>
+                    <label data-error="wrong" data-success="right" for="password">Your password</label>
+                    </div>
+    
+                    <div class="md-form form-sm mb-4">
+                    <input type="password" id="repeatPassword" class="form-control form-control-sm validate" required>
+                    <label data-error="wrong" data-success="right" for="repeatPassword">Repeat password</label>
+                    </div>
+    
+                    <div class="text-center mb-3">
+                        <button type="submit" class="btn btnx blue-gradient btn-block btn-rounded z-depth-1a">Sign Up</button>
+                      </div>
+                      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign Up
+                        with:</p>
+              
+                      <div class="row my-3 d-flex justify-content-center">
+                        <!--Facebook-->
+                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+                        <!--Twitter-->
+                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+                        <!--Google +-->
+                        <button type="button" class="btn btnx btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+                      </div>
+                    </form>
+    
+                </div>
+                <!--Footer-->
+                <div class="modal-footer mx-5 pt-3 mb-1">
+                    <p class="font-small grey-text d-flex justify-content-end">Already a member? <a href="#" class="blue-text ml-1">
+                        Log In</a></p>
+                  </div>
+                </div>
+                <!--/.Panel 8-->
+            </div>
+    
+            </div>
+        </div>
+        <!--/.Content-->
+        </div>
     </div>
+    <!--Modal: Login / Register Form-->
  
 
     <!-- HEADER BEGINS HERE -->
@@ -485,6 +627,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="application/javascript" src="javascripts/auth.js"></script>
+
+    <!--JS for login/signup popup-->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    
 </body>
 <script>
     $(document).ready(function () {

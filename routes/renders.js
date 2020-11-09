@@ -52,6 +52,7 @@ router.get('/blogs', (req, res) => {
 	return res.render('blogs');
 });
 
+ patch-35
 
 router.get('/newblog', (req, res) => {
 	return res.render('Addblog');
@@ -59,6 +60,10 @@ router.get('/newblog', (req, res) => {
 
 router.get('/allblog', (req, res) => {
 	return res.render('Allblog');
+=======
+router.get('/blog', (req, res) => {
+	return res.render('blog');
+development
 });
 
 router.get('/packages', (req, res) => {
