@@ -60,4 +60,8 @@ router.get('/forgot-password', (req, res) => {
 	return res.render('forgot-password');
 });
 
+router.get('/admin/all-package-category', (req, res) => {
+	return res.render('all-package-category');
+});
+
 module.exports = router;
