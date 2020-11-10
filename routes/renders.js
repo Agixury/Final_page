@@ -60,10 +60,14 @@ router.get('/newblog', (req, res) => {
 
 router.get('/allblog', (req, res) => {
 	return res.render('Allblog');
-=======
+
 router.get('/blog', (req, res) => {
 	return res.render('blog');
 development
+});
+
+router.get('/userdetail', (req, res) => {
+	return res.render('userdetail');
 });
 
 router.get('/packages', (req, res) => {
