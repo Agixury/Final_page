@@ -85,5 +85,17 @@ router.get('/admin', (req, res) => {
 router.get('/admin/all-packages', (req, res) => {
 	return res.render('all-packages');
 });
+	
+router.get('/admin/all-package-category', (req, res) => {
+	return res.render('all-package-category');
+});
+
+router.get('/admin/add-package', (req, res) => {
+	return res.render('add-package');
+});
+
+router.get('/profile', (req, res) => {
+	return res.render('profile');
+});
 
 module.exports = router;
