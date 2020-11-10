@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <%- include('partials/header-navbar.ejs') %>
+
+    <!-- Profile START -->
+    
+    <div id="profile" class="container">
+      <div class="contentWrapper contentWrapper--myprofile">
+        <div class="leftSecWrapper">
+          <div class="proflSdeBar proflsdeBar--sticky">
+           <!-- <div class="proflPicContanr">
+              <div class="proflPicContanr__nmeIniContanr">
+                <span class="latoBlack whiteText proflPicContanr__nmeIni">J</span>
+              </div>
+              <span class="myPrfilSprit myPrfilSprit__editGreyBg proflPicContanr__editGreyBgIcn"><input type="file" name="userDisplayPic" accept=".jpg,.jpeg,.bmp,.gif,.png,.PNG,.JPG,.JPEG,.BMP,.GIF" class="proflPicContanr__inputUpload" value="">
+                <input type="file" name="userDisplayPic" accept=".jpg,.jpeg,.bmp,.gif,.png,.PNG,.JPG,.JPEG,.BMP,.GIF" class="proflPicContanr__inputUpload" value="">
+              </span>  
+
+
+              
+            
+            <div class="profilSdeBar__contntWrap"><p class="font20 latoBlack blackText">Jagadabi</p><p class="font12 darkGreyText appendTop10">PERSONAL PROFILE</p>
+            
+            </div>
+            <ul class="sdeBarNav">
+              <li class="font14 darkGreyText latoBold sdeBarNav__navItm sdeBarNav__navItm-active">
+                <span class="sdeBarNav__iconContnr">
+                  <span class="myPrfilSprit myPrfilSprit__person">
+                    
+
+                  </span>
+                </span>Profile
+              </li>
+              <li class="font14 darkGreyText latoBold sdeBarNav__navItm">
+                <span class="sdeBarNav__iconContnr">
+                  <span class="myPrfilSprit myPrfilSprit__login">
+
+                  </span>
+                </span>
+                Login Details
+              </li>
+              <li class="font14 darkGreyText latoBold sdeBarNav__navItm">
+                <span class="sdeBarNav__iconContnr">
+                  <span class="myPrfilSprit myPrfilSprit__traveller">
+
+                  </span>
+                </span>
+                Save Travellers
+              </li>
+            </ul>
+          </div> -->
+          <aside class="profile-card">
+            <div class="mask-shadow"></div>
+            <header>
+          
+              <!-- here’s the avatar -->
+              
+                <img src="https://en.gravatar.com/userimage/42992842/b8e8ff24d6f1cb84bbe5c839903086bb.png?size=200">
+                <span class="myPrfilSprit myPrfilSprit__editGreyBg proflPicContanr__editGreyBgIcn"><input type="file" name="userDisplayPic" accept=".jpg,.jpeg,.bmp,.gif,.png,.PNG,.JPG,.JPEG,.BMP,.GIF" class="proflPicContanr__inputUpload" value="">
+                  <input type="file" name="userDisplayPic" accept=".jpg,.jpeg,.bmp,.gif,.png,.PNG,.JPG,.JPEG,.BMP,.GIF" class="proflPicContanr__inputUpload" value="">
+                </span>  
+              
+          
+              <!-- the username -->
+              <h1 style="font-weight: bolder; color: black;">Chandu</h1>
+          
+              <!-- and role or location -->
+              <h2>Personal Profile </h2>
+          
+            </header>
+          
+            <!-- bit of a bio; who are you? -->
+            <div class="profile-bio">
+              <ul style="list-style-type:none;">
+                <li>Profile</li>
+                <li>Login Details</li>
+                <li>Save Travellers</li>
+              </ul>
+          
+              
+          
+            </div>
+          
+            
+          
+          </aside>
+          <!-- that’s all folks! -->
+          </div>
+        </div>
+        <div class="rightSecWrapper">
+          <div class="proflCmpltonStats cm__myProfileTheme">
+            <div class="darkGreyText proflCmpltonStats__prcntagSec">
+              <p class="latoBold makeFlex spaceBetween">
+                <span>Complete your Profile</span>
+                <span class="latoBlack blackText">0%</span></p>
+                <div class="proflCmpltonStats__progrsBar">
+                  <div class="proflCmpltonStats__progrsBarFill proflCmpltonStats__progrsBarFill--complete40">
+
+                  </div>
+                </div>
+              </div>
+              <p class="darkGreyText appendTop10 float">Get the best out of MakeMyTrip by adding the remaining details!</p>
+              <ul class="font16 latoBold proflCmpltonStats__stpsStatusLst">
+                <li class="proflCmpltonStats__stpsStatusItm ">
+                  <span class="myPrfilSprit appendRight10 myPrfilSprit__verifiedBig">
+
+                  </span>
+                  Verified Email ID
+                </li>
+                <li class="proflCmpltonStats__stpsStatusItm blueText cursorPointer">
+                  <span class="myPrfilSprit appendRight10 myPrfilSprit__addBlueBg">
+
+                  </span>
+                  Add your mobile number
+                </li>
+                <li class="proflCmpltonStats__stpsStatusItm blueText cursorPointer">
+                  <span class="myPrfilSprit appendRight10 myPrfilSprit__addBlueBg">
+
+                  </span>
+                  Complete Basic Info
+                </li>
+              </ul>
+            </div>
+            <div class="profilCompont cm__myTripSideBar cm__myProfileTheme" id="profilePageComponent0">
+              <div class="detalCrdHadr undefined">
+                <div class="appendRight10">
+                  <h3 class="font30 latoBold blackText">Profile</h3>
+                  <p class="font18 darkGreyText appendTop10">Basic info, for a faster booking experience</p>
+                </div>
+                <div>
+                  <button type="button" class="font16 latoBold blueText btn__dtailAdEdt">
+                    <span class="myPrfilSprit myPrfilSprit__edtIcn noShrink appendRight5">
+
+                    </span>
+                    Edit
+                  </button>
+                </div>
+              </div>
+              <ul class="profilCompont__dtalLst">
+                <li class="profilCompont__dtalLstItm">
+                  <div class="profilCompont__dtalLstItmContnt">
+                    <span class="font11 darkGreyText profilCompont__detalkey">
+                      NAME
+                    </span>
+                    <span class="font16 blackText latoBold">
+                      Jagadabi
+                    </span>
+                  </div>
+                </li>
+                <li class="profilCompont__dtalLstItm">
+                  <div class="profilCompont__dtalLstItmContnt">
+                    <span class="font11 darkGreyText profilCompont__detalkey">
+                      BIRTHDAY
+                    </span>
+                    <span class="font16 blackText latoBold">
+
+                    </span>
+                    <span class="font14 latoBold blueText  appendRight30 cursorPointer">
+                      + Add
+                    </span>
+                  </div>
+                </li>
+                <li class="profilCompont__dtalLstItm">
+                  <div class="profilCompont__dtalLstItmContnt">
+                    <span class="font11 darkGreyText profilCompont__detalkey">
+                      GENDER
+                    </span>
+                    <span class="font16 blackText latoBold">
+
+                    </span>
+                    <span class="font14 latoBold blueText  appendRight30 cursorPointer">
+                      + Add
+                    </span>
+                  </div>
+                </li>
+                <li class="profilCompont__dtalLstItm">
+                  <div class="profilCompont__dtalLstItmContnt">
+                    <span class="font11 darkGreyText profilCompont__detalkey">
+                      MARITAL STATUS
+                    </span>
+                    <span class="font16 blackText latoBold">
+
+                    </span>
+                    <span class="font14 latoBold blueText  appendRight30 cursorPointer">
+                      + Add</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="lognDtalComp cm__myTripSideBar cm__myProfileTheme" id="profilePageComponent1">
+                <div class="detalCrdHadr undefined">
+                  <div class="appendRight10">
+                    <h3 class="font30 latoBold blackText">
+                      Login Details
+                    </h3>
+                    <p class="font18 darkGreyText appendTop10">
+                      Manage your email address mobile number and password
+                    </p>
+                  </div>
+                </div>
+                <ul class="lognDtalComp__dtalLst">
+                  <li class="lognDtalComp__dtalLstItm">
+                    <div class="lognDtalComp__dtalLstItmContnt">
+                      <span class="font11 darkGreyText lognDtalComp__detalkey">
+                        MOBILE NUMBER
+                      </span>
+                      <span class="font16 blackText latoBold">
+
+                      </span>
+                      <span class="font14 latoBold blueText appendRight30 cursorPointer ">
+                        + Add your mobile number
+                      </span>
+                    </div>
+                  </li>
+                  <li class="lognDtalComp__dtalLstItm">
+                    <div class="lognDtalComp__dtalLstItmContnt">
+                      <span class="font11 darkGreyText lognDtalComp__detalkey">
+                        EMAIL ID
+                      </span>
+                      <span class="font16 blackText latoBold">
+                        #########.66666@gmail.com
+                      </span>
+                      <span class="font14 latoBold greenText makeFlex hrtlCenter noShrink appendLeft10">
+                        <span class="myPrfilSprit myPrfilSprit__verified appendRight5">
+
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </li>
+                  <li class="lognDtalComp__dtalLstItm">
+                    <div class="lognDtalComp__dtalLstItmContnt">
+                      <span class="font11 darkGreyText lognDtalComp__detalkey">
+                        PASSWORD
+                      </span>
+                      <span class="blacktext latoBold lognDtalComp__pswrdTxt">
+                        ......
+                      </span>
+                      <span class="font14 latoBold blueText appendRight30 cursorPointer pushRight">
+                        Change Password?
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="travlrInfoCompt cm__myTripSideBar cm__myProfileTheme" id="profilePageComponent2">
+                <div class="detalCrdHadr undefined">
+                  <div class="appendRight10">
+                    <h3 class="font30 latoBold blackText">
+                      Save Traveller(s)
+                    </h3>
+                    <p class="font18 darkGreyText appendTop10">
+                      You have 0 Traveller(s)
+                    </p>
+                  </div>
+                  <div>
+                    <button type="button" class="font16 latoBold blueText btn__dtailAdEdt">
+                      <span class="myPrfilSprit myPrfilSprit__edtIcn noShrink appendRight5">
+
+                      </span>
+                      Add Traveller
+                    </button>
+                  </div>
+                </div>
+                <ul class="travlrInfoCompt__trvlrLst">
+
+                </ul>
+              </div>
+            </div>
+
+
+      </div>
+    </div>
+    <!-- profile END -->
+
+    <%- include('partials/footer.ejs') %>
+
+</body> 
+
+</html>
+ 
