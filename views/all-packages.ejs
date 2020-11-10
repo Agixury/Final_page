@@ -36,24 +36,34 @@
 
     <div class="sidebar">
         <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="/admin"><i class="fa fa-fw fa-user"></i> User</a>
+        <div id="shows1"><a href="#"><i class="fa fa-fw fa-user"></i> User &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus1" style="display: none;">
+            <a href="/userdetail" style="font-size: medium; text-indent: 5px;">User Details</a>
+            <a href="# " style="font-size: medium; text-indent: 5px;">Add New User</a>
+        </div>
+        <a href="#"><i class="fa fa-list"></i> Listing</a>
         <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
-        
-        <div id="show"><a href="#" class="active"><i class="fa fa-fw fa-plane"></i> Tour Packages</a></div>
+        <div id="show"><a href="#"><i class="fa fa-fw fa-plane"></i> Tour Packages &nbsp; <i class="fa fa-angle-down"></i> </a></div>
         <div class="subMenu" style="display: none;">
-            <a href="#" style="font-size: medium; text-indent: 5px;">All Packages</a>
+            <a href="/admin/all-packages" style="font-size: medium; text-indent: 5px;">All Packages </a>
             <a href="#" style="font-size: medium; text-indent: 5px;">Add Packages</a>
-            <a href="/admin/all-package-category" style="font-size: medium; text-indent: 5px;">All Package Category</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">All Package Category</a>
             <a href="#" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
         </div>
-        
+        <div id="shows"><a href="#"><i class='fab fa-blogger-b'></i> Blogs &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus" style="display: none;">
+            <a href="/allblog" style="font-size: medium; text-indent: 5px;">All Blogs</a>
+            <a href="/newblog" style="font-size: medium; text-indent: 5px;">Add Blog</a>
+        </div>
+        <a href="#"><i class="fa fa-fw fa-image"></i> Sight Seeings</a>
         <a href="#"><i class="fa fa-fw fa-building"></i> Hotels</a>
+        <a href="#"><i class="fa fa-dollar-sign"></i> Discounts</a>
+        <a href="#"><i class="fa fa-tag"></i> Offers</a>
+        <a href="#"><i class="fa fa-ticket-alt"></i> Booking & Enquiry</a>
+        <a href="#"><i class="fa fa-plus"></i> Social Media</a>
         <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
         <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
     </div>
-
-
-
     <div class="row" style="padding-left: 200px;">
 
         <div class="d-sm-flex justify-content-between align-items-center mb-4 mt-2 ml-4">
@@ -182,14 +192,6 @@
 
 </body>
 
-<script>
-    $(document).ready(function(){
-        $('#show').click(function(){
-            $('.subMenu').toggle("slide");
-        });
-    });
-</script>
-
 <style>
     
     body {font-family: "Lato", sans-serif;}
@@ -254,5 +256,26 @@
     }
 
 </style>
+
+<script>
+      $(document).ready(function(){
+            $('#show').click(function(){
+                $('.subMenu').toggle("slide");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#shows').click(function(){
+                $('.subMenus').toggle("slide");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#shows1').click(function(){
+                $('.subMenus1').toggle("slide");
+            });
+        });
+    
+</script>
 
 </html>
