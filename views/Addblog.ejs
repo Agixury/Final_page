@@ -60,7 +60,11 @@
         <a href="#"><i class="fa fa-fw fa-image"></i> Sight Seeings</a>
         <a href="#"><i class="fa fa-fw fa-building"></i> Hotels</a>
         <a href="#"><i class="fa fa-dollar-sign"></i> Discounts</a>
-        <a href="#"><i class="fa fa-tag"></i> Offers</a>
+        <div id="shows2"><a href="#"><i class="fa fa-tag"></i> Offers &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus2" style="display: none;">
+            <a href="/offer" style="font-size: medium; text-indent: 5px;">All Offers</a>
+            <a href="# " style="font-size: medium; text-indent: 5px;">New Offer</a>
+        </div>
         <a href="#"><i class="fa fa-ticket-alt"></i> Booking & Enquiry</a>
         <a href="#"><i class="fa fa-plus"></i> Social Media</a>
         <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
@@ -220,6 +224,12 @@
         $(document).ready(function(){
             $('#shows1').click(function(){
                 $('.subMenus1').toggle("slide");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#shows2').click(function(){
+                $('.subMenus2').toggle("slide");
             });
         });
 </script>
