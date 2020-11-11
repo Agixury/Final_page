@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Packages</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Chart.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+</head>
+<body>
+    
+    <nav>
+        <ul style="padding-left: 180px;">
+            <li style="padding-right: 10px;"><a href="#">Username</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="/admin"><i class="fa fa-fw fa-user"></i> User</a>
+        <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
+        
+        <div id="show"><a href="#" class="active"><i class="fa fa-fw fa-plane"></i> Tour Packages</a></div>
+        <div class="subMenu" style="display: none;">
+            <a href="/admin/all-packages" style="font-size: medium; text-indent: 5px;">All Packages</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">Add Packages</a>
+            <a href="/admin/all-package-category" style="font-size: medium; text-indent: 5px;">All Package Category</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
+        </div>
+        
+        <a href="#"><i class="fa fa-fw fa-building"></i> Hotels</a>
+        <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+        <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
+    </div>
+
+
+    <div class="row" style="padding-left: 200px;">
+        <div class="col-0 col-md-3"></div>
+        <div class="col-auto d-sm-flex align-items-center mb-4 mt-2 ml-4">
+            <h3 class="text-dark mb-0 mt-1">New Package</h3>
+        </div>
+    </div>
+
+    <div class="row" style="padding-left: 200px;">
+        <div class="col-0 col-md-3"></div>
+        <div class="col-12 col-md-5 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="text-primary font-weight-bold m-0">Add New Package</h6>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="packagename" class="col-md-3 col-form-label">Package Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" name="packagename" placeholder="Package Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="description" class="col-md-3 col-form-label">Package Description</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" name="description" placeholder="Package Description" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="authorname" class="col-md-3 col-form-label">Choose Category</label>
+                            <div class="col-md-9">
+                                <select class="form-control">
+                                    <option>Category 1</option>
+                                    <option>Category 2</option>
+                                    <option>Category 3</option>
+                                    <option>Category 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="authorname" class="col-md-3 col-form-label">Author Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" name="authname" placeholder="Author Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="telnum" class="col-7 col-md-3 col-form-label">Upload Blog Banner</label>
+                            <div class="col-3 col-md-9">
+                                <button type="button" class="btn btn-success">Upload</button>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    $(document).ready(function(){
+        $('#show').click(function(){
+            $('.subMenu').toggle("slide");
+        });
+    });
+</script>
+
+<style>
+    
+    body {font-family: "Lato", sans-serif;}
+    
+    .sidebar{
+        height: 100%;
+        width: 190px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 16px;
+    }
+    
+    .sidebar a{
+        padding: 10px 8px 10px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+    }
+    
+    .sidebar a:hover{
+        color: #f1f1f1;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    nav li {
+        float: right;
+    }
+
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        color: #fff;
+        background-color: #111;
+        text-decoration: none;
+    }
+
+    .active{
+        color: #f1f1f1;
+    }
+
+</style>
+
+</html>
