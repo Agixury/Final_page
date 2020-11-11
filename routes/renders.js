@@ -78,10 +78,6 @@ router.get('/forgot-password', (req, res) => {
 	return res.render('forgot-password');
 });
 
-router.get('/admin', (req, res) => {
-	return res.render('admin');
-});
-
 router.get('/offer', (req, res) => {
 	return res.render('alloffer');
 });
@@ -90,20 +86,25 @@ router.get('/addoffer', (req, res) => {
 	return res.render('addoffers');
 });
 
-router.get('/admin/all-packages', (req, res) => {
-	return res.render('all-packages');
-});
-	
-router.get('/admin/all-package-category', (req, res) => {
-	return res.render('all-package-category');
-});
-
-router.get('/admin/add-package', (req, res) => {
-	return res.render('add-package');
-});
 
 router.get('/profile', (req, res) => {
 	return res.render('profile');
+});
+	
+router.get('/user', (req, res) => {
+	return res.render('admin/user');
+});
+
+router.get('/user/all-packages', (req, res) => {
+	return res.render('admin/all-packages');
+});
+
+router.get('/user/all-package-category', (req, res) => {
+	return res.render('admin/all-package-category');
+});
+
+router.get('/user/add-package', (req, res) => {
+	return res.render('admin/add-package');
 });
 
 module.exports = router;
