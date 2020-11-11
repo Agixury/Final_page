@@ -1,0 +1,30 @@
+<nav>
+    <ul style="padding-left: 180px;">
+        <li style="padding-right: 10px;"><a href="#">Username</a></li>
+    </ul>
+</nav>
+
+<div class="sidebar">
+    <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="/user"><i class="fa fa-fw fa-user"></i> User</a>
+    <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
+    
+    <div ><a href="#" id="show"><i class="fa fa-fw fa-plane"></i> Tour Packages</a></div>
+    <div class="subMenu" style="display: none;">
+        <a href="/user/all-packages" style="font-size: medium; text-indent: 5px;">All Packages</a>
+        <a href="/user/add-package" style="font-size: medium; text-indent: 5px;">Add Packages</a>
+        <a href="/user/all-package-category" style="font-size: medium; text-indent: 5px;">All Package Category</a>
+        <a href="#" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
+    </div>
+    
+    <a href="#"><i class="fa fa-fw fa-building"></i> Hotels</a>
+    <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+    <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
+</div>
+
+<script>
+    var sBtn = document.getElementById('show');
+    sBtn.addEventListener('click', ()=>{
+        $('.subMenu').toggle('slide');
+    });
+</script>

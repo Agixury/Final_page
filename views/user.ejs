@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('admin-head') %>
+    <title>Dashboard</title>
+
+</head>
+<body>
+
+    <%- include('admin-navbar') %>
+    
+    <div class="container-fluid" style="padding-left: 200px;">
+                
+        <div class="d-sm-flex justify-content-between align-items-center mb-4 mt-2">
+            <h3 class="text-dark mb-0 mt-1">Dashboard</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card shadow border-left-primary py-2">
+                    <div class="card-body">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col mr-2">
+                                <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>Savings (monthly)</span></div>
+                                <div class="text-dark font-weight-bold h5 mb-0"><span>&#8377; 7,000</span></div>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card shadow border-left-success py-2">
+                    <div class="card-body">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col mr-2">
+                                <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Savings (annual)</span></div>
+                                <div class="text-dark font-weight-bold h5 mb-0"><span>&#8377; 84,000</span></div>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-rupee-sign fa-2x text-gray-300"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card shadow border-left-info py-2">
+                    <div class="card-body">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col mr-2">
+                                <div class="text-uppercase text-info font-weight-bold text-xs mb-1"><span>Any Progress</span></div>
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span>50%</span></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="sr-only">50%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 mb-4">
+                <div class="card shadow border-left-warning py-2">
+                    <div class="card-body">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col mr-2">
+                                <div class="text-uppercase text-warning font-weight-bold text-xs mb-1"><span>Tickets Raised</span></div>
+                                <div class="text-dark font-weight-bold h5 mb-0"><span>7</span></div>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="padding-left: 200px;">
+        <div class="col-sm-12 col-lg-7">
+            <div class="card shadow mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="text-primary font-weight-bold m-0">Most Visited Cities</h6>
+                </div>
+                <div class="card-body">
+                    <canvas id="myBarChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-12 col-lg-4 ml-3">
+            <div class="card shadow mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="text-primary font-weight-bold m-0">Mode of Transportation</h6>
+                </div>
+                <div class="card-body">
+                    <canvas id="myPieChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="row" style="padding-left: 200px;">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="text-primary font-weight-bold m-0">Projects</h6>
+                </div>
+                <div class="card-body">
+                    <h4 class="small font-weight-bold">Progress1<span class="float-right">20%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="sr-only">20%</span></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Progress2<span class="float-right">40%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Progress3<span class="float-right">60%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Progress4<span class="float-right">80%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Progress5<span class="float-right">Complete!</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-5 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="text-primary font-weight-bold m-0">Listing Enquiry</h6>
+                    <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
+                </div>
+                <div class="card-body">
+                    <div class="tab-inn">
+                        <div class="table-responsive table-desi">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Select</th>
+                                        <th>Listing</th>
+                                        <th>Name</th>
+                                        <th>Date</th>
+                                        <th>City</th>
+                                        <th>Enquiry</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="filled-in" id="filled-in-box-1" checked="checked" />
+                                            <label for="filled-in-box-1"></label>
+                                        </td>
+                                        <td><span class="list-img"><img src="" alt=""></span>
+                                        </td>
+                                        <td><span class="list-enq-name">Taaj Club House</span><span class="list-enq-city">Illunois, United States</span>
+                                        </td>
+                                        <td>12 may</td>
+                                        <td>Hawaii</td>
+                                        <td>
+                                            <span class="label">15</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="filled-in" id="filled-in-box-2" checked="checked" />
+                                            <label for="filled-in-box-2"></label>
+                                        </td>
+                                        <td><span class="list-img"><img src="" alt=""></span>
+                                        </td>
+                                        <td><span class="list-enq-name">Grand Hotel</span><span class="list-enq-city">Rio,Brazil</span>
+                                        </td>
+                                        <td>07 aug</td>
+                                        <td>Hawaii</td>
+                                        <td>
+                                            <span class="label">05</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="filled-in" id="filled-in-box-3" checked="checked" />
+                                            <label for="filled-in-box-3"></label>
+                                        </td>
+                                        <td><span class="list-img"><img src="" alt=""></span>
+                                        </td>
+                                        <td><span class="list-enq-name">Grand Pales</span><span class="list-enq-city">Chennai,India</span>
+                                        </td>
+                                        <td>18 jun</td>
+                                        <td>Hawaii</td>
+                                        <td>
+                                            <span class="label">35</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="filled-in" id="filled-in-box-4" />
+                                            <label for="filled-in-box-4"></label>
+                                        </td>
+                                        <td><span class="list-img"><img src="" alt=""></span>
+                                        </td>
+                                        <td><span class="list-enq-name">Lake Palace Hotel</span><span class="list-enq-city">Beijing,China</span>
+                                        </td>
+                                        <td>09 apr</td>
+                                        <td>Hawaii</td>
+                                        <td>
+                                            <span class="label">24</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="filled-in" id="filled-in-box-5" />
+                                            <label for="filled-in-box-5"></label>
+                                        </td>
+                                        <td><span class="list-img"><img src="" alt=""></span>
+                                        </td>
+                                        <td><span class="list-enq-name">First Class Hotel</span><span class="list-enq-city">Berlin,Germany</span>
+                                        </td>
+                                        <td>21 jun</td>
+                                        <td>Hawaii</td>
+                                        <td>
+                                            <span class="label">18</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="padding-left: 200px;">
+        <div class="col-md-11 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="text-primary font-weight-bold m-0">User Details</h6>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Country</th>
+                                    <th>Listings</th>
+                                    <th>Enquiry</th>
+                                    <th>Bookings</th>
+                                    <th>Reviews</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="list-img"><img src="" alt=""></span>
+                                    </td>
+                                    <td><a href="#"><span class="list-enq-name">Marsha Hogan</span><span class="list-enq-city">Illunois, United States</span></a>
+                                    </td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>Australia</td>
+                                    <td>
+                                        <span class="label">02</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">12</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">24</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">36</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="list-img"><img src="" alt=""></span>
+                                    </td>
+                                    <td><a href="#"><span class="list-enq-name">Marsha Hogan</span><span class="list-enq-city">Illunois, United States</span></a>
+                                    </td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>Australia</td>
+                                    <td>
+                                        <span class="label">02</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">12</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">24</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">36</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="list-img"><img src="" alt=""></span>
+                                    </td>
+                                    <td><a href="#"><span class="list-enq-name">Marsha Hogan</span><span class="list-enq-city">Illunois, United States</span></a>
+                                    </td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>Australia</td>
+                                    <td>
+                                        <span class="label">02</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">12</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">24</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">36</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="list-img"><img src="" alt=""></span>
+                                    </td>
+                                    <td><a href="#"><span class="list-enq-name">Marsha Hogan</span><span class="list-enq-city">Illunois, United States</span></a>
+                                    </td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>Australia</td>
+                                    <td>
+                                        <span class="label">02</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">12</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">24</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">36</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="list-img"><img src="" alt=""></span>
+                                    </td>
+                                    <td><a href="#"><span class="list-enq-name">Marsha Hogan</span><span class="list-enq-city">Illunois, United States</span></a>
+                                    </td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>Australia</td>
+                                    <td>
+                                        <span class="label">02</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">12</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">24</span>
+                                    </td>
+                                    <td>
+                                        <span class="label">36</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+                    
+</body>
+
+<script>
+    
+let myBarChart = document.getElementById('myBarChart').getContext('2d');
+let myPieChart = document.getElementById('myPieChart').getContext('2d');
+
+Chart.defaults.global.defaultFontSize = 18;
+Chart.defaults.global.defaultFontColor = '#777';
+
+let massVisChart = new Chart(myBarChart, {
+  type:'bar',
+  data:{
+    labels:['Jaipur', 'Rajasthan', 'Gujrat', 'Delhi', 'Agra', 'Kolkata'],
+    datasets:[{
+      label:'People Visited',
+      data:[
+        480,
+        450,
+        520,
+        570,
+        560,
+        480
+      ],
+      backgroundColor:[
+        'rgba(255, 99, 132, 0.7)',
+        'rgba(54, 162, 235, 0.7)',
+        'rgba(255, 206, 86, 0.7)',
+        'rgba(75, 192, 192, 0.7)',
+        'rgba(153, 102, 255, 0.7)',
+        'rgba(255, 159, 64, 0.7)',
+        'rgba(255, 99, 132, 0.7)'
+      ],
+      borderWidth:1,
+      borderColor:'#777',
+      hoverBorderWidth:2,
+      hoverBorderColor:'#111'
+    }]
+  },
+  options:{
+    legend:{
+      display:true,
+      position:'right',
+      labels:{
+        fontColor:'#000'
+      }
+    },
+    layout:{
+      padding:{
+        left:50,
+        right:0,
+        bottom:0,
+        top:0
+      }
+    },
+    tooltips:{
+      enabled:true
+    }
+  }
+});
+
+let DisChart = new Chart(myPieChart, {
+  type:'pie',
+  data:{
+    labels:['Bus', 'Airplane', 'Train'],
+    datasets:[{
+      label:'People Visited',
+      data:[
+        55,
+        35,
+        10
+      ],
+      backgroundColor:[
+        'rgba(2, 117, 216, 0.7)',
+        'rgba(92, 184, 92, 0.7)',
+        'rgba(240, 173, 78, 0.7)'
+      ],
+      borderWidth:1,
+      borderColor:'#777',
+      hoverBorderWidth:2,
+      hoverBorderColor:'#111'
+    }]
+  },
+  options:{
+    legend:{
+      display:true,
+      position:'right',
+      labels:{
+        fontColor:'#000'
+      }
+    },
+    layout:{
+      padding:{
+        left:50,
+        right:0,
+        bottom:0,
+        top:0
+      }
+    },
+    tooltips:{
+      enabled:true
+    }
+  }
+});
+
+</script>
+
+</html>
