@@ -1624,13 +1624,13 @@ width: 40px;
 }
 
 /* Make the image fully responsive */
-.carousel-inner img {
+/*.carousel-inner img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     display: block;
     margin: auto;
-  }
+  }*/
 
 
 
