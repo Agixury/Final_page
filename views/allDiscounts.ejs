@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agixury - All Discounts</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Chart.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+</head>
+<body>
+
+    <nav>
+        <ul style="padding-left: 180px;">
+            <li style="padding-right: 10px;"><a href="#">Username</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+        <div id="shows1"><a href="#"><i class="fa fa-fw fa-user"></i> User &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus1" style="display: none;">
+            <a href="/userdetail" style="font-size: medium; text-indent: 5px;">User Details</a>
+            <a href="# " style="font-size: medium; text-indent: 5px;">Add New User</a>
+        </div>
+        <a href="#"><i class="fa fa-list"></i> Listing</a>
+        <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
+        <div id="show"><a href="#"><i class="fa fa-fw fa-plane"></i> Tour Packages &nbsp; <i class="fa fa-angle-down"></i> </a></div>
+        <div class="subMenu" style="display: none;">
+            <a href="/admin/all-packages" style="font-size: medium; text-indent: 5px;">All Packages </a>
+            <a href="/admin/add-package" style="font-size: medium; text-indent: 5px;">Add Packages</a>
+            <a href="/admin/all-package-category" style="font-size: medium; text-indent: 5px;">All Package Category</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
+        </div>
+        <div id="shows"><a href="#"><i class='fab fa-blogger-b'></i> Blogs &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus" style="display: none;">
+            <a href="/allblog" style="font-size: medium; text-indent: 5px;">All Blogs</a>
+            <a href="/newblog" style="font-size: medium; text-indent: 5px;">Add Blog</a>
+        </div>
+        <a href="#"><i class="fa fa-fw fa-image"></i> Sight Seeings</a>
+        <a href="#"><i class="fa fa-fw fa-building"></i> Hotels</a>
+        <div id="shows3"><a href="#"><i class="fa fa-dollar-sign"></i> Discounts &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus3" style="display: none;">
+            <a href="/allDiscounts" style="font-size: medium; text-indent: 5px;">All Discounts</a>
+            <a href="/addDiscount" style="font-size: medium; text-indent: 5px;">Add Discount</a>
+        </div>
+         <div id="shows2"><a href="#"><i class="fa fa-tag"></i> Offers &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus2" style="display: none;">
+            <a href="/offer" style="font-size: medium; text-indent: 5px;">All Offers</a>
+            <a href="/addoffer" style="font-size: medium; text-indent: 5px;">New Offer</a>
+        </div>
+        <a href="#"><i class="fa fa-ticket-alt"></i> Booking & Enquiry</a>
+        <a href="#"><i class="fa fa-plus"></i> Social Media</a>
+        <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+        <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
+    </div>
+
+    <table class="table " style="margin-left: 300px;">
+        <h3 class="headtext mt-5"> <a href="/admin"><i class="arrow fa fa-arrow-left" style="float: left;color: white;"></i></a> All Discounts</h3>
+        <thead>
+          <tr>
+            <th scope="col">USER</th>
+            <th scope="col">EVENTS</th>
+            <th scope="col">OFFERS</th>
+            <th scope="col">DATE</th>
+            <th scope="col">COUNTRY</th>
+            <th scope="col">EDIT</th>
+            <th scope="col">DELETE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>+50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>+50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>+50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>+50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/06/17/18/35/background-2413081__480.jpg" style="height: 30px; width: 30px; border-radius: 50%;"> </th>
+            <td>Domestic Help Services</td>
+            <td>50%</td>
+            <td>17 Nov 2020</td>
+            <td>India</td>
+            <td><i class='fas fa-edit'></i></td>
+            <td><i class='fas fa-trash-alt'></i></td>
+          </tr>
+         
+          
+          
+        </tbody>
+      </table>
+
+      
+<style>
+
+.table{
+            width: 70%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 10px;
+            padding-top: 30px;
+        }
+         .headtext{
+            text-align: center;
+            color:black;
+            background-color: cornflowerblue;
+            padding: 10px;
+            width: 70%;
+            margin-top: 60px;
+            margin: auto;
+            margin-left: 300px;
+        }
+
+    
+  body {font-family: "Lato", sans-serif;}
+  
+  .sidebar{
+      height: 100%;
+      width: 180px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 16px;
+  }
+  
+  .sidebar a{
+      padding: 10px 8px 10px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+  }
+  
+  .sidebar a:hover{
+      color: #f1f1f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+  }
+
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+
+  nav li {
+      float: right;
+  }
+
+  li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  nav li a:hover {
+      color: #fff;
+      background-color: #111;
+      text-decoration: none;
+  }
+
+  .arrow{
+      font-size: 2.2rem;
+  }
+
+  /* drop down link */
+
+
+</style>
+
+<script>
+  $(document).ready(function(){
+            $('#show').click(function(){
+                $('.subMenu').toggle("slide");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#shows').click(function(){
+                $('.subMenus').toggle("slide");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#shows1').click(function(){
+                $('.subMenus1').toggle("slide");
+            });
+        });
+
+          $(document).ready(function(){
+            $('#shows2').click(function(){
+                $('.subMenus2').toggle("slide");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#shows3').click(function(){
+                $('.subMenus3').toggle("slide");
+            });
+        });
+</script>
+
+</body>
+
+</html>
