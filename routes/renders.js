@@ -126,5 +126,17 @@ router.get('/bookings', (req, res) => {
 	return res.render('enquiry');
 });
 
+router.get('/admin',(req,res) => {
+	return res.render('admin');
+});
+
+router.get('/addDiscount',(req,res) => {
+	return res.render('addDiscount');
+});
+
+router.get('/allDiscounts',(req,res) => {
+	return res.render('allDiscounts');
+});
+
 
 module.exports = router;
