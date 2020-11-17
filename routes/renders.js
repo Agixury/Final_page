@@ -116,6 +116,15 @@ router.get('/user/all-package-category', (req, res) => {
 
 router.get('/user/add-package', (req, res) => {
 	return res.render('admin/add-package');
+
 });
+
+router.get('/booking', (req, res) => {
+	return res.render('booking');
+});
+router.get('/bookings', (req, res) => {
+	return res.render('enquiry');
+});
+
 
 module.exports = router;
