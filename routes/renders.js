@@ -33,8 +33,8 @@ router.get('/terms', (req, res) => {
 });
 
 
-router.get('/admin', (req, res) => {
-	return res.render('admin');
+router.get('/user', (req, res) => {
+	return res.render('admin/user');
 });
 
 router.get('/refer', (req, res) => {
@@ -119,15 +119,15 @@ router.get('/user/add-package', (req, res) => {
 
 });
 
+router.get('/user/add-package-category', (req, res) => {
+	return res.render('admin/add-package-category');
+});
+
 router.get('/booking', (req, res) => {
 	return res.render('booking');
 });
 router.get('/bookings', (req, res) => {
 	return res.render('enquiry');
-});
-
-router.get('/admin',(req,res) => {
-	return res.render('admin');
 });
 
 router.get('/addDiscount',(req,res) => {
@@ -138,5 +138,20 @@ router.get('/allDiscounts',(req,res) => {
 	return res.render('allDiscounts');
 });
 
+router.get('/user/all-room-type', (req, res) => {
+	return res.render('admin/all-room-type');
+});
+
+router.get('/user/add-room-type', (req, res) => {
+	return res.render('admin/add-room-type');
+});
+
+router.get('/user/add-hotel', (req, res) => {
+	return res.render('admin/add-hotel');
+});
+
+router.get('/user/all-hotels', (req, res) => {
+	return res.render('admin/all-hotels');
+});
 
 module.exports = router;
