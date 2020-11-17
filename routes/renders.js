@@ -58,20 +58,20 @@ router.get('/blogs', (req, res) => {
 });
 
 
-router.get('/newblog', (req, res) => {
-	return res.render('Addblog');
+router.get('/user/newblog', (req, res) => {
+	return res.render('admin/Addblog');
 });
 
-router.get('/allblog', (req, res) => {
-	return res.render('Allblog');
+router.get('/user/allblog', (req, res) => {
+	return res.render('admin/Allblog');
 })
 router.get('/blog', (req, res) => {
 	return res.render('blog');
 development
 });
 
-router.get('/userdetail', (req, res) => {
-	return res.render('userdetail');
+router.get('/user/userdetail', (req, res) => {
+	return res.render('admin/userdetail');
 });
 
 router.get('/packages', (req, res) => {
@@ -82,20 +82,20 @@ router.get('/forgot-password', (req, res) => {
 	return res.render('forgot-password');
 });
 
-router.get('/offer', (req, res) => {
-	return res.render('alloffer');
+router.get('/user/offer', (req, res) => {
+	return res.render('admin/alloffer');
 });
 
-router.get('/addoffer', (req, res) => {
-	return res.render('addoffers');
+router.get('/user/addoffer', (req, res) => {
+	return res.render('admin/addoffers');
 });
 
-router.get('/hotelenquiry', (req, res) => {
-	return res.render('hotel-enquiry');
+router.get('/user/hotelenquiry', (req, res) => {
+	return res.render('admin/hotel-enquiry');
 });
 
-router.get('/eventsenquiry', (req, res) => {
-	return res.render('events-enquiry');
+router.get('/user/eventsenquiry', (req, res) => {
+	return res.render('admin/events-enquiry');
 });
 
 router.get('/profile', (req, res) => {
@@ -123,19 +123,19 @@ router.get('/user/add-package-category', (req, res) => {
 	return res.render('admin/add-package-category');
 });
 
-router.get('/booking', (req, res) => {
-	return res.render('booking');
+router.get('/user/booking', (req, res) => {
+	return res.render('admin/booking');
 });
-router.get('/bookings', (req, res) => {
-	return res.render('enquiry');
-});
-
-router.get('/addDiscount',(req,res) => {
-	return res.render('addDiscount');
+router.get('/user/bookings', (req, res) => {
+	return res.render('admin/enquiry');
 });
 
-router.get('/allDiscounts',(req,res) => {
-	return res.render('allDiscounts');
+router.get('/user/addDiscount',(req,res) => {
+	return res.render('admin/addDiscount');
+});
+
+router.get('/user/allDiscounts',(req,res) => {
+	return res.render('admin/allDiscounts');
 });
 
 router.get('/user/all-room-type', (req, res) => {
