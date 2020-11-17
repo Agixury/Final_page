@@ -1,0 +1,42 @@
+<nav class="top-nav">
+    <ul style="padding-left: 180px; list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;">
+        <li style="padding-right: 10px; float: right;"><a href="#">Username</a></li>
+    </ul>
+</nav>
+
+<div class="sidebar">
+    <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="/user"><i class="fa fa-fw fa-user"></i> User</a>
+    <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
+    
+    <div ><a href="#" id="tourMenu"><i class="fa fa-fw fa-plane"></i> Tour Packages</a></div>
+    <div class="tourSubMenu" style="display: none;">
+        <a href="/user/all-packages" style="font-size: medium; text-indent: 5px;">All Packages</a>
+        <a href="/user/add-package" style="font-size: medium; text-indent: 5px;">Add Packages</a>
+        <a href="/user/all-package-category" style="font-size: medium; text-indent: 5px;">All Package Category</a>
+        <a href="/user/add-package-category" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
+    </div>
+    
+    <a href="#" id="hotelMenu"><i class="fa fa-fw fa-building"></i> Hotels</a>
+    <div class="hotelSubMenu" style="display: none;">
+        <a href="/user/all-hotels" style="font-size: medium; text-indent: 5px;">All Hotels</a>
+        <a href="/user/add-hotel" style="font-size: medium; text-indent: 5px;">Add New Hotel</a>
+        <a href="/user/all-room-type" style="font-size: medium; text-indent: 5px;">Room Type</a>
+        <a href="/user/add-room-type" style="font-size: medium; text-indent: 5px;">Add Room Type</a>
+    </div>
+
+    <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+    <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
+</div>
+
+<script>
+    var hBtn = document.getElementById('hotelMenu');
+    hBtn.addEventListener('click', ()=>{
+        $('.hotelSubMenu').toggle('slide');
+    });
+    
+    var tBtn = document.getElementById('tourMenu');
+    tBtn.addEventListener('click', ()=>{
+        $('.tourSubMenu').toggle('slide');
+    });
+</script>
