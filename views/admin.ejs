@@ -48,8 +48,8 @@
         <div id="show"><a href="#"><i class="fa fa-fw fa-plane"></i> Tour Packages &nbsp; <i class="fa fa-angle-down"></i> </a></div>
         <div class="subMenu" style="display: none;">
             <a href="/admin/all-packages" style="font-size: medium; text-indent: 5px;">All Packages </a>
-            <a href="/admin/add-package" style="font-size: medium; text-indent: 5px;">Add Packages</a>
-            <a href="/admin/all-package-category" style="font-size: medium; text-indent: 5px;">All Package Category</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">Add Packages</a>
+            <a href="#" style="font-size: medium; text-indent: 5px;">All Package Category</a>
             <a href="#" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
         </div>
         <div id="shows"><a href="#"><i class='fab fa-blogger-b'></i> Blogs &nbsp <i class="fa fa-angle-down"></i></a></div>
@@ -66,7 +66,11 @@
             <a href="/offer" style="font-size: medium; text-indent: 5px;">All Offers</a>
             <a href="/addoffer" style="font-size: medium; text-indent: 5px;">New Offer</a>
         </div>
-        <a href="#"><i class="fa fa-ticket-alt"></i> Booking & Enquiry</a>
+        <div id="shows3"><a href="#"><i class="fa fa-ticket-alt"></i> Booking & Enquiry &nbsp <i class="fa fa-angle-down"></i></a></div>
+        <div class="subMenus3" style="display: none;">
+            <a href="/booking" style="font-size: medium; text-indent: 5px;">Pakage Booking Enquiry</a>
+            <a href="/bookings" style="font-size: medium; text-indent: 5px;">Sight Seeing Booking Enquiry</a>
+        </div>
         <a href="#"><i class="fa fa-plus"></i> Social Media</a>
         <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
         <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
@@ -469,6 +473,12 @@
           $(document).ready(function(){
             $('#shows2').click(function(){
                 $('.subMenus2').toggle("slide");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#shows3').click(function(){
+                $('.subMenus3').toggle("slide");
             });
         });
     
