@@ -32,6 +32,11 @@ router.get('/terms', (req, res) => {
 	return res.render('terms');
 });
 
+
+router.get('/admin', (req, res) => {
+	return res.render('admin');
+});
+
 router.get('/refer', (req, res) => {
 	return res.render('refer');
 });
@@ -85,6 +90,13 @@ router.get('/addoffer', (req, res) => {
 	return res.render('addoffers');
 });
 
+router.get('/hotelenquiry', (req, res) => {
+	return res.render('hotel-enquiry');
+});
+
+router.get('/eventsenquiry', (req, res) => {
+	return res.render('events-enquiry');
+});
 
 router.get('/profile', (req, res) => {
 	return res.render('profile');
