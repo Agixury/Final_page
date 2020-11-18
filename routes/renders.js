@@ -170,4 +170,8 @@ router.get('/user/add-listing-category', (req, res) => {
 	return res.render('admin/add-listing-category');
 });
 
+router.get('/user/social-media', (req, res) => {
+	return res.render('admin/social-media');
+});
+
 module.exports = router;
