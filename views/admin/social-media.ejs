@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('admin-head') %>
+    <title>Social Media and Share</title>
+
+</head>
+<body>
+    
+    <%- include('admin-navbar') %>
+
+    <div class="row" style="padding-left: 220px;">
+        <div class="col-auto d-sm-flex align-items-center mb-4 mt-2 ml-4">
+            <h3 class="text-dark mb-0 mt-1">Social Media and Share</h3>
+        </div>
+    </div>
+
+    <div class="row" style="padding-left: 220px;">
+        <div class="col-12 col-md-11 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header">
+                    <h6 class="text-primary font-weight-bold m-0">Social Media</h6>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="socialurl" class="col-12 col-md-2 col-form-label">Facebook URL</label>
+                            <div class="col-12 col-md-10">
+                                <input type="url" class="form-control" name="fburl" placeholder="Facebook URL">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="socialurl" class="col-12 col-md-2 col-form-label">Google Plus URL</label>
+                            <div class="col-12 col-md-10">
+                                <input type="url" class="form-control" name="gpurl" placeholder="Google Plus URL">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="socialurl" class="col-12 col-md-2 col-form-label">Twitter</label>
+                            <div class="col-12 col-md-10">
+                                <input type="url" class="form-control" name="turl" placeholder="Twitter URL">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="socialurl" class="col-12 col-md-2 col-form-label">LinkedIn URL</label>
+                            <div class="col-12 col-md-10">
+                                <input type="url" class="form-control" name="lurl" placeholder="LinkedIn URL">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="socialurl" class="col-12 col-md-2 col-form-label">VK URL</label>
+                            <div class="col-12 col-md-10">
+                                <input type="url" class="form-control" name="vkurl" placeholder="VK URL">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="socialurl" class="col-12 col-md-2 col-form-label">WhatsApp Number</label>
+                            <div class="col-12 col-md-10">
+                                <input type="tel" class="form-control" name="wano" placeholder="WhatsApp Number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary btn-lg">Upload</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
