@@ -123,12 +123,6 @@ router.get('/user/add-package-category', (req, res) => {
 	return res.render('admin/add-package-category');
 });
 
-router.get('/user/booking', (req, res) => {
-	return res.render('admin/booking');
-});
-router.get('/user/bookings', (req, res) => {
-	return res.render('admin/enquiry');
-});
 
 router.get('/user/addDiscount',(req,res) => {
 	return res.render('admin/addDiscount');
