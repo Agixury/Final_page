@@ -9,6 +9,14 @@
     <a href="/user"><i class="fa fa-fw fa-user"></i> User</a>
     <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
     
+    <a href="#" id="listMenu"><i class="fa fa-fw fa-building"></i> Listing</a>
+    <div class="listSubMenu" style="display: none;">
+        <a href="/user/all-listing" style="font-size: medium; text-indent: 5px;">All Listings</a>
+        <a href="/user/add-listing" style="font-size: medium; text-indent: 5px;">Add Listing</a>
+        <a href="/user/all-listing-category" style="font-size: medium; text-indent: 5px;">Listing Category</a>
+        <a href="/user/add-listing-category" style="font-size: medium; text-indent: 5px;">Add Listing Category</a>
+    </div>
+    
     <div ><a href="#" id="tourMenu"><i class="fa fa-fw fa-plane"></i> Tour Packages</a></div>
     <div class="tourSubMenu" style="display: none;">
         <a href="/user/all-packages" style="font-size: medium; text-indent: 5px;">All Packages</a>
@@ -38,5 +46,10 @@
     var tBtn = document.getElementById('tourMenu');
     tBtn.addEventListener('click', ()=>{
         $('.tourSubMenu').toggle('slide');
+    });
+    
+    var lBtn = document.getElementById('listMenu');
+    lBtn.addEventListener('click', ()=>{
+        $('.listSubMenu').toggle('slide');
     });
 </script>
