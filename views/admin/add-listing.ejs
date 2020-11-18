@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('admin-head') %>
+    <title>Add Listing</title>
+
+</head>
+<body>
+    
+    <%- include('admin-navbar') %>
+
+    <div class="row" style="padding-left: 220px;">
+        <div class="col-auto d-sm-flex align-items-center mb-4 mt-2 ml-4">
+            <h3 class="text-dark mb-0 mt-1">New Listing</h3>
+        </div>
+    </div>
+
+    <div class="row" style="padding-left: 220px;">
+        <div class="col-12 col-md-11 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header">
+                    <h6 class="text-primary font-weight-bold m-0">Add New Listing</h6>
+                </div>
+                <div class="card-body">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-detail-tab" data-toggle="tab" href="#nav-detail" role="tab" aria-controls="nav-detail" aria-selected="true">
+                                <i class="fa fa-info" aria-hidden="true"></i> Detail</a>
+                            <a class="nav-item nav-link" id="nav-room-tab" data-toggle="tab" href="#nav-room" role="tab" aria-controls="nav-room" aria-selected="false">
+                                <i class="fa fa-bed" aria-hidden="true"></i> Room Type</a>
+                            <a class="nav-item nav-link" id="nav-photo-tab" data-toggle="tab" href="#nav-photo" role="tab" aria-controls="nav-photo" aria-selected="false">
+                                <i class="fa fa-image" aria-hidden="true"></i> Photo Gallery</a>
+                            <a class="nav-item nav-link" id="nav-social-tab" data-toggle="tab" href="#nav-social" role="tab" aria-controls="nav-social" aria-selected="false">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i> Social Media</a>
+                            <a class="nav-item nav-link" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="false">
+                                <i class="fa fa-id-card" aria-hidden="true"></i> Contact Info</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-detail" role="tabpanel" aria-labelledby="nav-detail-tab">
+                            <h4>Listing Information<br><small class="text-muted">Airtport Hotels The Right Way To Start A Short Break Holiday</small></h4><br>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="listname" class="col-md-2 col-form-label">Listing Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" name="listname" placeholder="Listing Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="listdescription" class="col-md-2 col-form-label">Listing Description</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" name="listdescription" placeholder="Listing Description" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contactname" class="col-md-2 col-form-label">Contact Person</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" name="contactname" placeholder="Contact Person">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="category" class="col-md-2 col-form-label">Choose Category</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control">
+                                            <option>Category 1</option>
+                                            <option>Category 2</option>
+                                            <option>Category 3</option>
+                                            <option>Category 4</option>
+                                        </select>
+                                    </div>
+                                    <label for="subcategory" class="col-md-2 col-form-label">Choose Sub-Category</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control">
+                                            <option>Sub-Category 1</option>
+                                            <option>Sub-Category 2</option>
+                                            <option>Sub-Category 3</option>
+                                            <option>Sub-Category 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-room" role="tabpanel" aria-labelledby="nav-room-tab">
+                            <h4>Hotel Room Details<br><small class="text-muted">Airtport Hotels The Right Way To Start A Short Break Holiday</small></h4><br>
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="roomtype" class="col-md-2 col-form-label">Room Type</label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" name="roomtype" placeholder="Room Type">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="roomprice" class="col-md-2 col-form-label">Price</label>
+                                            <div class="col-md-10">
+                                                <input type="number" class="form-control" name="contactname" placeholder="Price">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="listdescription" class="col-md-2 col-form-label">Listing Description</label>
+                                            <div class="col-md-10">
+                                                <textarea class="form-control" name="listdescription" placeholder="Listing Description" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="roomimg" class="col-7 col-md-2 col-form-label">Upload Room Image</label>
+                                            <div class="col-3 col-md-10">
+                                                <button type="button" class="btn btn-success">Upload</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-auto">
+                                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="roomtype" class="col-md-2 col-form-label">Room Type</label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control" name="roomtype" placeholder="Room Type">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="roomprice" class="col-md-2 col-form-label">Price</label>
+                                            <div class="col-md-10">
+                                                <input type="number" class="form-control" name="contactname" placeholder="Price">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="listdescription" class="col-md-2 col-form-label">Listing Description</label>
+                                            <div class="col-md-10">
+                                                <textarea class="form-control" name="listdescription" placeholder="Listing Description" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="roomimg" class="col-7 col-md-2 col-form-label">Upload Room Image</label>
+                                            <div class="col-3 col-md-10">
+                                                <button type="button" class="btn btn-success">Upload</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-auto">
+                                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
+                            <h4>Photo Gallery<br><small class="text-muted">Airtport Hotels The Right Way To Start A Short Break Holiday</small></h4><br>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="photoup" class="col-7 col-md-2 col-form-label">Upload Images</label>
+                                    <div class="col-3 col-md-10">
+                                        <button type="button" class="btn btn-success">Upload</button>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-social-tab">
+                            <h4>Social Media<br><small class="text-muted">Airtport Hotels The Right Way To Start A Short Break Holiday</small></h4><br>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="socialurl" class="col-12 col-md-2 col-form-label">Facebook URL</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="url" class="form-control" name="fburl" placeholder="Facebook URL">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="socialurl" class="col-12 col-md-2 col-form-label">Google Plus URL</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="url" class="form-control" name="gpurl" placeholder="Google Plus URL">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="socialurl" class="col-12 col-md-2 col-form-label">Twitter</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="url" class="form-control" name="turl" placeholder="Twitter URL">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="socialurl" class="col-12 col-md-2 col-form-label">LinkedIn URL</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="url" class="form-control" name="lurl" placeholder="LinkedIn URL">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="socialurl" class="col-12 col-md-2 col-form-label">VK URL</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="url" class="form-control" name="vkurl" placeholder="VK URL">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="socialurl" class="col-12 col-md-2 col-form-label">WhatsApp Number</label>
+                                    <div class="col-12 col-md-10">
+                                        <input type="tel" class="form-control" name="wano" placeholder="WhatsApp Number">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary btn-lg">Upload</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+                            <h4>Contact Info<br><small class="text-muted">Airtport Hotels The Right Way To Start A Short Break Holiday</small></h4><br>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="contactname" class="col-md-2 col-form-label">Contact Name</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" name="contactname" placeholder="Contact Name">    
+                                    </div>
+                                    <label for="contactalter" class="col-md-2 col-form-label">Alter Contact Name</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" name="contactalter" placeholder="Alter Contact Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="phone" class="col-md-2 col-form-label">Phone Number</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" name="phone" placeholder="Phone">    
+                                    </div>
+                                    <label for="mobile" class="col-md-2 col-form-label">Mobile Number</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" name="mobile" placeholder="Mobile">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" name="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="listdescription" class="col-md-2 col-form-label">Listing Description</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" name="listdescription" placeholder="Listing Description" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
