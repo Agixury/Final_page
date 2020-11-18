@@ -36,7 +36,13 @@
 
     <a href="#"><i class="fa fa-fw fa-image"></i> Sight Seeing</a>
     <a href="#"><i class="fa fa-fw fa-calendar"></i> Events</a>
-    <a href="#"><i class="fa fa-fw fa-dollar-sign"></i> Discounts</a>
+
+    <a href="#" id="discountMenu"><i class="fa fa-dollar-sign"></i> Discounts</a>
+    <div class="discountSubMenu" style="display: none;">
+        <a href="/user/allDiscounts" style="font-size: medium; text-indent: 5px;">All Discounts</a>
+        <a href="/user/addDiscount" style="font-size: medium; text-indent: 5px;">Add Discount</a>
+    </div>
+
     <a href="#"><i class="fa fa-fw fa-tags"></i> Offers</a>
     <a href="#"><i class="fa fa-fw fa-ticket-alt"></i> Booking & Enquiry</a>
     <a href="#"><i class="fa fa-fw fa-rss"></i> Blogs & Articles</a>
@@ -58,4 +64,10 @@
     lBtn.addEventListener('click', ()=>{
         $('.listSubMenu').toggle('slide');
     });
+
+    var dBtn = document.getElementById('discountMenu');
+    dBtn.addEventListener('click',()=>{
+        $('.discountSubMenu').toggle('slide');
+    });
+
 </script>
