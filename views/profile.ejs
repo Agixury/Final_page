@@ -36,8 +36,6 @@
               <li class="font14 darkGreyText latoBold sdeBarNav__navItm sdeBarNav__navItm-active">
                 <span class="sdeBarNav__iconContnr">
                   <span class="myPrfilSprit myPrfilSprit__person">
-                    
-
                   </span>
                 </span>Profile
               </li>
@@ -99,17 +97,8 @@
         </div>
         <div class="rightSecWrapper">
           <div class="proflCmpltonStats cm__myProfileTheme">
-            <div class="darkGreyText proflCmpltonStats__prcntagSec">
-              <p class="latoBold makeFlex spaceBetween">
-                <span>Complete your Profile</span>
-                <span class="latoBlack blackText">0%</span></p>
-                <div class="proflCmpltonStats__progrsBar">
-                  <div class="proflCmpltonStats__progrsBarFill proflCmpltonStats__progrsBarFill--complete40">
-
-                  </div>
-                </div>
-              </div>
-              <p class="darkGreyText appendTop10 float">Get the best out of MakeMyTrip by adding the remaining details!</p>
+            
+              <p class="darkGreyText appendTop10 float">Get the best out of Agixury by adding the remaining details!</p>
               <ul class="font16 latoBold proflCmpltonStats__stpsStatusLst">
                 <li class="proflCmpltonStats__stpsStatusItm ">
                   <span class="myPrfilSprit appendRight10 myPrfilSprit__verifiedBig">
@@ -131,72 +120,93 @@
                 </li>
               </ul>
             </div>
-            <div class="profilCompont cm__myTripSideBar cm__myProfileTheme" id="profilePageComponent0">
-              <div class="detalCrdHadr undefined">
-                <div class="appendRight10">
-                  <h3 class="font30 latoBold blackText">Profile</h3>
-                  <p class="font18 darkGreyText appendTop10">Basic info, for a faster booking experience</p>
+
+            <form>
+              <div class="profilCompont cm__myTripSideBar cm__myProfileTheme" id="profilePageComponent0">
+                <div class="detalCrdHadr undefined">
+                  <div class="appendRight10">
+                    <h3 class="font30 latoBold blackText">Profile</h3>
+                    <p class="font18 darkGreyText appendTop10">Basic info, for a faster booking experience</p>
+                  </div>
+                  <div>
+                    
+                  </div>
                 </div>
-                <div>
-                  <button type="button" class="font16 latoBold blueText btn__dtailAdEdt">
-                    <span class="myPrfilSprit myPrfilSprit__edtIcn noShrink appendRight5">
-
-                    </span>
-                    Edit
-                  </button>
-                </div>
-              </div>
-              <ul class="profilCompont__dtalLst">
-                <li class="profilCompont__dtalLstItm">
-                  <div class="profilCompont__dtalLstItmContnt">
-                    <span class="font11 darkGreyText profilCompont__detalkey">
-                      NAME
-                    </span>
-                    <span class="font16 blackText latoBold">
-                      Jagadabi
-                    </span>
-                  </div>
-                </li>
-                <li class="profilCompont__dtalLstItm">
-                  <div class="profilCompont__dtalLstItmContnt">
-                    <span class="font11 darkGreyText profilCompont__detalkey">
-                      BIRTHDAY
-                    </span>
-                    <span class="font16 blackText latoBold">
-
-                    </span>
-                    <span class="font14 latoBold blueText  appendRight30 cursorPointer">
-                      + Add
-                    </span>
-                  </div>
-                </li>
-                <li class="profilCompont__dtalLstItm">
-                  <div class="profilCompont__dtalLstItmContnt">
-                    <span class="font11 darkGreyText profilCompont__detalkey">
-                      GENDER
-                    </span>
-                    <span class="font16 blackText latoBold">
-
-                    </span>
-                    <span class="font14 latoBold blueText  appendRight30 cursorPointer">
-                      + Add
-                    </span>
-                  </div>
-                </li>
-                <li class="profilCompont__dtalLstItm">
-                  <div class="profilCompont__dtalLstItmContnt">
-                    <span class="font11 darkGreyText profilCompont__detalkey">
-                      MARITAL STATUS
-                    </span>
-                    <span class="font16 blackText latoBold">
-
-                    </span>
-                    <span class="font14 latoBold blueText  appendRight30 cursorPointer">
-                      + Add</span>
+                <ul class="profilCompont__dtalLst">
+                  <li class="profilCompont__dtalLstItm">
+                    <div class="profilCompont__dtalLstItmContnt">
+                      <span class="font11 darkGreyText profilCompont__detalkey">
+                        NAME
+                      </span>
+                      <span class="font16 blackText latoBold">
+                        <input type="text" placeholder="Name"  required>
+                      </span>
                     </div>
                   </li>
-                </ul>
-              </div>
+                  <li class="profilCompont__dtalLstItm">
+                    <div class="profilCompont__dtalLstItmContnt">
+                      <span class="font11 darkGreyText profilCompont__detalkey">
+                        BIRTHDAY
+                      </span>
+                      <span class="font16 blackText latoBold">
+  
+                      </span>
+                      <span class="font14 latoBold blueText  appendRight30 cursorPointer">
+                        <input type="date" placeholder="BOD"  required>
+                      </span>
+                    </div>
+                  </li>
+                  <li class="profilCompont__dtalLstItm">
+                    <div class="profilCompont__dtalLstItmContnt">
+                      <span class="font11 darkGreyText profilCompont__detalkey">
+                        GENDER
+                      </span>
+                      <span class="font16 blackText latoBold">
+  
+                      </span>
+                      <span class="font14 latoBold blueText  appendRight30 cursorPointer">
+                        
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" checked>Male
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio">Female
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio">Others
+                          </label>
+                        
+                      </span>
+                    </div>
+                  </li>
+                  <li class="profilCompont__dtalLstItm">
+                    <div class="profilCompont__dtalLstItmContnt">
+                      <span class="font11 darkGreyText profilCompont__detalkey">
+                        MARITAL STATUS
+                      </span>
+                      <span class="font16 blackText latoBold">
+  
+                      </span>
+                      <span class="font14 latoBold blueText  appendRight30 cursorPointer">
+                        <select name="cars" id="cars">
+                          <option aria-placeholder="Marital Status">Marital Status</option>
+                          <option value="Single">Single</option>
+                          <option value="married">Married</option>
+                          
+                        </select>
+                        
+                      </span>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <input type="reset" value="Reset">
+                  <input type="submit" value="Save">
+                </div>
+                
+            
+            </form>
+              
               <div class="lognDtalComp cm__myTripSideBar cm__myProfileTheme" id="profilePageComponent1">
                 <div class="detalCrdHadr undefined">
                   <div class="appendRight10">
@@ -218,7 +228,7 @@
 
                       </span>
                       <span class="font14 latoBold blueText appendRight30 cursorPointer ">
-                        + Add your mobile number
+                        <input type="tel"  placeholder="(+91)XXX-XXX-XXXX" required>
                       </span>
                     </div>
                   </li>
@@ -228,7 +238,7 @@
                         EMAIL ID
                       </span>
                       <span class="font16 blackText latoBold">
-                        #########.66666@gmail.com
+                        <input type="email" placeholder="customer@agixury.com" required>
                       </span>
                       <span class="font14 latoBold greenText makeFlex hrtlCenter noShrink appendLeft10">
                         <span class="myPrfilSprit myPrfilSprit__verified appendRight5">
@@ -246,9 +256,35 @@
                       <span class="blacktext latoBold lognDtalComp__pswrdTxt">
                         ......
                       </span>
-                      <span class="font14 latoBold blueText appendRight30 cursorPointer pushRight">
-                        Change Password?
+                      <span class="font14 latoBold blueText appendRight30 cursorPointer pushRight" onclick="openForm">
+                         
                       </span>
+                      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Change Password?</button>
+ 
+                      <div id="id01" class="modal">
+                          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                          <form class="modal-content animate" action="/action_page.php">
+                              <div class="container">
+                                  <label><b>Old Password :</b></label>
+                                  <input type="password" placeholder="Enter Old Password" name="psw" required><br>
+                                 
+                   
+                                  <label><b>New Password :</b></label>
+                                  <input type="password" placeholder="Enter New Password" name="psw" required> <br>
+                   
+                                  <label><b>Repeat Password :</b></label>
+                                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required> <br>
+                                  <input type="checkbox"> Remember me
+                                  
+                   
+                                  <div class="clearfix">
+                                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                      <button type="submit" class="signupbtn">Submit</button>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                   
                     </div>
                   </li>
                 </ul>
@@ -285,6 +321,17 @@
 
     <%- include('partials/footer.ejs') %>
 
+
+<!--close the modal by just clicking outside of the modal-->
+<script>
+  var modal = document.getElementById('id01');
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
 </body> 
 
 </html>
