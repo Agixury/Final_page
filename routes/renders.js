@@ -154,4 +154,20 @@ router.get('/user/all-hotels', (req, res) => {
 	return res.render('admin/all-hotels');
 });
 
+router.get('/user/all-listing', (req, res) => {
+	return res.render('admin/all-listing');
+});
+
+router.get('/user/add-listing', (req, res) => {
+	return res.render('admin/add-listing');
+});
+
+router.get('/user/all-listing-category', (req, res) => {
+	return res.render('admin/all-listing-category');
+});
+
+router.get('/user/add-listing-category', (req, res) => {
+	return res.render('admin/add-listing-category');
+});
+
 module.exports = router;
