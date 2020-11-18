@@ -2242,16 +2242,16 @@ html, body {
   height: 24px;
   background-position: -87px -80px;
 }
-
+span{
+  color: #000;
+}
 .appendRight10 {
   margin-right: 10px;
 }
 .cursorPointer {
   cursor: pointer;
 }
-.blueText {
-  color: #008cff;
-}
+
 .myPrfilSprit__addBlueBg {
   width: 24px;
   height: 24px;
@@ -2515,6 +2515,113 @@ ul {
   background-color: #fff;
   padding: 20px 30px 2px;
 }
+input[type="radio"] {
+  margin-left:10px;
+}
+input[type=submit], input[type=reset] {
+  background-color: #2359ee;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+input[type=reset] {
+  background-color: rgb(240, 27, 27);
 
+}
+
+
+    /*add full-width input fields*/
+    
+    input[type=password] {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+    /* set a style for all buttons*/
+    button {
+        background-color: #2359ee;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 25%;
+        border-radius: 20px;
+    }
+    /*set styles for the cancel button*/
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #FF2E00;
+    }
+    /*float cancel and signup buttons and add an equal width*/
+    .cancelbtn,
+    .signupbtn {
+        
+        width: 25%
+    }
+    /*add padding to container elements*/
+    .container {
+        padding: 16px;
+    }
+    /*define the modal’s background*/
+     
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+    }
+    /*define the modal-content background*/
+     
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 50%;
+    }
+    /*define the close button*/
+     
+    .close {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        color: #000;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    /*define the close hover and focus effects*/
+     
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+     
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+     
+    @media screen and (max-width: 300px) {
+        .cancelbtn,
+        .signupbtn {
+            width: 25%;
+        }
+    }
 /*---------------------End of the Profile---------------------------------------*/
 
