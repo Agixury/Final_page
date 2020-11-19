@@ -123,6 +123,9 @@
 
             <form>
               <div class="profilCompont cm__myTripSideBar cm__myProfileTheme" id="profilePageComponent0">
+                <div>
+                  <button class="makeEditable"><i class="fa fa-edit"></i></button>
+                </div>
                 <div class="detalCrdHadr undefined">
                   <div class="appendRight10">
                     <h3 class="font30 latoBold blackText">Profile</h3>
@@ -135,11 +138,12 @@
                 <ul class="profilCompont__dtalLst">
                   <li class="profilCompont__dtalLstItm">
                     <div class="profilCompont__dtalLstItmContnt">
+                      
                       <span class="font11 darkGreyText profilCompont__detalkey">
                         NAME
                       </span>
                       <span class="font16 blackText latoBold">
-                        <input type="text" placeholder="Name"  required>
+                        <input type="text" placeholder="Name" class="non-edit" required >
                       </span>
                     </div>
                   </li>
@@ -152,7 +156,7 @@
   
                       </span>
                       <span class="font14 latoBold blueText  appendRight30 cursorPointer">
-                        <input type="date" placeholder="BOD"  required>
+                        <input type="date" placeholder="BOD" class="non-edit" required>
                       </span>
                     </div>
                   </li>
@@ -167,13 +171,13 @@
                       <span class="font14 latoBold blueText  appendRight30 cursorPointer">
                         
                           <label class="radio-inline">
-                            <input type="radio" name="optradio" checked>Male
+                            <input type="radio" name="optradio" class="non-edit" >Male
                           </label>
                           <label class="radio-inline">
-                            <input type="radio" name="optradio">Female
+                            <input type="radio" name="optradio" class="non-edit">Female
                           </label>
                           <label class="radio-inline">
-                            <input type="radio" name="optradio">Others
+                            <input type="radio" name="optradio" class="non-edit">Others
                           </label>
                         
                       </span>
@@ -189,9 +193,9 @@
                       </span>
                       <span class="font14 latoBold blueText  appendRight30 cursorPointer">
                         <select name="cars" id="cars">
-                          <option aria-placeholder="Marital Status">Marital Status</option>
-                          <option value="Single">Single</option>
-                          <option value="married">Married</option>
+                          <option aria-placeholder="Marital Status" class="non-edit">Marital Status</option>
+                          <option value="Single" class="non-edit">Single</option>
+                          <option value="married" class="non-edit">Married</option>
                           
                         </select>
                         
@@ -200,8 +204,8 @@
                     </li>
                   </ul>
                   
-                  <input type="reset" value="Reset">
-                  <input type="submit" value="Save">
+                  <input type="reset" value="Reset" >
+                  <input type="submit" value="Save" >
                 </div>
                 
             
@@ -228,7 +232,7 @@
 
                       </span>
                       <span class="font14 latoBold blueText appendRight30 cursorPointer ">
-                        <input type="tel"  placeholder="(+91)XXX-XXX-XXXX" required>
+                        <input type="tel"  placeholder="(+91)XXX-XXX-XXXX" class="non-edit" required>
                       </span>
                     </div>
                   </li>
@@ -238,7 +242,7 @@
                         EMAIL ID
                       </span>
                       <span class="font16 blackText latoBold">
-                        <input type="email" placeholder="customer@agixury.com" required>
+                        <input type="email" placeholder="customer@agixury.com" class="non-edit" required>
                       </span>
                       <span class="font14 latoBold greenText makeFlex hrtlCenter noShrink appendLeft10">
                         <span class="myPrfilSprit myPrfilSprit__verified appendRight5">
@@ -331,6 +335,14 @@
           modal.style.display = "none";
       }
   }
+</script>
+<script>
+  $(".non-edit").ready(function() {
+    $('input:text').attr("readonly", "readonly"); //make input field non-editable
+});
+$(".makeEditable").click(function(){
+    $('input:text').removeAttr("readonly"); //make input filed editable
+});
 </script>
 </body> 
 
