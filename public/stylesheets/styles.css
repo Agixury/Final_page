@@ -2623,5 +2623,10 @@ input[type=reset] {
             width: 25%;
         }
     }
+.makeEditable{
+      float:right;
+      height: 40px;
+      width: 80px;
+    }   
 /*---------------------End of the Profile---------------------------------------*/
 
