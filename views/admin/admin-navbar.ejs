@@ -16,7 +16,13 @@
         <a href="/user/add-listing-category" style="font-size: medium; text-indent: 5px;">Add Listing Category</a>
     </div>
 
-    <a href="#"><i class="fa fa-fw fa-user"></i> User</a>
+
+    <a href="#" id="userMenu"><i class="fa fa-fw fa-user"></i> User</a>
+    <div class="userSubMenu" style="display: none;">
+        <a href="/user/userdetail" style="font-size: medium; text-indent: 5px;">User Details</a>
+        <a href="#" style="font-size: medium; text-indent: 5px;">Add New User</a>
+    </div>
+
     
     <div ><a href="#" id="tourMenu"><i class="fa fa-fw fa-plane"></i> Tour Packages</a></div>
     <div class="tourSubMenu" style="display: none;">
@@ -37,16 +43,27 @@
     <a href="#"><i class="fa fa-fw fa-image"></i> Sight Seeing</a>
     <a href="#"><i class="fa fa-fw fa-calendar"></i> Events</a>
 
-    <a href="#" id="discountMenu"><i class="fa fa-dollar-sign"></i> Discounts</a>
-    <div class="discountSubMenu" style="display: none;">
+    <a href="#" id="disMenu"><i class="fa fa-fw fa-dollar-sign"></i>Discounts  </a>
+    <div class="disSubMenu" style="display: none;">
         <a href="/user/allDiscounts" style="font-size: medium; text-indent: 5px;">All Discounts</a>
-        <a href="/user/addDiscount" style="font-size: medium; text-indent: 5px;">Add Discount</a>
+        <a href="/user/addDiscount" style="font-size: medium; text-indent: 5px;">Add New Discounts</a>
     </div>
 
     <a href="#"><i class="fa fa-fw fa-tags"></i> Offers</a>
-    <a href="#"><i class="fa fa-fw fa-ticket-alt"></i> Booking & Enquiry</a>
-    <a href="#"><i class="fa fa-fw fa-rss"></i> Blogs & Articles</a>
-    <a href="/user/social-media"><i class="fa fa-fw fa-plus-square"></i> Social Media</a>
+    <a href="#" id="bookMenu"><i class="fa fa-fw fa-ticket-alt"></i> Booking & Enquiry </a>
+    <div class="bookSubMenu" style="display: none;">
+        <a href="/user/booking" style="font-size: medium; text-indent: 5px;">Pakage Booking Enquiry</a>
+        <a href="/user/bookings" style="font-size: medium; text-indent: 5px;">Sight Seeing Booking Enquiry</a>
+    </div>
+
+
+    <a href="#" id="blogMenu"><i class="fa fa-fw fa-rss"></i> Blogs & Articles </a>
+    <div class="blogSubMenu" style="display: none;">
+        <a href="/user/allblog" style="font-size: medium; text-indent: 5px;">All Blog</a>
+        <a href="/user/newblog" style="font-size: medium; text-indent: 5px;">Add New Blog</a>
+    </div>
+
+    <a href="#"><i class="fa fa-fw fa-plus-square"></i> Social Media</a>
 </div>
 
 <script>
@@ -65,9 +82,24 @@
         $('.listSubMenu').toggle('slide');
     });
 
-    var dBtn = document.getElementById('discountMenu');
-    dBtn.addEventListener('click',()=>{
-        $('.discountSubMenu').toggle('slide');
+    var hBtn = document.getElementById('userMenu');
+    hBtn.addEventListener('click', ()=>{
+        $('.userSubMenu').toggle('slide');
+    });
+    
+    var hBtn = document.getElementById('blogMenu');
+    hBtn.addEventListener('click', ()=>{
+        $('.blogSubMenu').toggle('slide');
+    });
+    
+    var hBtn = document.getElementById('bookMenu');
+    hBtn.addEventListener('click', ()=>{
+        $('.bookSubMenu').toggle('slide');
+    });
+
+    var hBtn = document.getElementById('disMenu');
+    hBtn.addEventListener('click', ()=>{
+        $('.disSubMenu').toggle('slide');
     });
 
 </script>
