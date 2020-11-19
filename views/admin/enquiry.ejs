@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGIXURY</title>
-
+    <%- include('admin-head') %>
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -31,52 +31,9 @@
 </head>
 <body>
 
-  <nav>
-    <ul style="padding-left: 180px;">
-        <li style="padding-right: 10px;"><a href="#">Username</a></li>
-    </ul>
-</nav>
-<div class="sidebar">
-    <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-    <div id="shows1"><a href="#"><i class="fa fa-fw fa-user"></i> User &nbsp <i class="fa fa-angle-down"></i></a></div>
-    <div class="subMenus1" style="display: none;">
-        <a href="/userdetail" style="font-size: medium; text-indent: 5px;">User Details</a>
-        <a href="# " style="font-size: medium; text-indent: 5px;">Add New User</a>
-    </div>
-    <a href="#"><i class="fa fa-list"></i> Listing</a>
-    <a href="#"><i class="fa fa-fw fa-chart-area"></i> Analytics</a>
-    <div id="show"><a href="#"><i class="fa fa-fw fa-plane"></i> Tour Packages &nbsp; <i class="fa fa-angle-down"></i> </a></div>
-    <div class="subMenu" style="display: none;">
-        <a href="/admin/all-packages" style="font-size: medium; text-indent: 5px;">All Packages </a>
-        <a href="#" style="font-size: medium; text-indent: 5px;">Add Packages</a>
-        <a href="#" style="font-size: medium; text-indent: 5px;">All Package Category</a>
-        <a href="#" style="font-size: medium; text-indent: 5px;">Add Package Category</a>
-    </div>
-    <div id="shows"><a href="#"><i class='fab fa-blogger-b'></i> Blogs &nbsp <i class="fa fa-angle-down"></i></a></div>
-    <div class="subMenus" style="display: none;">
-        <a href="/allblog" style="font-size: medium; text-indent: 5px;">All Blogs</a>
-        <a href="/newblog" style="font-size: medium; text-indent: 5px;">Add Blog</a>
-    </div>
-    <a href="#"><i class="fa fa-fw fa-image"></i> Sight Seeings</a>
-    <a href="#"><i class="fa fa-fw fa-building"></i> Hotels</a>
-    <a href="#"><i class="fa fa-dollar-sign"></i> Discounts</a>
-    <a href="#"> Offers</a>
-     <div id="shows2"><a href="#"><i class="fa fa-tag"></i> Offers &nbsp <i class="fa fa-angle-down"></i></a></div>
-    <div class="subMenus2" style="display: none;">
-        <a href="/offer" style="font-size: medium; text-indent: 5px;">All Offers</a>
-        <a href="/addoffer" style="font-size: medium; text-indent: 5px;">New Offer</a>
-    </div>
-    <div id="shows3"><a href="#"><i class="fa fa-ticket-alt"></i> Booking & Enquiry &nbsp <i class="fa fa-angle-down"></i></a></div>
-    <div class="subMenus3" style="display: none;">
-        <a href="/booking" style="font-size: medium; text-indent: 5px;">Pakage Booking Enquiry</a>
-        <a href="/bookings" style="font-size: medium; text-indent: 5px;">Sight Seeing Booking Enquiry</a>
-    </div>
-    <a href="#"><i class="fa fa-plus"></i> Social Media</a>
-    <a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
-    <a href="#"><i class="fa fa-fw fa-cogs"></i> Settings</a>
-</div>
+    <%- include('admin-navbar') %>
     <table class="table " style="margin-left: 300px;">
-        <h3 class="headtext mt-5"> <a href="/admin"><i class="fa fa-arrow-left" style="float: left; color: black;"></i></a> Package Booking Enquiry</h3>
+        <h3 class="headtext mt-5"> <a href="/user"><i class="fa fa-arrow-left" style="float: left; color: black;"></i></a> Package Booking Enquiry</h3>
         <thead>
           <tr>
             <th scope="col">USER</th>
@@ -225,37 +182,7 @@
 
 </style>
 
-<script>
-   $(document).ready(function(){
-            $('#show').click(function(){
-                $('.subMenu').toggle("slide");
-            });
-        });
 
-        $(document).ready(function(){
-            $('#shows').click(function(){
-                $('.subMenus').toggle("slide");
-            });
-        });
-
-        $(document).ready(function(){
-            $('#shows1').click(function(){
-                $('.subMenus1').toggle("slide");
-            });
-        });
-
-          $(document).ready(function(){
-            $('#shows2').click(function(){
-                $('.subMenus2').toggle("slide");
-            });
-        });
-
-        $(document).ready(function(){
-            $('#shows3').click(function(){
-                $('.subMenus3').toggle("slide");
-            });
-        });
-</script>
 
 </body>
 
