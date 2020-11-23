@@ -4,9 +4,6 @@ router.get('/', (req, res) => {
 	return res.render('index',{user:{}});
 });
 
-router.get('/hotels', (req, res) => {
-	return res.render('hotels');
-});
 
 router.get('/about', (req, res) => {
 	return res.render('about');
