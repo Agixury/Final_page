@@ -10,7 +10,7 @@ const users = require('./routes/users');
 const renders = require('./routes/renders');
 
 app.use(compression());
-app.set('view engine', 'ejs');
+app.set('view engine', "ejs");
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
