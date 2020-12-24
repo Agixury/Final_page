@@ -5,34 +5,21 @@
     <%- include('partials/head.ejs') %>
     <script data-ad-client="ca-pub-1312936521283570" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
-    <!--CSS for Login/Signup Popup-->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" class="homepageback">
-    
-   
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
     <%- include('partials/header-navbar.ejs') %>
-   
     
-    <!-- <div id="loginModal" class="modal fade" role="dialog">
+    <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-md modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" style="margin: auto; width:100%">Login/Sign-up</h4>
+                    <h4 class="modal-title" style="margin: auto; width:100%">Log in / Sign up</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
+                    <div id="authFormContainer">
                          <div class="row row-login">
                             <div class="login-signup" style="z-index: 2;">
                                 <div class="inner" style="width: 90%;">
@@ -49,8 +36,8 @@
                                         <a href="/forgot-password" style="color: black;">forgotten password?</a>
         
                                         <div class="botm-option">
-                                            <button class="line"><a href="/auth/facebook">Log In with&nbsp;<i class="fa fa-facebook" aria-hidden="true"></i></a></button>
-                                            <button><a href="/google">Log In with&nbsp;<i class="fa fa-envelope mail" aria-hidden="true"></i></a></button>
+                                            <button class="line"><a href="#">Log In with&nbsp;<i class="fa fa-facebook" aria-hidden="true"></i></a></button>
+                                            <button><a href="#">Log In with&nbsp;<i class="fa fa-envelope mail" aria-hidden="true"></i></a></button>
                                         </div>
         
                                     </div>
@@ -72,144 +59,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
-
-    <!--Modal: Login / Register Form-->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog cascading-modal" role="document">
-            
-    <div id="authFormContainer">
-        <!--Content-->
-        <div class="modal-content">
-    
-            <!--Modal cascading tabs-->
-            <div class="modal-c-tabs">
-    
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-                <li class="nav-item">
-                <a style="color: white;" class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
-                    Login</a>
-                </li>
-                <li class="nav-item">
-                <a style="color: white;" class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
-                    Register</a>
-                </li>
-            </ul>
-    
-            <!-- Tab panels -->
-            <div class="tab-content">
-                <!--Panel 7-->
-                <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-    
-                <!--Body-->
-                <div class="modal-body mb-1">
-                    <form id="loginForm">
-                    <div class="md-form form-sm mb-5">
-                    <input type="email" id="emailOrContact" class="form-control form-control-sm validate" required>
-                    <label data-error="wrong" data-success="right" for="emailOrContact">Your email</label>
-                    </div>
-    
-                    <div class="md-form form-sm mb-4">
-                    <input type="password" id="passwordLogin" class="form-control form-control-sm validate" required>
-                    <label data-error="wrong" data-success="right" for="passwordLogin">Your password</label>
-                    <p class="font-small blue-text d-flex justify-content-end"><a href="/forgot-password" class="blue-text ml-1">
-                        Forgot Password?</a></p>
-                    </div>
-                    <div class="text-center mb-3">
-                        <button type="submit" class="btn btnx blue-gradient btn-block btn-rounded z-depth-1a">Log in</button>
-                    </div>
-                      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Log In
-                        with:</p>
-              
-                      <div class="row my-3 d-flex justify-content-center">
-                        <!--Facebook-->
-                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
-                        <!--Twitter-->
-                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
-                        <!--Google +-->
-                        <button type="button" class="btn btnx btn-white btn-rounded z-depth-1a"><a href="/google"><i class="fab fa-google-plus-g"></i></a></button>
-                      </div>
-                    </form>
-                </div>
-                <!--Footer-->
-                <div class="modal-footer mx-5 pt-3 mb-1">
-                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">
-                        Sign Up</a></p>
-                  </div>
-    
-                </div>
-                <!--/.Panel 7-->
-    
-                <!--Panel 8-->
-                <div class="tab-pane fade" id="panel8" role="tabpanel">
-    
-                <!--Body-->
-                <div class="modal-body">
-                    <form id="registerForm">
-                    <div class="md-form form-sm mb-5">
-                        <input type="text" id="firstName" class="form-control form-control-sm validate" required>
-                        <label data-error="wrong" data-success="right" for="firstName">First Name</label>
-                    </div>
-
-                    <div class="md-form form-sm mb-5">
-                        <input type="text" id="lastName" class="form-control form-control-sm validate" required>
-                        <label data-error="wrong" data-success="right" for="lastName">Last Name</label>
-                    </div>
-
-                    <div class="md-form form-sm mb-5">
-                    <input type="email" id="email" class="form-control form-control-sm validate" required>
-                    <label data-error="wrong" data-success="right" for="email">Your email</label>
-                    </div>
-
-                    <div class="md-form form-sm mb-5">
-                        <input type="number" id="contactNumber" class="form-control form-control-sm validate" required>
-                        <label data-error="wrong" data-success="right" for="contactNumber">Contact Number</label>
-                    </div>
-    
-                    <div class="md-form form-sm mb-5">
-                    <input type="password" id="password" class="form-control form-control-sm validate" required>
-                    <label data-error="wrong" data-success="right" for="password">Your password</label>
-                    </div>
-    
-                    <div class="md-form form-sm mb-4">
-                    <input type="password" id="repeatPassword" class="form-control form-control-sm validate" required>
-                    <label data-error="wrong" data-success="right" for="repeatPassword">Repeat password</label>
-                    </div>
-    
-                    <div class="text-center mb-3">
-                        <button type="submit" class="btn btnx blue-gradient btn-block btn-rounded z-depth-1a">Sign Up</button>
-                      </div>
-                      <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign Up
-                        with:</p>
-              
-                      <div class="row my-3 d-flex justify-content-center">
-                        <!--Facebook-->
-                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
-                        <!--Twitter-->
-                        <button type="button" class="btn btnx btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
-                        <!--Google +-->
-                        <button type="button" class="btn btnx btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
-                      </div>
-                    </form>
-    
-                </div>
-                <!--Footer-->
-                <div class="modal-footer mx-5 pt-3 mb-1">
-                    <p class="font-small grey-text d-flex justify-content-end">Already a member? <a href="#" class="blue-text ml-1">
-                        Log In</a></p>
-                  </div>
-                </div>
-                <!--/.Panel 8-->
-            </div>
-    
-            </div>
-        </div>
-        <!--/.Content-->
-        </div>
     </div>
-    </div>
-    <!--Modal: Login / Register Form-->
  
 
     <!-- HEADER BEGINS HERE -->
@@ -220,11 +70,6 @@
       
                 <!--forms-->
             </div>
-        </div>
-       
-       <div class="mainhead">
-            <h1 class="hometext1">AGIXURY</h1>
-            <h3 class="hometext">We strive only for the best!</h3>
         </div>
 
         <div class="container" id="social-button-last">
@@ -282,57 +127,29 @@
 
                     </div>
                 </div><br ><br>
-                <!-- newsletter_container  start -->
-               <!-- newsletter_container  start -->
-               <div id="newsletter_white_background" class="row white_newsletter"
-               style=" width: 100%; height: 80px; margin-top: 5%; position:fixed; z-index: 1; bottom:0; margin-bottom:9.5rem;">
-               <!--sub-->
-               <div class="newsletter containerb">
-                   <div id="Slogans_id" class="deal Slogans text-style "
-                       style="margin-left:16%;font-size: 21px;padding-top: 2%;">
-                       <!-- <h3 style="font-size: 3rem;"> Great deals! Never miss a deal</h3> -->
-                       <h3 style="font-size: 2.5rem;"> Don't Delay!</h3>
-                       <h3 >Keep Clam and Carry on</h3>
-                       <p class="para-1">
-                           Get the best travel deals in you inbox</p>
-                   </div>
-
-                   <div id="newsletter_id" class="container newsletter_container sign-up">
-                       <nav class="">
-                           <a class="navbar-brand newsletter_brand" href="#">
-                               <span class="newsletters text-style"> <h1>NEWSLETTER</h1> </span>
-                           </a>
-                       </nav>
-                       <span class="tag_line text-style"><p class="sub-head">Stay up to date with our <br><strong> latest offers, alters and services</strong>.</p></span>
-
-
-                       <form action="#">
-                           <input onclick="ValidateEmail()" type="email" class="form-control" id="MyEmail1"
-                               name="Email" aria-describedby="emailHelp" placeholder="Please enter your Email"
-                               required>
-
-                           <input id="subscribe_button" onclick="subscribefunction()" class="subscribe"
-                               type="submit" value="SUBSCRIBE">
-
-                       </form>
-                                               
-                       <!-- <div class="nothanks">
-                           <a href="#">No Thanks</a>
-                       </div> -->
-                       <span class="text-style"><p class="nospam">Your email is safe with us,we don't spam.<span>Terms and
-                           Services</span>.</p></span>
-                   </div>
-
-                   <span id="blackclosebotton" onclick="close_newsletter()">
-                       <i class="far fa-times-circle"
-                           style="font-size: 40px; cursor: pointer; color:rgba(140, 153, 255  ); position: relative;"></i>
-
-                   </span>
-
-               </div>
-           </div>
-            <!-- newsletter_container  end -->
-                <!-- newsletter_container  end -->
+                <div class="row"
+                    style=" width: 100%; height: 80px; margin-top: 9%; position:fixed; z-index: 1; bottom:0; margin-bottom:9.5rem;">
+                    <!--sub-->
+                    <div id="close-component" class="newsletter" style="background: #0000007C; opacity: 1; margin-left : 0px;margin-bottom: -152px; position: absolute; bottom:0px; display: flex; width: 100%;justify-content: space-evenly;">
+                        <div style="color: #ffffff; margin-left:4%; margin-top:2%; font-size: 21px;padding-top: 1%;">
+                            <h3 style="font-size: 2rem;">Never miss a deal</h3>
+                            <p class="para-1">
+                                Get the best travel deals in you inbox</p>
+                        </div>
+                        <div class="Subscribe" style="float: right;margin-right: 10%; padding-top: 1%;position:absoluete;z-index: 5; flex: 0.6;">
+                            <h5 class="para-2"style="color: #fff;">Subscribe to our Newsletter</h5>
+                            <form action="#">
+                                <div style="display: flex;">
+                                    <input class="input" type="text" placeholder="Please enter your Email" style="padding: 11px; width: 450px;margin-left:40px;">
+                                    <input type="submit" value="SUBSCRIBE" style="padding: 13px; background-color: orangered; color: white;">
+                                </div>
+                                <label style="margin-left:40px;color: #ffffff;text-align: left;"><input type="checkbox" name="t&c"> I, agree to the <a
+                                        href="#">Terms & conditions</a> and would like to subscribe to offers,alerts and services. </label>
+                            </form>
+                        </div>
+                        <span onclick="close_newsletter()" style="margin-right:-7%; margin-top:5px; cursor: pointer;"><i style="color: white;" class="far fa-2x fa-times-circle"></i></span>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -342,41 +159,12 @@
 
 
     <!--list-->
-	<a id="hotels">
-    <br><br><br><div class="container" style="z-index: 0;">
+    <div class="container" style="z-index: 0;">
      <a href="/packages">
-        <div class="card-wrap">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
-                    <a name="/hotels"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
-                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                </div>
-                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
-                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                </div>
-            </div>
-        </div>
-        </a>
-         <a name="/hotels">
-        <div class="card-wrap">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <div class="card-wrap" style="width: 800px;margin-left:150px ;">
+            <div class="row" >
+                <div class="col-md-8 col-lg-8" >
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel" style="padding-left:195px ;width:600px;">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <img class="d-block" src="images/p.jpg" alt="jaipur">
@@ -393,126 +181,154 @@
                     <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
                     <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
                 </div>
-                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
+                <div style="padding-left:px;" class="col-md-6 col-lg-6">
                     <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
                     <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
                 </div>
             </div>
         </div>
         </a>
-         <a href="/packages">
-        <div class="card-wrap">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
-                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
-                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                </div>
-                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
-                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                </div>
-            </div>
-        </div>
-        </a>
-         <a href="/packages">
-        <div class="card-wrap">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
+        <a href="/packages">
+            <div class="card-wrap" style="width: 800px;margin-left:150px ;">
+                <div class="row" >
+                    <div class="col-md-8 col-lg-8" >
+                        <div id="mycarousel" class="carousel slide" data-ride="carousel" style="padding-left:195px ;width:600px;">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
-                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
-                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                </div>
-                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
-                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                </div>
-            </div>
-        </div>
-        </a>
-         <a href="/packages">
-        <div class="card-wrap">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                        </div>
+                <div class="row">
+                    <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                        <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                    </div>
+                    <div style="padding-left:px;" class="col-md-6 col-lg-6">
+                        <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                        <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
-                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
-                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                </div>
-                <div style="padding-right:25px;" class="col-md-6 col-lg-6">
-                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                </div>
-            </div>
-        </div>
-        </a>
-         <a href="/packages">
-        <div class="card-wrap">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="images/p.jpg" alt="jaipur">
+            </a>
+            <a href="/packages">
+                <div class="card-wrap" style="width: 800px;margin-left:150px ;">
+                    <div class="row" >
+                        <div class="col-md-8 col-lg-8" >
+                            <div id="mycarousel" class="carousel slide" data-ride="carousel" style="padding-left:195px ;width:600px;">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                            <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                            <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                        </div>
+                        <div style="padding-left:px;" class="col-md-6 col-lg-6">
+                            <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                            <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
-                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
-                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
-                </div>
-                <div style="padding-right: 25px;"style="padding-right:25px;"  class="col-md-6 col-lg-6">
-                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
-                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    </a>
+                </a>
+                <a href="/packages">
+                    <div class="card-wrap" style="width: 800px;margin-left:150px ;">
+                        <div class="row" >
+                            <div class="col-md-8 col-lg-8" >
+                                <div id="mycarousel" class="carousel slide" data-ride="carousel" style="padding-left:195px ;width:600px;">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                                <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                                <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                            </div>
+                            <div style="padding-left:px;" class="col-md-6 col-lg-6">
+                                <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                                <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="/packages">
+                        <div class="card-wrap" style="width: 800px;margin-left:150px ;">
+                            <div class="row" >
+                                <div class="col-md-8 col-lg-8" >
+                                    <div id="mycarousel" class="carousel slide" data-ride="carousel" style="padding-left:195px ;width:600px;">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                                    <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                                    <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                                </div>
+                                <div style="padding-left:px;" class="col-md-6 col-lg-6">
+                                    <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                                    <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="/packages">
+                            <div class="card-wrap" style="width: 800px;margin-left:150px ;">
+                                <div class="row" >
+                                    <div class="col-md-8 col-lg-8" >
+                                        <div id="mycarousel" class="carousel slide" data-ride="carousel" style="padding-left:195px ;width:600px;">
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block" src="images/p.jpg" alt="jaipur">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div style="padding-left:25px;" class="col-md-6 col-lg-6">
+                                        <a href="/packages"><h5 style="text-align: left; margin-top:20px;" class="card-title"><i class="fa fa-map-marker-alt"></i><strong> Jaipur, India</strong></h3></a>
+                                        <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum adipisci! Distinctio iure optio dolore eius, odit, quasi reiciendis saepe, qui sit eum eligendi facilis! Distinctio iure eos aliquid odio.</p>
+                                    </div>
+                                    <div style="padding-left:px;" class="col-md-6 col-lg-6">
+                                        <h3 class="card-text"><i class="fa fa-rupee-sign"></i><strong> 9,999</strong> /room</h3>
+                                        <h5 class="card-text"><i class="fa fa-clock"></i> Limited Time Offer</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+         
     
         <!--
         <div class="row"
@@ -626,7 +442,6 @@
             </div>
         </div>
     </div>
-	</a>
     -->
     <!--list completed-->
 
@@ -634,45 +449,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="application/javascript" src="javascripts/auth.js"></script>
-
-    <!--JS for login/signup popup-->
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 <script>
     $(document).ready(function () {
 
@@ -712,34 +489,11 @@ $(document).ready(function(){
       $('#loginButtonmobileview').click(function(){
         $('#loginModal').modal('show');
     });
-
     function close_newsletter(){
         var close=document.getElementById("close-component");
         close.innerHTML='';
     }
-
-
-    function close_newsletter(){
-document.getElementById("newsletter_white_background").style.display="none";
-     
-}
-function subscribefunction(){
-    document.getElementById("subscribe_button").addEventListener("click", function(event){
-  event.preventDefault()
-});
-    document.getElementById("newsletter_id").innerHTML="<h1>Thank you for Subscribing<h1/>";
-        setTimeout(function(){
-           
-            document.getElementById("newsletter_id").innerHTML="";
-        },2000);
-        
-        document.getElementById("newsletter_id").style.fontSize="30px";
-        document.getElementById("Slogans_id").style.display="none";
-        document.getElementById("blackclosebotton").style.display="none";
-        document.getElementById("MyEmail1").required;
- 
-}
-
+    
     
 </script>
 
