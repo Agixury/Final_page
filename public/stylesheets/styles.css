@@ -1613,7 +1613,7 @@ hr {
     color: #f1f1f1;
 }
 
-.btn::before {
+/*.btn::before {
     content: "";
     position: absolute;
     width: 120%;
@@ -1643,7 +1643,7 @@ hr {
         top: -10%;
         left: -10%;
     }
-}
+} */
 
 .container6 {
     float: right;
