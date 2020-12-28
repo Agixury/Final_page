@@ -387,9 +387,9 @@ footer {
 	padding-left: 65px;
 	padding-bottom: 20px;
 	padding-right: 65px;
-	background-color: #f0eeee;
+	background-color: #3E3E3E;
 	text-align: left;
-	font-family: 'SegoeUI';
+	font-family: 'Segoe UI';
 }
 
 /* background color #dcdcdc ? */
@@ -415,7 +415,7 @@ footer {
 .footer-mobile__wrapper {
 	padding-top: 45px;
 	padding-bottom: 45px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Segoe  UI';
 }
 
 .footer-title h3 {
@@ -459,8 +459,9 @@ footer {
 }
 
 .footer-about {
-	font-size: 13px;
+	font-size: 19.4px;
 	line-height: 1.75rem;
+	font-family: 'Segoe  UI';
 }
 
 .footer-bottom {
@@ -468,7 +469,8 @@ footer {
 }
 
 .footer-list__item a {
-	font-size: 14px;
+	font-size: 20px;
+	font-family: 'Segoe  UI';
 	text-decoration: none;
 	color: #000000;
 }
