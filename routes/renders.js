@@ -3,7 +3,7 @@ const router = require('express').Router();
 router.get('/', (req, res) => {
 	return res.render('index');
 });
-
+// Added code for stability
 router.get('/hotels', (req, res) => {
 	return res.render('hotels');
 });
